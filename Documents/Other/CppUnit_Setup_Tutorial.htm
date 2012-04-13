@@ -1,0 +1,684 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head><title>
+	CPPUnit in VS2010&ndash;with a sample
+</title><meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="author" content="EricT" />
+<meta name="Generator" content="Subtext Version 2.1.2.2" />
+<link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="http://blogs.powersoft.ca/erict/Rss.aspx" />
+<link type="text/css" rel="stylesheet" href="/Skins/Colors/css.axd?name=Colors-ScarletAndGrey.css" />
+<link id="Rsd" rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blogs.powersoft.ca/erict/rsd.xml.ashx" /><link id="AtomLink" title="RSS" type="application/rss+xml" rel="alternate" href="http://blogs.powersoft.ca/erict/Rss.aspx" />
+		<script type="text/javascript" src="/Scripts/common.js" ></script>
+		<script type="text/javascript">
+			var subtextAllowedHtmlTags = ['a', 'b', 'strong', 'blockquote', 'p', 'i', 'em', 'u', 'strike', 'super', 'sub', 'code'];
+			var subtextBlogInfo = new blogInfo('/', '/erict/');
+		</script>
+		<script type="text/javascript" src="/scripts/prototype.js"></script>
+<script type="text/javascript" src="/scripts/scriptaculous.js?load=effects"></script>
+<script type="text/javascript" src="/scripts/lightbox.js"></script>
+<link rel="pingback" href="http://blogs.powersoft.ca/erict/Services/Pingback.aspx"></link></head>
+	<body>
+		<form name="Form1" method="post" action="cppunit-in-vs2010ndashwith-a-sample.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="Form1">
+<div>
+<input type="hidden" name="PostComment_ascx_ctl00_answer" id="PostComment_ascx_ctl00_answer" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="PostComment_ascx_ctl00_encrypted" id="PostComment_ascx_ctl00_encrypted" value="cUBrad1YspEVm0ld3gOdWutTcqSUsVvzfbGP4VSiL/A=" />
+<input type="hidden" name="__VIEWSTATE" id="
+__VIEWSTATE" value="" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=U_oudiDR8NQh68YgxalRxtx_7ux-7vz7X0blHQUFHSU7WdrFMt1rbVO1AD-TwH8pQ3dN0DljLetMGAnNd_ZZ8axZFtM1&amp;t=634605330834856163" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=b1YJhxd_ecQbadL2nap0BLNtWnureVXx2X9ra-OxsKhaCcQYLWOSf5Wbdj9JbSEUTKQJas-qJs3r91WUGg1wsLwlbsReuUk9G_MAroCX9iyFTVF6Um-Tvz5IRHXmy-p8mMhcIcPl6-U4EaVn9I-iQSKH0a41&amp;t=634605330834856163" type="text/javascript"></script>
+<script src="/WebResource.axd?d=GJcbpeRzeJX7nJJ53vT6WtanLm9OgMhjmpKAiJsA8-QpDq0jpOF7WZ_PGy312nmS9KNF9KEnwjch6PMrmr_yhmbqc7oyQrEIbQ-uXPntOecpO3maYeOZohKthctSzRyhUP7V2V_2fNn8Y0ivTwQNsSPbbw7DhilD4UbxO4oM52pUot7a0&amp;t=633842861280000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=ESFCN20Wxp7vmlAhB57CGTu69ZD_fovOdK40lzerfXhn_Kxc3yB-5flP2MU18iNT2dWU3TaL_7TFkrgNNOsM-IGKqQIClp9uZefrin89IQsM1ntGa1sti4f14YG4UmOwEjxVhA2&amp;t=633842433900000000" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=8_aVODyuMqkFbsU1GdyzNIb2iUcrYyTOeNYvdTIqSWlwaRKwoaInQj4WziPgvPjcfZPnTnSGvwbsCnrhKlmzN81by8YUTbIovRUpsx4uNFITPFk5tuTP9HWnwGFn0PX78sA5n8Z5kd8yRmYu69DNcQV7UEU1&amp;t=633923137337448420" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=4JRZ10HIWYTfLIwK12BZLEl_jxpz3UW7Ybw_2KelQDim9u3BtByzD19AvJsiTPNIHCi9bmcqULbPrzJIame5LvCxa82ypvtwVzInLDNjLQDrbiOwvFmSNLrbtZXi5QvYI7tLZRXArE0Wp8_y4GV6q33A_k-wZ9BUNAy8d6qmx-PAZrdc0&amp;t=633923137337448420" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0" />
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCwL+raDpAgLrxL6xAgLvxb7sCAL+3ZGoBAKyqIecCQLH9YpTAq+a5rsPAoqv5pwLAq/bzYAMAqX8uYIOAsnZ7LoEpdH7jVILTz1A/z0ylo6Fn2gDPPU=" />
+</div>
+            <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('SubtextScriptManager', document.getElementById('Form1'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tcommentsUpdatePanelWrapper'], [], [], 90);
+//]]>
+</script>
+
+			
+<div id="main">
+	
+
+<div id="header">
+	<div id="title">
+		<h1><a id="Header1_HeaderTitle" title="The Title Of This Blog." class="headermaintitle" href="/erict/Default.aspx">EricT</a></h1>
+		<h2>Work / Geek stuff</h2>
+	</div>
+	
+	
+<div id="search">
+	<label for="txtSearch">search for term</label> <input name="Header1$search$txtSearch" type="text" id="Header1_search_txtSearch" class="searchterm" /> <input type="submit" name="Header1$search$btnSearch" value="GO" id="Header1_search_btnSearch" class="searchButton" />
+	
+	
+</div>
+</div>	
+	
+	<div id="content">
+		<div id="sidebar">
+			
+				
+<ul id="nav">
+	<li><a id="MyLinks1_HomeLink" title="Link to the home page." class="listitem" href="/erict/Default.aspx">Home</a></li>
+	<li><a id="MyLinks1_ContactLink" accesskey="9" title="Contact form." class="listitem" href="/erict/contact.aspx">Contact</a></li>
+	<li><a id="MyLinks1_Syndication" title="Subscribe to this feed." class="listitem" href="http://blogs.powersoft.ca/erict/Rss.aspx">Syndication</a> <a id="MyLinks1_XMLLink" title="Subscribe to this feed." href="http://blogs.powersoft.ca/erict/Rss.aspx"></a>
+	<li><a id="MyLinks1_Admin" title="Login Form." class="listitem" href="/erict/login.aspx">Login</a></li>
+</ul>
+				
+				
+				
+		<div class="contentbox">
+			<h2>Archives</h2>
+			<div class="content">
+				
+						<ul>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl01_Link" class="listitem" title="" rel="" href="/erict/archive/2012/02.aspx">February, 2012 (1)</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl02_Link" class="listitem" title="" rel="" href="/erict/archive/2011/12.aspx">December, 2011 (1)</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl03_Link" class="listitem" title="" rel="" href="/erict/archive/2011/01.aspx">January, 2011 (1)</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl04_Link" class="listitem" title="" rel="" href="/erict/archive/2010/10.aspx">October, 2010 (1)</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl05_Link" class="listitem" title="" rel="" href="/erict/archive/2009/07.aspx">July, 2009 (1)</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl06_Link" class="listitem" title="" rel="" href="/erict/archive/2009/06.aspx">June, 2009 (2)</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl07_Link" class="listitem" title="" rel="" href="/erict/archive/2009/04.aspx">April, 2009 (1)</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl08_Link" class="listitem" title="" rel="" href="/erict/archive/2009/03.aspx">March, 2009 (1)</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl09_Link" class="listitem" title="" rel="" href="/erict/archive/2009/01.aspx">January, 2009 (2)</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl10_Link" class="listitem" title="" rel="" href="/erict/archive/2008/12.aspx">December, 2008 (1)</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl11_Link" class="listitem" title="" rel="" href="/erict/archive/2008/03.aspx">March, 2008 (1)</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl00_LinkList_ctl12_Link" class="listitem" title="" rel="" href="/erict/archive/2008/01.aspx">January, 2008 (5)</a> </li>
+					
+						</ul>
+					
+			</div>
+		</div>
+	
+		<div class="contentbox">
+			<h2>Image Galleries</h2>
+			<div class="content">
+				
+						<ul>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl01_Link" class="listitem" title="" rel="" href="/erict/gallery/9.aspx">SubText manual</a> </li>
+					
+							<li><a id="ArchiveLinks1_Categories_CatList_ctl01_LinkList_ctl02_Link" class="listitem" title="" rel="" href="/erict/gallery/10.aspx">general pics</a> </li>
+					
+						</ul>
+					
+			</div>
+		</div>
+	
+
+
+				
+
+
+			
+		</div>
+		<div id="blogPosts">
+			
+					
+<div class="previousNext">
+	<a id="viewpost_ascx_PreviousNext_PrevLink" title="previous post" href="http://blogs.powersoft.ca/erict/archive/2011/12/20/having-a-link-to-the-created-build-in-cruisecontrol.net-again.aspx">&lt;&lt; Having a link to the created build in CruiseControl.Net</a>
+	<span id="viewpost_ascx_PreviousNext_LeftPipe"> | </span>
+	<a id="viewpost_ascx_PreviousNext_MainLink" href="/erict/Default.aspx">Home</a>
+	
+	
+</div>
+
+
+<div class="dropshadow">
+	<div class="contentbox">
+		<h2><a id="viewpost_ascx_TitleUrl" title="Title of this entry." class="singleposttitle" href="/erict/archive/2012/02/21/cppunit-in-vs2010ndashwith-a-sample.aspx">CPPUnit in VS2010&ndash;with a sample</a></h2>
+		<div class="content">
+			<p>I modified the CPPUnit 1.12.1 environment so it works in Visual Studio 2010.  I also included a small project that uses CPPUnit as part of the build of the small project.  Until I find a permanent home for the files, email me at erict [ at ] powersoft [ dot ] ca , and I will send to you.</p>  <p>The sample below doesn’t begin to explore the power that is available in CPPUnit.  The examples provided in CPPUnit itself need to be studied.  But this is a start…</p>  <h3>Building CPPUnit</h3>  <p>To recompile all the CPPUnit stuff, open examples.sln, then click on Build |  Batch Build…, do select all, then unselect all the Template configurations (I don’t know what the Template configurations do).  You will get some errors in the build, but these are example builds included which are supposed to fail.</p>  <h3>A sample project of my own using CPPUnit</h3>  <p>The project I needed was to test a class, which is defined in a header file.  I named the project TestSomeClassesInHeaders.</p>  <p>Below I will describe all the steps I had to do to create the small project.</p>  <ol>   <li>Create new project in VS2010: Visual C++ | Win32; Console application; add Project Name ‘TestSomeClassesInHeaders’; click Finish to complete the application wizard </li>    <li>Go into project properties;      <ol>       <li>C/C++; General and modify the ‘Additional Include Directories’ field by adding the path to the folder cppunit-1.12.1\include </li>        <li>Linker; General and modify the ‘Additional Library Directories’ field by adding the path to the folder cppunit-1.12.1\lib </li>        <li>Linker; Input and modify the ‘Additional Dependencies’ field by adding the name cppunitd.lib for your debug configuration, and cppunit.lib for the release configuration. </li>        <li>Build Events | Post-Build Event, add the line $(TargetDir)$(TargetFileName) so that the tests execute as part of the build. </li>     </ol>   </li>    <li>Modify the file TestSomeClassesInHeaders.cpp by adding the following headers:      <br />      <br />      <div class="csharpcode">       <pre class="alt"><span class="lnum">   1:  </span>#include &lt;cppunit/CompilerOutputter.h&gt;</pre>
+
+      <pre><span class="lnum">   2:  </span>#include &lt;cppunit/extensions/TestFactoryRegistry.h&gt;</pre>
+
+      <pre class="alt"><span class="lnum">   3:  </span>#include &lt;cppunit/ui/text/TestRunner.h&gt;</pre>
+
+      <br /></div>
+    </li><style type="text/css"><![CDATA[
+
+
+
+
+
+
+
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }]]></style>
+
+  <li>Replace the contents of _tmain as follows: 
+    <br />
+
+    <br />
+
+    <div class="csharpcode">
+      <pre class="alt"><span class="lnum">   1:  </span><span class="rem">// get the top-level suite of tests (registry is not the Win32 registry)</span></pre>
+
+      <pre><span class="lnum">   2:  </span>CppUnit::Test * suite = CppUnit::TestFactoryRegistry::getRegistry().makeTest();</pre>
+
+      <pre class="alt"><span class="lnum">   3:  </span><span class="rem">// add the test to the list of tests to run</span></pre>
+
+      <pre><span class="lnum">   4:  </span>CppUnit::TextUi::TestRunner runner;</pre>
+
+      <pre class="alt"><span class="lnum">   5:  </span>runner.addTest(suite);</pre>
+
+      <pre><span class="lnum">   6:  </span><span class="rem">// change the default outputter to a compiler error format outputter</span></pre>
+
+      <pre class="alt"><span class="lnum">   7:  </span>runner.setOutputter(<span class="kwrd">new</span> CppUnit::CompilerOutputter(&amp;runner.result(), std::cerr));</pre>
+
+      <pre><span class="lnum">   8:  </span><span class="rem">// run the tests</span></pre>
+
+      <pre class="alt"><span class="lnum">   9:  </span><span class="kwrd">bool</span> wasSuccessful = runner.run();</pre>
+
+      <pre><span class="lnum">  10:  </span><span class="rem">// return error code 1 if one or more tests failed</span></pre>
+
+      <pre class="alt"><span class="lnum">  11:  </span><span class="kwrd">return</span> wasSuccessful ? 0 : 1;</pre>
+
+      <br /></div>
+  </li>
+
+  <li>
+    <div class="csharpcode"><font face="Arial">If you now build, you will have a working framework, without any tests. But part of the build is the execution of the runner.  <br />Next we add a dummy class which needs to be tested:</font></div>
+  </li>
+
+  <li>
+    <div class="csharpcode"><font face="Arial">Add a C++ class using the class wizard (Add Class). Call it NewClass, and make it inline.  In the generated header file add a public method, as follows: 
+        <br />
+
+        <br />
+
+        <div class="csharpcode">
+          <pre class="alt"><span class="lnum">   1:  </span><span class="kwrd">int</span> Feature(<span class="kwrd">int</span> x)</pre>
+
+          <pre><span class="lnum">   2:  </span>{</pre>
+
+          <pre class="alt"><span class="lnum">   3:  </span>    <span class="kwrd">return</span> x;</pre>
+
+          <pre><span class="lnum">   4:  </span>}</pre>
+        </div>
+        <style type="text/css"><![CDATA[
+
+
+
+
+
+
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }]]></style>
+
+        <br /></font></div>
+  </li>
+
+  <li>
+    <div class="csharpcode"><font face="Arial">Next we add a test object.  Add a C++ class using the class wizard (Add Class).  Call it NewClassTesting.  Don’t make it inline.</font></div>
+  </li>
+
+  <li>
+    <div class="csharpcode"><font face="Arial">Just above the constructor in the CPP File, add the following to identify it as a test suite: 
+        <br />
+
+        <br />
+
+        <div class="csharpcode">
+          <pre class="alt"><span class="lnum">   1:  </span>CPPUNIT_TEST_SUITE_REGISTRATION(NewClassTesting);</pre>
+        </div>
+        <style type="text/css"><![CDATA[
+
+
+
+
+
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }]]></style>
+
+        <br /></font></div>
+  </li>
+
+  <li>
+    <div class="csharpcode"><font face="Arial">The header file of the testing class needs to be modified quite a bit.  Here is the complete file, with comments: 
+        <br />
+
+        <br />
+
+        <div class="csharpcode">
+          <pre class="alt"><span class="lnum">   1:  </span><span class="preproc">#pragma</span> once</pre>
+
+          <pre><span class="lnum">   2:  </span>#include &lt;cppUnit/TestCase.h&gt;</pre>
+
+          <pre class="alt"><span class="lnum">   3:  </span>#include &lt;cppUnit/extensions/HelperMacros.h&gt;</pre>
+
+          <pre><span class="lnum">   4:  </span> </pre>
+
+          <pre class="alt"><span class="lnum">   5:  </span>#include <span class="str">"NewClass.h"</span>   <span class="rem">// the class we want to test</span></pre>
+
+          <pre><span class="lnum">   6:  </span> </pre>
+
+          <pre class="alt"><span class="lnum">   7:  </span><span class="kwrd">class</span> NewClassTesting :</pre>
+
+          <pre><span class="lnum">   8:  </span>        <span class="kwrd">public</span> CppUnit::TestFixture</pre>
+
+          <pre class="alt"><span class="lnum">   9:  </span>{</pre>
+
+          <pre><span class="lnum">  10:  </span>    CPPUNIT_TEST_SUITE(NewClassTesting);</pre>
+
+          <pre class="alt"><span class="lnum">  11:  </span>    CPPUNIT_TEST(test1);</pre>
+
+          <pre><span class="lnum">  12:  </span>    <span class="rem">// ... name each method that should be executed</span></pre>
+
+          <pre class="alt"><span class="lnum">  13:  </span>    CPPUNIT_TEST_SUITE_END();</pre>
+
+          <pre><span class="lnum">  14:  </span> </pre>
+
+          <pre class="alt"><span class="lnum">  15:  </span><span class="kwrd">public</span>:</pre>
+
+          <pre><span class="lnum">  16:  </span>    NewClassTesting(<span class="kwrd">void</span>);</pre>
+
+          <pre class="alt"><span class="lnum">  17:  </span>    ~NewClassTesting(<span class="kwrd">void</span>);</pre>
+
+          <pre><span class="lnum">  18:  </span> </pre>
+
+          <pre class="alt"><span class="lnum">  19:  </span>    <span class="kwrd">void</span> test1()</pre>
+
+          <pre><span class="lnum">  20:  </span>    {</pre>
+
+          <pre class="alt"><span class="lnum">  21:  </span>        NewClass nc;</pre>
+
+          <pre><span class="lnum">  22:  </span>        <span class="kwrd">int</span> x = nc.Feature(5);</pre>
+
+          <pre class="alt"><span class="lnum">  23:  </span>        CPPUNIT_ASSERT(x == 5);</pre>
+
+          <pre><span class="lnum">  24:  </span>    }</pre>
+
+          <pre class="alt"><span class="lnum">  25:  </span>};</pre>
+        </div>
+        <style type="text/css"><![CDATA[
+
+
+
+
+
+.csharpcode, .csharpcode pre
+{
+	font-size: small;
+	color: black;
+	font-family: consolas, "Courier New", courier, monospace;
+	background-color: #ffffff;
+	/*white-space: pre;*/
+}
+.csharpcode pre { margin: 0em; }
+.csharpcode .rem { color: #008000; }
+.csharpcode .kwrd { color: #0000ff; }
+.csharpcode .str { color: #006080; }
+.csharpcode .op { color: #0000c0; }
+.csharpcode .preproc { color: #cc6633; }
+.csharpcode .asp { background-color: #ffff00; }
+.csharpcode .html { color: #800000; }
+.csharpcode .attr { color: #ff0000; }
+.csharpcode .alt 
+{
+	background-color: #f4f4f4;
+	width: 100%;
+	margin: 0em;
+}
+.csharpcode .lnum { color: #606060; }]]></style>
+
+        <br /></font></div>
+  </li>
+
+  <li>
+    <div class="csharpcode"><font face="Arial">Again build.  You now have a framework and unit tested your NewClass! 
+        <br /></font></div>
+  </li>
+
+  <li>
+    <div class="csharpcode"><font face="Arial">Just for the fun of it, change line 23 of the testing class to CPPUNIT_ASSERT(x != 5);  Upon building you will see build errors with a description ‘error : Assertion’.  Double clicking here will show you which assert failed.  You can single step through the project to find out details.</font></div>
+  </li>
+</ol>
+
+<p class="csharpcode"><font face="Arial">Enjoy.</font></p>
+
+
+<a href="https://skydrive.live.com/redir.aspx?cid=62ec12f129a50654&amp;resid=62EC12F129A50654!205&amp;parid=62EC12F129A50654!130&amp;authkey=!ABmsE09OCIC88Xw">Here's cppunit-1.12.1-VS2010.zip</a>
+<p class="csharpcode"><font face="Arial" /></p>
+			<div class = "itemdesc">
+				<a href="javascript:window.print();" class="printIcon"><span>Print</span></a> | posted on Tuesday, February 21, 2012 1:19 PM
+			</div>
+		</div>	
+	</div>
+</div>
+<!--
+   <rdf:RDF 
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+
+      <rdf:Description
+         rdf:about="http://blogs.powersoft.ca/erict/archive/2012/02/21/cppunit-in-vs2010ndashwith-a-sample.aspx"
+         dc:identifier="http://blogs.powersoft.ca/erict/archive/2012/02/21/cppunit-in-vs2010ndashwith-a-sample.aspx"
+         dc:title="CPPUnit in VS2010&ndash;with a sample"
+         trackback:ping="http://blogs.powersoft.ca/erict/services/trackbacks/96.aspx" 
+      />
+   </rdf:RDF>
+-->
+<div id="commentsUpdatePanelWrapper">
+	
+<a name="feedback" title="feedback anchor"></a>
+<div id="commments">
+	<h2>Feedback</h2>
+	
+	
+			<a name="219"></a>
+			<div class="comment">
+				<h3><a id="Comments_ascx_CommentList_ctl00_EditCommentImgLink"></a><a title="permalink: re: CPPUnit in VS2010–with a sample" href="http://blogs.powersoft.ca/erict/archive/2012/02/21/cppunit-in-vs2010ndashwith-a-sample.aspx#219">#</a>&nbsp;<a name="219"></a>re: CPPUnit in VS2010–with a sample</h3>
+				<span class="commentInfo">left by <a id="Comments_ascx_CommentList_ctl00_NameLink" title="Adam Dreaver" target="_blank">Adam Dreaver</a> at 3/18/2012 8:02 PM <a id="Comments_ascx_CommentList_ctl00_EditLink" href="javascript:__doPostBack('Comments_ascx$CommentList$ctl00$EditLink','')"></a></span>
+				<img id="Comments_ascx_CommentList_ctl00_GravatarImg" class="avatar" src="http://www.gravatar.com/avatar.php?gravatar_id=1e59335c3af36adde5be983143c3fc7a&amp;size=50&amp;default=identicon" alt="Gravatar" style="border-width:0px;" />
+				<div class="commentbody">
+					Nice project here. I'm having some difficulty recreating the sample. Every time I build it, the sample doesn't output anything to the output window, except the first time it's built! <br /><br />If I download your example TestSomeClassesInHeaders, I can repeatedly hit the build button and keep seeing the test results. <br /><br />I follow your example to a T, new project, console. Copy in the code, fix up compiler/linker to find the cppunit hearders/lib. I fix post build options to $(TargetDir)$(TargetFileName). <br /><br />I have gone through your projects settings and the settings of the project I created from scratch, and I can't seem to find any differences in any of the settings, and I've gone through them one by one.<br /><br />
+				</div>
+			</div>
+		
+</div>
+
+
+
+
+<div class="moreinfo">
+<table id="CommentForm" class="comments" cellSpacing="1" cellPadding="1"  border="0" >
+	<tr>
+		<td width="75">Title</td>
+		<td>
+			<input name="PostComment_ascx$tbTitle" type="text" value="re: CPPUnit in VS2010–with a sample" maxlength="128" id="PostComment_ascx_tbTitle" Size="40" style="width:300px;" /></td>
+		<td>
+			<span id="PostComment_ascx_RequiredFieldValidator1" style="color:Red;visibility:hidden;">Please enter a title</span></td>
+	</tr>
+	<tr>
+		<td width="75">Name</td>
+		<td>
+			<input name="PostComment_ascx$tbName" type="text" maxlength="32" id="PostComment_ascx_tbName" Size="40" style="width:300px;" /></td>
+		<td>
+			<span id="PostComment_ascx_vldNameRequired" style="color:Red;display:none;">Please enter your name</span>
+	</tr>
+	<tr>
+		<td>Email (never displayed)</td>
+		<td>
+			<input name="PostComment_ascx$tbEmail" type="text" maxlength="128" id="PostComment_ascx_tbEmail" Size="40" style="width:300px;" />
+		</td>
+		<td>
+			<span id="PostComment_ascx_vldEmail" style="color:Red;display:none;">Email is not required, but it must be valid if specified.</span>
+		</td>
+	</tr>
+	<tr>
+		<td>Url</td>
+		<td>
+			<input name="PostComment_ascx$tbUrl" type="text" maxlength="256" id="PostComment_ascx_tbUrl" Size="40" style="width:300px;" />
+		</td>
+		<td>
+			<span id="PostComment_ascx_vldUrl" style="color:Red;display:none;">Url is not required, but it must be valid if specified.</span>
+		</td>
+	</tr>
+	<tr>
+		<td colSpan="3">Comments&nbsp;
+			<span id="PostComment_ascx_RequiredFieldValidator3" style="color:Red;visibility:hidden;">Please enter a comment</span><br />
+			<textarea name="PostComment_ascx$tbComment" rows="10" cols="50" id="PostComment_ascx_tbComment" style="height:193px;width:400px;"></textarea></td>
+	</tr>
+	<tr>
+		<td colSpan="3">
+			<input id="PostComment_ascx_chkRemember" type="checkbox" name="PostComment_ascx$chkRemember" /><label for="PostComment_ascx_chkRemember">Remember Me?</label>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<span id="PostComment_ascx_ctl00" style="color:Red;display:none;">Please enter the answer to the supplied question.</span><span id="PostComment_ascx_ctl00_subtext_captcha">Please add 2 and 2 and type the answer here: <input type="text" name="PostComment_ascx_ctl00_visibleanswer" value="" /></span><input type="hidden" name="PostComment_ascx_captcha_encrypted" value="Kij/aAHzKAuj4VrBXEhi7Us7CH5TmScm7pmtTjQw2ak=" /><div id="PostComment_ascx_captcha" class="captcha"><img src="/CaptchaImage.ashx?spec=PIbuagxSEMzZS7fwQgcd1KdjtekX1FKWuPJwD%2biei9n62I6MT6q5EoEa0lfsdTjK" border="0" width="180"  height="50"  /><label for="PostComment_ascx_captcha_answer">Enter the code shown above:</label><span id="PostComment_ascx_captcha" style="display:inline-block;color:Red;height:50px;width:180px;display:none;">Please enter the correct word</span><input name="PostComment_ascx_captcha_answer" type="text" size="4" maxlength="4" value="" /></div><input type="submit" name="PostComment_ascx$btnSubmit" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;PostComment_ascx$btnSubmit&quot;, &quot;&quot;, true, &quot;SubtextComment&quot;, &quot;&quot;, false, false))" id="PostComment_ascx_btnSubmit" /></td>
+		<td colspan="2">
+			<span id="PostComment_ascx_Message" style="color:Red;"></span></td>
+	</tr>
+</table>
+</div>
+</div>
+				
+		</div>
+	</div>
+	
+<div class="footer">
+	Copyright &copy; EricT
+</div>
+</div>
+		
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("PostComment_ascx_RequiredFieldValidator1"), document.getElementById("PostComment_ascx_vldNameRequired"), document.getElementById("PostComment_ascx_vldEmail"), document.getElementById("PostComment_ascx_vldUrl"), document.getElementById("PostComment_ascx_RequiredFieldValidator3"), document.getElementById("PostComment_ascx_ctl00"), document.getElementById("PostComment_ascx_captcha"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var PostComment_ascx_RequiredFieldValidator1 = document.all ? document.all["PostComment_ascx_RequiredFieldValidator1"] : document.getElementById("PostComment_ascx_RequiredFieldValidator1");
+PostComment_ascx_RequiredFieldValidator1.controltovalidate = "PostComment_ascx_tbTitle";
+PostComment_ascx_RequiredFieldValidator1.errormessage = "Please enter a title";
+PostComment_ascx_RequiredFieldValidator1.validationGroup = "SubtextComment";
+PostComment_ascx_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+PostComment_ascx_RequiredFieldValidator1.initialvalue = "";
+var PostComment_ascx_vldNameRequired = document.all ? document.all["PostComment_ascx_vldNameRequired"] : document.getElementById("PostComment_ascx_vldNameRequired");
+PostComment_ascx_vldNameRequired.controltovalidate = "PostComment_ascx_tbName";
+PostComment_ascx_vldNameRequired.errormessage = "Please enter your name";
+PostComment_ascx_vldNameRequired.display = "Dynamic";
+PostComment_ascx_vldNameRequired.validationGroup = "SubtextComment";
+PostComment_ascx_vldNameRequired.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+PostComment_ascx_vldNameRequired.initialvalue = "";
+var PostComment_ascx_vldEmail = document.all ? document.all["PostComment_ascx_vldEmail"] : document.getElementById("PostComment_ascx_vldEmail");
+PostComment_ascx_vldEmail.controltovalidate = "PostComment_ascx_tbEmail";
+PostComment_ascx_vldEmail.errormessage = "Email is not required, but it must be valid if specified.";
+PostComment_ascx_vldEmail.display = "Dynamic";
+PostComment_ascx_vldEmail.validationGroup = "SubtextComment";
+PostComment_ascx_vldEmail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+PostComment_ascx_vldEmail.validationexpression = "^.*?@.+\\..+$";
+var PostComment_ascx_vldUrl = document.all ? document.all["PostComment_ascx_vldUrl"] : document.getElementById("PostComment_ascx_vldUrl");
+PostComment_ascx_vldUrl.controltovalidate = "PostComment_ascx_tbUrl";
+PostComment_ascx_vldUrl.errormessage = "Url is not required, but it must be valid if specified.";
+PostComment_ascx_vldUrl.display = "Dynamic";
+PostComment_ascx_vldUrl.validationGroup = "SubtextComment";
+PostComment_ascx_vldUrl.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+PostComment_ascx_vldUrl.validationexpression = "^(https?://)?([\\w-]+\\.)+[\\w-]+([\\w-./?%&=:]*)?$";
+var PostComment_ascx_RequiredFieldValidator3 = document.all ? document.all["PostComment_ascx_RequiredFieldValidator3"] : document.getElementById("PostComment_ascx_RequiredFieldValidator3");
+PostComment_ascx_RequiredFieldValidator3.controltovalidate = "PostComment_ascx_tbComment";
+PostComment_ascx_RequiredFieldValidator3.errormessage = "Please enter a comment";
+PostComment_ascx_RequiredFieldValidator3.validationGroup = "SubtextComment";
+PostComment_ascx_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+PostComment_ascx_RequiredFieldValidator3.initialvalue = "";
+var PostComment_ascx_ctl00 = document.all ? document.all["PostComment_ascx_ctl00"] : document.getElementById("PostComment_ascx_ctl00");
+PostComment_ascx_ctl00.errormessage = "Please enter the answer to the supplied question.";
+PostComment_ascx_ctl00.display = "Dynamic";
+PostComment_ascx_ctl00.validationGroup = "SubtextComment";
+var PostComment_ascx_captcha = document.all ? document.all["PostComment_ascx_captcha"] : document.getElementById("PostComment_ascx_captcha");
+PostComment_ascx_captcha.errormessage = "Please enter the correct word";
+PostComment_ascx_captcha.display = "Dynamic";
+PostComment_ascx_captcha.validationGroup = "SubtextComment";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+<script type="text/javascript">
+subtext_invisible_captcha_hideFromJavascriptEnabledBrowsers('PostComment_ascx_ctl00_subtext_captcha');
+</script><script type="text/javascript">
+subtext_invisible_captcha_setAnswer(2, 2, 'PostComment_ascx_ctl00_answer');
+</script>
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.add_init(PBR_ApplicationInit);var PBR_WaitText = 'Submitting...';var PBR_MonitoredUpdatePanels = new Array('commentsUpdatePanelWrapper');var PBR_WaitTexts = new Array();var PBR_WaitImages = new Array();
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+Sys.Application.initialize();
+
+document.getElementById('PostComment_ascx_RequiredFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('PostComment_ascx_RequiredFieldValidator1'));
+}
+
+document.getElementById('PostComment_ascx_vldNameRequired').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('PostComment_ascx_vldNameRequired'));
+}
+
+document.getElementById('PostComment_ascx_vldEmail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('PostComment_ascx_vldEmail'));
+}
+
+document.getElementById('PostComment_ascx_vldUrl').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('PostComment_ascx_vldUrl'));
+}
+
+document.getElementById('PostComment_ascx_RequiredFieldValidator3').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('PostComment_ascx_RequiredFieldValidator3'));
+}
+
+document.getElementById('PostComment_ascx_ctl00').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('PostComment_ascx_ctl00'));
+}
+
+document.getElementById('PostComment_ascx_captcha').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('PostComment_ascx_captcha'));
+}
+//]]>
+</script>
+</form>
+	
+	</body>
+</html>

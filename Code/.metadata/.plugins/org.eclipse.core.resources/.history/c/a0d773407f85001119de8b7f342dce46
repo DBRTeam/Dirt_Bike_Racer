@@ -1,0 +1,11 @@
+package game;
+
+/**
+ * Player controlled bike during game
+ *
+ * @author schuenjr.
+ *         Created Apr 13, 2012.
+ */
+public class Bike {
+	
+}

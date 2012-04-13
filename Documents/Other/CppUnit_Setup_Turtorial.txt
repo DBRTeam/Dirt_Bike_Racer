@@ -1,0 +1,131 @@
+CPPUnit in VS2010–with a sample
+
+I modified the CPPUnit 1.12.1 environment so it works in Visual Studio 2010.  I also included a small project that uses CPPUnit as part of the build of the small project.  Until I find a permanent home for the files, email me at erict [ at ] powersoft [ dot ] ca , and I will send to you.
+
+The sample below doesn’t begin to explore the power that is available in CPPUnit.  The examples provided in CPPUnit itself need to be studied.  But this is a start…
+Building CPPUnit
+
+To recompile all the CPPUnit stuff, open examples.sln, then click on Build |  Batch Build…, do select all, then unselect all the Template configurations (I don’t know what the Template configurations do).  You will get some errors in the build, but these are example builds included which are supposed to fail.
+A sample project of my own using CPPUnit
+
+The project I needed was to test a class, which is defined in a header file.  I named the project TestSomeClassesInHeaders.
+
+Below I will describe all the steps I had to do to create the small project.
+
+    Create new project in VS2010: Visual C++ | Win32; Console application; add Project Name ‘TestSomeClassesInHeaders’; click Finish to complete the application wizard
+    Go into project properties;
+        C/C++; General and modify the ‘Additional Include Directories’ field by adding the path to the folder cppunit-1.12.1\include
+        Linker; General and modify the ‘Additional Library Directories’ field by adding the path to the folder cppunit-1.12.1\lib
+        Linker; Input and modify the ‘Additional Dependencies’ field by adding the name cppunitd.lib for your debug configuration, and cppunit.lib for the release configuration.
+        Build Events | Post-Build Event, add the line $(TargetDir)$(TargetFileName) so that the tests execute as part of the build.
+    Modify the file TestSomeClassesInHeaders.cpp by adding the following headers:
+
+       1:  #include <cppunit/CompilerOutputter.h>
+
+       2:  #include <cppunit/extensions/TestFactoryRegistry.h>
+
+       3:  #include <cppunit/ui/text/TestRunner.h>
+
+
+    Replace the contents of _tmain as follows:
+
+       1:  // get the top-level suite of tests (registry is not the Win32 registry)
+
+       2:  CppUnit::Test * suite = CppUnit::TestFactoryRegistry::getRegistry().makeTest();
+
+       3:  // add the test to the list of tests to run
+
+       4:  CppUnit::TextUi::TestRunner runner;
+
+       5:  runner.addTest(suite);
+
+       6:  // change the default outputter to a compiler error format outputter
+
+       7:  runner.setOutputter(new CppUnit::CompilerOutputter(&runner.result(), std::cerr));
+
+       8:  // run the tests
+
+       9:  bool wasSuccessful = runner.run();
+
+      10:  // return error code 1 if one or more tests failed
+
+      11:  return wasSuccessful ? 0 : 1;
+
+
+    If you now build, you will have a working framework, without any tests. But part of the build is the execution of the runner. 
+    Next we add a dummy class which needs to be tested:
+    Add a C++ class using the class wizard (Add Class). Call it NewClass, and make it inline.  In the generated header file add a public method, as follows:
+
+       1:  int Feature(int x)
+
+       2:  {
+
+       3:      return x;
+
+       4:  }
+
+
+    Next we add a test object.  Add a C++ class using the class wizard (Add Class).  Call it NewClassTesting.  Don’t make it inline.
+    Just above the constructor in the CPP File, add the following to identify it as a test suite:
+
+       1:  CPPUNIT_TEST_SUITE_REGISTRATION(NewClassTesting);
+
+
+    The header file of the testing class needs to be modified quite a bit.  Here is the complete file, with comments:
+
+       1:  #pragma once
+
+       2:  #include <cppUnit/TestCase.h>
+
+       3:  #include <cppUnit/extensions/HelperMacros.h>
+
+       4:   
+
+       5:  #include "NewClass.h"   // the class we want to test
+
+       6:   
+
+       7:  class NewClassTesting :
+
+       8:          public CppUnit::TestFixture
+
+       9:  {
+
+      10:      CPPUNIT_TEST_SUITE(NewClassTesting);
+
+      11:      CPPUNIT_TEST(test1);
+
+      12:      // ... name each method that should be executed
+
+      13:      CPPUNIT_TEST_SUITE_END();
+
+      14:   
+
+      15:  public:
+
+      16:      NewClassTesting(void);
+
+      17:      ~NewClassTesting(void);
+
+      18:   
+
+      19:      void test1()
+
+      20:      {
+
+      21:          NewClass nc;
+
+      22:          int x = nc.Feature(5);
+
+      23:          CPPUNIT_ASSERT(x == 5);
+
+      24:      }
+
+      25:  };
+
+
+    Again build.  You now have a framework and unit tested your NewClass!
+    Just for the fun of it, change line 23 of the testing class to CPPUNIT_ASSERT(x != 5);  Upon building you will see build errors with a description ‘error : Assertion’.  Double clicking here will show you which assert failed.  You can single step through the project to find out details.
+
+Enjoy.
+Enjoy.

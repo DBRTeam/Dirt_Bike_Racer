@@ -1,0 +1,92 @@
+package tests;
+
+import static org.junit.Assert.*;
+import game.Bike;
+
+import org.junit.Test;
+
+/**
+ * TODO Put here a description of what this class does.
+ *
+ * @author schuenjr.
+ *         Created Apr 13, 2012.
+ */
+public class TestsforBike {
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 */
+	@Test
+	public void testBikeisCreated() {
+		Bike test = new Bike();
+		assertEquals(test.getClass(),Bike.class);
+	}
+	
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 */
+	@Test
+	public void testBikeRecievesNewLocationX() {
+		Bike test = new Bike();
+		test.UpdatePostion(55,37);
+		assertEquals(test.xPosition,55);
+	}
+
+	
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 */
+	@Test
+	public void testBikeRecievesNewLocationY() {
+		Bike test = new Bike();
+		test.UpdatePostion(55,37);
+		assertEquals(test.yPosition,37);
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 */
+	@Test
+	public void testBikeRecievesNewVectorSpeed() {
+		Bike test = new Bike();
+		test.UpdateVector(200,110);
+		fail("Not yet implemented");
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 */
+	@Test
+	public void testBikeRecievesNewRotation() {
+		Bike test = new Bike();
+		
+		fail("Not yet implemented");
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 */
+	@Test
+	public void testBikeCrashFromForce() {
+		Bike test = new Bike();
+		
+		fail("Not yet implemented");
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 */
+	@Test
+	public void testBikeCrashFromFlip() {
+		Bike test = new Bike();
+		
+		fail("Not yet implemented");
+	}
+}

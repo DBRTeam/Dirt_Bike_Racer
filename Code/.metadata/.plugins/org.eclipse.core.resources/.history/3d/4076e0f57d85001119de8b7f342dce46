@@ -1,0 +1,20 @@
+package tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * TODO Put here a description of what this class does.
+ *
+ * @author schuenjr.
+ *         Created Apr 13, 2012.
+ */
+public class TestsforBike {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
