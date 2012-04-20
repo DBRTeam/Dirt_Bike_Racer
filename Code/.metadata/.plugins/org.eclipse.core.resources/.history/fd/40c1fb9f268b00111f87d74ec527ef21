@@ -15,6 +15,15 @@ public class Session {
 		this.level = level;
 	}
 
+	/**
+	 * TODO Put here a description of what this constructor does.
+	 *
+	 * @param testFile
+	 */
+	public Session(String testFile) {
+		// TODO Auto-generated constructor stub.
+	}
+
 	public Bike getBike(){
 		return this.bike;
 	}
