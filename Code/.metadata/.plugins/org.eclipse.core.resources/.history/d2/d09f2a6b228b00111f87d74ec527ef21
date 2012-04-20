@@ -1,0 +1,57 @@
+package game;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+/**
+ * Creates a session with a level and a bike.
+ *
+ * @author schuenjr.
+ *         Created Apr 13, 2012.
+ */
+public class Session {
+	private Bike bike;
+	private ArrayList <Array> level;
+	
+	public Session(String file){
+		this.bike = new Bike();
+		this.level = readfile(file);
+	}
+	
+	/**
+	 * TODO Put here a description of what this constructor does.
+	 *
+	 */
+	public Session() {
+		// TODO Auto-generated constructor stub.
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @param file
+	 * @return
+	 */
+	private ArrayList<Array> readfile(String file) {
+		// TODO Auto-generated method stub.
+		return null;
+	}
+
+	public Bike getBike(){
+		return this.bike;
+	}
+	
+	public ArrayList<Array> getLevel(){
+		return this.level;
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @param level2
+	 */
+	public void setLevel(int[] level2) {
+		// TODO Auto-generated method stub.
+		
+	}
+}

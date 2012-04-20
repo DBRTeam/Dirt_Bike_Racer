@@ -30,11 +30,11 @@ public class Bike {
 	private int rotation;
 	
 	public Bike(){
-		this.xPosition = 0;
-		this.yPosition = 0;
-		this.directionVector = 0;
-		this.speedVector = 0;
-		this.rotation = 0;
+		xPosition = 0;
+		yPosition = 0;
+		directionVector = 0;
+		speedVector = 0;
+		rotation = 0;
 	}
 
 	/**
@@ -44,8 +44,8 @@ public class Bike {
 	 * @param y
 	 */
 	public void UpdatePosition(int x, int y) {
-		this.xPosition = x;
-		this.yPosition = y;
+		xPosition = x;
+		yPosition = y;
 	}
 
 	/**
@@ -65,7 +65,7 @@ public class Bike {
 	 * @param r
 	 */
 	public void UpdateRotation(int r) {
-		this.rotation = r;
+		rotation = r;
 	}
 
 	/**
@@ -79,23 +79,23 @@ public class Bike {
 	}
 	
 	public int getX(){
-		return this.xPosition;
+		return xPosition;
 	}
 	
 	public int getY(){
-		return this.yPosition;
+		return yPosition;
 	}
 
 	public int getDirection(){
-		return this.directionVector;
+		return directionVector;
 	}
 
 	public int getSpeed(){
-		return this.speedVector;
+		return speedVector;
 	}
 
 	public int getRotation(){
-		return this.rotation;
+		return rotation;
 	}
 	
 }

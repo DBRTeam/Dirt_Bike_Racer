@@ -196,15 +196,4 @@ public class TestsforBike {
 		// TODO setup a scenario where Bike shouldn't crash
 		assertFalse(test.Crash());
 	}
-	
-	/**
-	 * TODO Put here a description of what this method does.
-	 *
-	 */
-	@Test
-	public void testBikeDetectsTerrain() {
-		Bike test = new Bike();
-		// TODO setup a scenario where Bike should react to terrain
-		assertFalse(test.Crash());
-	}
 }
