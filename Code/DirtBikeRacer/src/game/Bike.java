@@ -9,56 +9,63 @@ package game;
 public class Bike {
 
 	/**
-	 * TODO Put here a description of this field.
+	 * The horizontal coordinate of the bike.
 	 */
-	public int xPosition;
+	private int xPosition;
 	/**
-	 * TODO Put here a description of this field.
+	 * The vertical coordinate of the bike.
 	 */
-	public int yPosition;
+	private int yPosition;
 	/**
-	 * TODO Put here a description of this field.
+	 * The direction the bike is traveling, in degrees.
 	 */
-	public int directionVector;
+	private int directionVector;
 	/**
-	 * TODO Put here a description of this field.
+	 * The speed of the bike.
 	 */
-	public int speedVector;
+	private int speedVector;
 	/**
-	 * TODO Put here a description of this field.
+	 * The orientation of the bike, in degrees.
 	 */
-	public int Rotation;
-
-	/**
-	 * TODO Put here a description of what this method does.
-	 *
-	 * @param i
-	 * @param j
-	 */
-	public void UpdatePostion(int i, int j) {
-		// TODO Auto-generated method stub.
-		
+	private int rotation;
+	
+	public Bike(){
+		xPosition = 0;
+		yPosition = 0;
+		directionVector = 0;
+		speedVector = 0;
+		rotation = 0;
 	}
 
 	/**
-	 * TODO Put here a description of what this method does.
+	 * Changes the position to reflect movement.
 	 *
-	 * @param i
-	 * @param j
+	 * @param x
+	 * @param y
 	 */
-	public void UpdateVector(int i, int j) {
-		// TODO Auto-generated method stub.
-		
+	public void UpdatePosition(int x, int y) {
+		xPosition = x;
+		yPosition = y;
 	}
 
 	/**
-	 * TODO Put here a description of what this method does.
+	 * Changes the vector to reflect acceleration.
 	 *
-	 * @param i
+	 * @param speed
+	 * @param direction
 	 */
-	public void UpdateRotation(int i) {
-		// TODO Auto-generated method stub.
-		
+	public void UpdateVector(int speed, int direction) {
+		speedVector = speed;
+		directionVector = direction;
+	}
+
+	/**
+	 * Changes the orientation of the bike.
+	 *
+	 * @param r
+	 */
+	public void UpdateRotation(int r) {
+		rotation = r;
 	}
 
 	/**
@@ -69,6 +76,26 @@ public class Bike {
 	public boolean Crash() {
 		// TODO Auto-generated method stub.
 		return false;
+	}
+	
+	public int getX(){
+		return xPosition;
+	}
+	
+	public int getY(){
+		return yPosition;
+	}
+
+	public int getDirection(){
+		return directionVector;
+	}
+
+	public int getSpeed(){
+		return speedVector;
+	}
+
+	public int getRotation(){
+		return rotation;
 	}
 	
 }

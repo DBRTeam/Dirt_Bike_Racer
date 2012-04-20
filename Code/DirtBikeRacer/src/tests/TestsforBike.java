@@ -30,8 +30,8 @@ public class TestsforBike {
 	@Test
 	public void testBikeRecievesNewLocationX() {
 		Bike test = new Bike();
-		test.UpdatePostion(55,37);
-		assertEquals(test.xPosition,55);
+		test.UpdatePosition(55,37);
+		assertEquals(test.getX(),55);
 	}
 
 	/**
@@ -41,12 +41,12 @@ public class TestsforBike {
 	@Test
 	public void testBikeRecievesNewLocationXAgain() {
 		Bike test = new Bike();
-		test.UpdatePostion(55,37);
-		test.UpdatePostion(57,37);
-		test.UpdatePostion(58,39);
-		test.UpdatePostion(60,42);
-		test.UpdatePostion(62,44);
-		assertEquals(test.xPosition,62);
+		test.UpdatePosition(55,37);
+		test.UpdatePosition(57,37);
+		test.UpdatePosition(58,39);
+		test.UpdatePosition(60,42);
+		test.UpdatePosition(62,44);
+		assertEquals(test.getX(),62);
 	}
 	
 	/**
@@ -56,8 +56,8 @@ public class TestsforBike {
 	@Test
 	public void testBikeRecievesNewLocationY() {
 		Bike test = new Bike();
-		test.UpdatePostion(55,37);
-		assertEquals(test.yPosition,37);
+		test.UpdatePosition(55,37);
+		assertEquals(test.getY(),37);
 	}
 	
 	/**
@@ -67,12 +67,12 @@ public class TestsforBike {
 	@Test
 	public void testBikeRecievesNewLocationYAgain() {
 		Bike test = new Bike();
-		test.UpdatePostion(55,37);
-		test.UpdatePostion(57,37);
-		test.UpdatePostion(58,39);
-		test.UpdatePostion(60,42);
-		test.UpdatePostion(62,44);
-		assertEquals(test.yPosition,44);
+		test.UpdatePosition(55,37);
+		test.UpdatePosition(57,37);
+		test.UpdatePosition(58,39);
+		test.UpdatePosition(60,42);
+		test.UpdatePosition(62,44);
+		assertEquals(test.getY(),44);
 	}
 	
 	/**
@@ -83,7 +83,7 @@ public class TestsforBike {
 	public void testBikeRecievesNewVectorDirection() {
 		Bike test = new Bike();
 		test.UpdateVector(200,110);
-		assertEquals(test.directionVector,110);
+		assertEquals(test.getDirection(),110);
 	}
 	
 	/**
@@ -98,7 +98,7 @@ public class TestsforBike {
 		test.UpdateVector(195,100);
 		test.UpdateVector(192,95);
 		test.UpdateVector(190,90);
-		assertEquals(test.directionVector,90);
+		assertEquals(test.getDirection(),90);
 	}
 
 	/**
@@ -109,7 +109,7 @@ public class TestsforBike {
 	public void testBikeRecievesNewVectorSpeed() {
 		Bike test = new Bike();
 		test.UpdateVector(200,110);
-		assertEquals(test.speedVector,200);
+		assertEquals(test.getSpeed(),200);
 	}
 	
 	/**
@@ -124,7 +124,7 @@ public class TestsforBike {
 		test.UpdateVector(195,100);
 		test.UpdateVector(192,95);
 		test.UpdateVector(190,90);
-		assertEquals(test.speedVector,190);
+		assertEquals(test.getSpeed(),190);
 	}
 	
 	/**
@@ -135,7 +135,7 @@ public class TestsforBike {
 	public void testBikeRecievesNewRotation() {
 		Bike test = new Bike();
 		test.UpdateRotation(118);
-		assertEquals(test.Rotation,118);
+		assertEquals(test.getRotation(),118);
 	}
 	
 	/**
@@ -150,8 +150,9 @@ public class TestsforBike {
 		test.UpdateRotation(123);
 		test.UpdateRotation(125);
 		test.UpdateRotation(127);
-		assertEquals(test.Rotation,127);
+		assertEquals(test.getRotation(),127);
 	}
+	
 	/**
 	 * TODO Put here a description of what this method does.
 	 *
