@@ -10,7 +10,7 @@ public class Game {
 	private static Session currentSession;
 	
 	public static void main(String[] args) {
-		currentSession = new Session(null);
+		currentSession = new Session();
 	}
 	
 	public void setCurrentSession(Session s){

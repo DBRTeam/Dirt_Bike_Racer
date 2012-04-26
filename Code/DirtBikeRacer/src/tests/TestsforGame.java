@@ -1,6 +1,10 @@
 package tests;
 
 import static org.junit.Assert.*;
+
+import java.awt.Point;
+import java.util.ArrayList;
+
 import game.Game;
 import game.Session;
 
@@ -31,7 +35,7 @@ public class TestsforGame {
 	@Test
 	public void testSessionisCreated() {
 		Game test = new Game();
-		Session s = new Session(null);
+		Session s = new Session();
 		test.setCurrentSession(s);
 		assertEquals(test.getCurrentSession(), s);
 	}
@@ -43,8 +47,8 @@ public class TestsforGame {
 	@Test
 	public void testSessionCanBeChanged() {
 		Game test = new Game();
-		Session s1 = new Session(null);
-		Session s2 = new Session(new int[3]);
+		Session s1 = new Session();
+		Session s2 = new Session(new ArrayList<Point>());
 		test.setCurrentSession(s1);
 		test.setCurrentSession(s2);
 		assertEquals(test.getCurrentSession(), s2);
