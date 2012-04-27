@@ -2,6 +2,8 @@ package tests;
 
 import static org.junit.Assert.*;
 
+import java.awt.Point;
+import java.io.File;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -24,7 +26,7 @@ public class TestsforSession {
 	 */
 	@Test
 	public void testSessionisCreated() {
-		Session test = new Session(null);
+		Session test = new Session();
 		assertEquals(test.getClass(),Session.class);
 	}
 	
@@ -34,21 +36,11 @@ public class TestsforSession {
 	 */
 	@Test
 	public void testBikeisCreated() {
-		Session test = new Session(null);
+		Session test = new Session();
 		assertEquals(test.getBike().getClass(), Bike.class);
 	}
 	
-	/**
-	 * TODO Put here a description of what this method does.
-	 *
-	 */
-	@Test
-	public void testLevelReturned() {
-		int[] level = new int[4];
-		level[0] = 0;level[1] = 0;level[2] = 1;level[3] = 0;
-		Session test = new Session(level);
-		assertEquals(test.getLevel(), level);
-	}
+
 	
 	/**
 	 * TODO Put here a description of what this method does.
@@ -56,22 +48,22 @@ public class TestsforSession {
 	 */
 	@Test
 	public void testTerrainIsReadInCorrectly() {
-		String testFile = "C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/Levels/LevelTest.txt";
+		String testFileName = "C:/Users/spurrme/Documents/Sophomore Year/CSSE376/Project/Dirt_Bike_Racer/Code/DirtBikeRacer/src/testLevel.txt";
+		File testFile = new File(testFileName);
+		assertTrue(testFile.exists());
 		Session testSession = new Session(testFile);
-		ArrayList<int[]> testTrack = new ArrayList<int[]>();
-		int[] Array0 = new int[2];
-		Array0[0] = 0;
-		Array0[1] = 0;
-		int[] Array1 = new int[2];
-		Array1[0] = 0;
-		Array1[1] = 1;
-		int[] Array2 = new int[2];
-		Array2[0] = 1;
-		Array2[1] = 1;
-		testTrack.add(Array0);
-		testTrack.add(Array1);
-		testTrack.add(Array2);
-		assertEquals(testSession.getLevel(), testTrack);
+		ArrayList<Point> actualTrack = testSession.getLevel();
+		ArrayList<Point> testTrack = new ArrayList<Point>();
+		testTrack.add(new Point(0,0));
+		testTrack.add(new Point(4,6));
+		testTrack.add(new Point(8,12));
+		testTrack.add(new Point(12,12));
+		testTrack.add(new Point(16,6));
+		testTrack.add(new Point(20,0));
+		for (int i = 1; i < actualTrack.size(); i++) {
+			assertEquals(testTrack.get(i), actualTrack.get(i));
+		}
+		
 	}
 	
 	/**
@@ -80,7 +72,8 @@ public class TestsforSession {
 	 */
 	@Test
 	public void testBikeXPositionIsTrackedCorrectly() {
-		String testFile = "C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/Levels/LevelTest.txt";
+		String testFileName = "C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/Levels/LevelTest.txt";
+		File testFile = new File(testFileName);
 		Session testSession = new Session(testFile);
 		testSession.getBike().UpdatePosition(14,27);
 		assertEquals(testSession.getBike().getX(), 14);
@@ -92,7 +85,8 @@ public class TestsforSession {
 	 */
 	@Test
 	public void testBikeYPositionIsTrackedCorrectly() {
-		String testFile = "C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/Levels/LevelTest.txt";
+		String testFileName = "C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/Levels/LevelTest.txt";
+		File testFile = new File(testFileName);
 		Session testSession = new Session(testFile);
 		testSession.getBike().UpdatePosition(14,27);
 		assertEquals(testSession.getBike().getY(), 27);
