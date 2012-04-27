@@ -11,23 +11,23 @@ public class Bike {
 	/**
 	 * The horizontal coordinate of the bike.
 	 */
-	private int xPosition;
+	private double xPosition;
 	/**
 	 * The vertical coordinate of the bike.
 	 */
-	private int yPosition;
+	private double yPosition;
 	/**
 	 * The direction the bike is traveling, in degrees.
 	 */
-	private int directionVector;
+	private double directionVector;
 	/**
 	 * The speed of the bike.
 	 */
-	private int speedVector;
+	private double speedVector;
 	/**
 	 * The orientation of the bike, in degrees.
 	 */
-	private int rotation;
+	private double rotation;
 	
 	public Bike(){
 		this.xPosition = 0;
@@ -43,7 +43,7 @@ public class Bike {
 	 * @param x
 	 * @param y
 	 */
-	public void UpdatePosition(int x, int y) {
+	public void UpdatePosition(double x, double y) {
 		this.xPosition = x;
 		this.yPosition = y;
 	}
@@ -54,7 +54,7 @@ public class Bike {
 	 * @param speed
 	 * @param direction
 	 */
-	public void UpdateVector(int speed, int direction) {
+	public void UpdateVector(double speed, double direction) {
 		this.speedVector = speed;
 		this.directionVector = direction;
 	}
@@ -64,37 +64,27 @@ public class Bike {
 	 *
 	 * @param r
 	 */
-	public void UpdateRotation(int r) {
+	public void UpdateRotation(double r) {
 		this.rotation = r;
 	}
-
-	/**
-	 * TODO Put here a description of what this method does.
-	 *
-	 * @return boolean
-	 */
-	public boolean Crash() {
-		// TODO Auto-generated method stub.
-		return false;
-	}
 	
-	public int getX(){
+	public double getX(){
 		return this.xPosition;
 	}
 	
-	public int getY(){
+	public double getY(){
 		return this.yPosition;
 	}
 
-	public int getDirection(){
+	public double getDirection(){
 		return this.directionVector;
 	}
 
-	public int getSpeed(){
+	public double getSpeed(){
 		return this.speedVector;
 	}
 
-	public int getRotation(){
+	public double getRotation(){
 		return this.rotation;
 	}
 	

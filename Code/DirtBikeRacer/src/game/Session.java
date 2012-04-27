@@ -19,6 +19,10 @@ public class Session {
 	private Bike bike;
 	private File level;
 	private ArrayList<Point> parsedLevel;
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 	/**
 	 * Empty constructor for a level.
 	 *
@@ -26,6 +30,10 @@ public class Session {
 	public Session(){
 		this.bike = new Bike();
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 	/**
 	 * Constructor for a level that uses a file to build the game.
 	 *
@@ -34,7 +42,12 @@ public class Session {
 	public Session(File level){
 		this.bike = new Bike();
 		this.level = level;
+		this.parsedLevel = parseLevel(level);
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 	/**
 	 * Constructor for a level that uses an array list to build the game.
 	 *
@@ -44,6 +57,10 @@ public class Session {
 		this.bike = new Bike();
 		this.parsedLevel = parsedLevel;
 	}
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 	/**
 	 * Gets the bike for the session.
 	 *
@@ -59,8 +76,11 @@ public class Session {
 	 * @return the parsed level
 	 */
 	public ArrayList<Point> getLevel(){
+<<<<<<< HEAD
 		this.parsedLevel = parseLevel(this.level);
 		
+=======
+>>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 		return this.parsedLevel;
 	}
 
@@ -95,6 +115,49 @@ public class Session {
 			  }
 		
 		return levelList;
+<<<<<<< HEAD
+=======
+	}
+
+	/**
+	 * Moves the bike based on its speed and the terrain.
+	 */
+	public void moveBike(){
+		double newX = bike.getX()+bike.getSpeed();
+		double newY = getTrackY(newX);
+		bike.UpdatePosition(newX, newY);
+	}
+	
+	/**
+	 * Gets the y position on the track at a given x position.
+	 * 
+	 * @param x
+	 * @return y
+	 */
+	public double getTrackY(double x){
+		int index = 0;
+		while(x > parsedLevel.get(index+1).x){
+			index++;
+		}
+		double left = parsedLevel.get(index).x;
+		double right = parsedLevel.get(index+1).x;
+		double ratio = (x-left)/(right-left);
+		double top = parsedLevel.get(index+1).y;
+		double bottom = parsedLevel.get(index).y;
+		return parsedLevel.get(index).y + ratio*(top-bottom);
+	}
+	
+	/**
+	 * Checks to see if the bike should crash or not.
+	 * 
+	 * @return
+	 */
+	public boolean bikeCrash(){
+		if(bike.getY() == getTrackY(bike.getX())){
+			if((Math.cos(Math.toRadians(bike.getRotation())) < Math.cos(Math.toRadians(15))))return true;
+		}
+		return false;
+>>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 	}
 
 
