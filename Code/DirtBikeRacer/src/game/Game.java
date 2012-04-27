@@ -8,9 +8,12 @@ package game;
  */
 public class Game {
 	private static Session currentSession;
+	private static GUI gui;
 	
 	public static void main(String[] args) {
 		currentSession = new Session();
+		gui = new GUI();
+		gui.setVisible(true);
 	}
 	
 	public void setCurrentSession(Session s){
