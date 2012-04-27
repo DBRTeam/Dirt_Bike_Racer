@@ -6,7 +6,7 @@ import game.Bike;
 import org.junit.Test;
 
 /**
- * TODO Put here a description of what this class does.
+ * Tests everything in the bike class.
  *
  * @author schuenjr.
  *         Created Apr 13, 2012.
@@ -14,8 +14,7 @@ import org.junit.Test;
 public class TestsforBike {
 
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a bike can be created.
 	 */
 	@Test
 	public void testBikeisCreated() {
@@ -24,19 +23,18 @@ public class TestsforBike {
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a bike can get a new x location.
 	 */
 	@Test
 	public void testBikeRecievesNewLocationX() {
 		Bike test = new Bike();
 		test.UpdatePosition(55,37);
-		assertEquals(test.getX(),55);
+		assertEquals(test.getX(),55, 0.001);
 	}
 
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a bike can change the x location
+	 * multiple times.
 	 */
 	@Test
 	public void testBikeRecievesNewLocationXAgain() {
@@ -46,23 +44,22 @@ public class TestsforBike {
 		test.UpdatePosition(58,39);
 		test.UpdatePosition(60,42);
 		test.UpdatePosition(62,44);
-		assertEquals(test.getX(),62);
+		assertEquals(test.getX(),62, 0.001);
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a bike can get a new y location.
 	 */
 	@Test
 	public void testBikeRecievesNewLocationY() {
 		Bike test = new Bike();
 		test.UpdatePosition(55,37);
-		assertEquals(test.getY(),37);
+		assertEquals(test.getY(),37, 0.001);
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a bike can change the y location
+	 * multiple times.
 	 */
 	@Test
 	public void testBikeRecievesNewLocationYAgain() {
@@ -72,23 +69,22 @@ public class TestsforBike {
 		test.UpdatePosition(58,39);
 		test.UpdatePosition(60,42);
 		test.UpdatePosition(62,44);
-		assertEquals(test.getY(),44);
+		assertEquals(test.getY(),44, 0.001);
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a bike can get a new direction vector.
 	 */
 	@Test
 	public void testBikeRecievesNewVectorDirection() {
 		Bike test = new Bike();
 		test.UpdateVector(200,110);
-		assertEquals(test.getDirection(),110);
+		assertEquals(test.getDirection(),110, 0.001);
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a bike can change the direction vector
+	 * multiple times.
 	 */
 	@Test
 	public void testBikeRecievesNewVectorDirectionAgain() {
@@ -98,23 +94,21 @@ public class TestsforBike {
 		test.UpdateVector(195,100);
 		test.UpdateVector(192,95);
 		test.UpdateVector(190,90);
-		assertEquals(test.getDirection(),90);
+		assertEquals(test.getDirection(),90, 0.001);
 	}
 
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a bike can get a new speed.
 	 */
 	@Test
 	public void testBikeRecievesNewVectorSpeed() {
 		Bike test = new Bike();
 		test.UpdateVector(200,110);
-		assertEquals(test.getSpeed(),200);
+		assertEquals(test.getSpeed(),200, 0.001);
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a bike can change the speed multiple times.
 	 */
 	@Test
 	public void testBikeRecievesNewVectorSpeedAgain() {
@@ -124,23 +118,21 @@ public class TestsforBike {
 		test.UpdateVector(195,100);
 		test.UpdateVector(192,95);
 		test.UpdateVector(190,90);
-		assertEquals(test.getSpeed(),190);
+		assertEquals(test.getSpeed(),190, 0.001);
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a bike can get a new rotation.
 	 */
 	@Test
 	public void testBikeRecievesNewRotation() {
 		Bike test = new Bike();
 		test.UpdateRotation(118);
-		assertEquals(test.getRotation(),118);
+		assertEquals(test.getRotation(),118, 0.001);
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a bike can change the rotation multiple times.
 	 */
 	@Test
 	public void testBikeRecievesNewRotationAgain() {
@@ -150,61 +142,7 @@ public class TestsforBike {
 		test.UpdateRotation(123);
 		test.UpdateRotation(125);
 		test.UpdateRotation(127);
-		assertEquals(test.getRotation(),127);
+		assertEquals(test.getRotation(),127, 0.001);
 	}
 	
-	/**
-	 * TODO Put here a description of what this method does.
-	 *
-	 */
-	@Test
-	public void testBikeCrashFromForce() {
-		Bike test = new Bike();
-		// TODO setup a scenario where Bike should crash
-		assertTrue(test.Crash());
-	}
-
-	/**
-	 * TODO Put here a description of what this method does.
-	 *
-	 */
-	@Test
-	public void testBikeCrashFromFlip() {
-		Bike test = new Bike();
-		// TODO setup a scenario where Bike should crash
-		assertTrue(test.Crash());
-	}
-	
-	/**
-	 * TODO Put here a description of what this method does.
-	 *
-	 */
-	@Test
-	public void testBikeDoesntFalseCrashFromForce() {
-		Bike test = new Bike();
-		// TODO setup a scenario where Bike shouldn't crash
-		assertFalse(test.Crash());
-	}
-
-	/**
-	 * TODO Put here a description of what this method does.
-	 *
-	 */
-	@Test
-	public void testBikeDoesntFalseCrashFromFlip() {
-		Bike test = new Bike();
-		// TODO setup a scenario where Bike shouldn't crash
-		assertFalse(test.Crash());
-	}
-	
-	/**
-	 * TODO Put here a description of what this method does.
-	 *
-	 */
-	@Test
-	public void testBikeDetectsTerrain() {
-		Bike test = new Bike();
-		// TODO setup a scenario where Bike should react to terrain
-		assertFalse(test.Crash());
-	}
 }

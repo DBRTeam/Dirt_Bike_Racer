@@ -11,7 +11,7 @@ import game.Session;
 import org.junit.Test;
 
 /**
- * TODO Put here a description of what this class does.
+ * Tests everything in the game class.
  *
  * @author schuenjr.
  *         Created Apr 13, 2012.
@@ -19,8 +19,7 @@ import org.junit.Test;
 public class TestsforGame {
 
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a game can be created.
 	 */
 	@Test
 	public void testGameisCreated() {
@@ -29,8 +28,7 @@ public class TestsforGame {
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that a game can create a session.
 	 */
 	@Test
 	public void testSessionisCreated() {
@@ -41,8 +39,7 @@ public class TestsforGame {
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 * Makes sure that the game can change sessions.
 	 */
 	@Test
 	public void testSessionCanBeChanged() {
