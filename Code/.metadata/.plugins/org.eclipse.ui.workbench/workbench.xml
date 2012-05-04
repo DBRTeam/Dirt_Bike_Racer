@@ -11,7 +11,7 @@
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
@@ -31,10 +31,41 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bike.java" partName="Bike.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/DirtBikeRacer/src/game/Bike.java" title="Bike.java" tooltip="DirtBikeRacer/src/game/Bike.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/game/Bike.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Session.java" partName="Session.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/DirtBikeRacer/src/game/Session.java" title="Session.java" tooltip="DirtBikeRacer/src/game/Session.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/game/Session.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2556" selectionTopPixel="1275"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestsforPhysics.java" partName="TestsforPhysics.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/DirtBikeRacer/src/tests/TestsforPhysics.java" title="TestsforPhysics.java" tooltip="DirtBikeRacer/src/tests/TestsforPhysics.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/tests/TestsforPhysics.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="7" selectionOffset="957" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestsforSession.java" partName="TestsforSession.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/DirtBikeRacer/src/tests/TestsforSession.java" title="TestsforSession.java" tooltip="DirtBikeRacer/src/tests/TestsforSession.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/tests/TestsforSession.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="40" selectionOffset="4834" selectionTopPixel="1725"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GUI.java" partName="GUI.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/DirtBikeRacer/src/game/GUI.java" title="GUI.java" tooltip="DirtBikeRacer/src/game/GUI.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/game/GUI.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Game.java" partName="Game.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/DirtBikeRacer/src/game/Game.java" title="Game.java" tooltip="DirtBikeRacer/src/game/Game.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/game/Game.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
@@ -42,10 +73,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings"/>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="703"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -53,9 +80,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1334330383299">
@@ -84,6 +108,9 @@
 </xmlDefinedFilters>
 </customFilters>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
@@ -177,7 +204,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.31456953" ratioLeft="285" ratioRight="621" relationship="2" relative="left"/>
+<info part="org.eclipse.ui.editorss" ratio="0.31346577" ratioLeft="284" ratioRight="622" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.7496136" ratioLeft="485" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
@@ -208,7 +235,53 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/game/Bike.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/game/Session.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/game/Game.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/tests/TestsforPhysics.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/tests/TestsforSession.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/game/GUI.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/game/Game.java"/>
+</editors>
+<item historyLabel="Bike.java" index="0">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Session.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Session.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Game.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Session.java" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="TestsforPhysics.java" index="3">
+<position info="not_deleted" x="957" y="7"/>
+</item>
+<item historyLabel="TestsforSession.java" index="4">
+<position info="not_deleted" x="4096" y="0"/>
+</item>
+<item historyLabel="TestsforPhysics.java" index="3">
+<position info="not_deleted" x="957" y="7"/>
+</item>
+<item historyLabel="TestsforSession.java" index="4">
+<position info="not_deleted" x="4834" y="40"/>
+</item>
+<item historyLabel="GUI.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Game.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="GUI.java" index="5">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -232,6 +305,24 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Game.java" tooltip="DirtBikeRacer/src/game/Game.java">
+<persistable path="/DirtBikeRacer/src/game/Game.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GUI.java" tooltip="DirtBikeRacer/src/game/GUI.java">
+<persistable path="/DirtBikeRacer/src/game/GUI.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestsforSession.java" tooltip="DirtBikeRacer/src/tests/TestsforSession.java">
+<persistable path="/DirtBikeRacer/src/tests/TestsforSession.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestsforPhysics.java" tooltip="DirtBikeRacer/src/tests/TestsforPhysics.java">
+<persistable path="/DirtBikeRacer/src/tests/TestsforPhysics.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Session.java" tooltip="DirtBikeRacer/src/game/Session.java">
+<persistable path="/DirtBikeRacer/src/game/Session.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bike.java" tooltip="DirtBikeRacer/src/game/Bike.java">
+<persistable path="/DirtBikeRacer/src/game/Bike.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="testLevelHill.txt" tooltip="DirtBikeRacer/TestLevels/testLevelHill.txt">
 <persistable path="/DirtBikeRacer/TestLevels/testLevelHill.txt"/>
 </file>
@@ -243,9 +334,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="User Story Week 6.txt" tooltip="DirtBikeRacer/src/tests/User Story Week 6.txt">
 <persistable path="/DirtBikeRacer/src/tests/User Story Week 6.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestsforPhysics.java" tooltip="DirtBikeRacer/src/tests/TestsforPhysics.java">
-<persistable path="/DirtBikeRacer/src/tests/TestsforPhysics.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BikeTest1.java" tooltip="DirtBikeRacer/src/physics/BikeTest1.java">
 <persistable path="/DirtBikeRacer/src/physics/BikeTest1.java"/>
@@ -261,18 +349,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyFirstTest.java" tooltip="DirtBikeRacer/src/physics/MyFirstTest.java">
 <persistable path="/DirtBikeRacer/src/physics/MyFirstTest.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhysicsTester.java" tooltip="DirtBikeRacer/src/PhysicsTester.java">
-<persistable path="/DirtBikeRacer/src/PhysicsTester.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.iam.pomeditor.formeditor.MavenPomFormEditor" name="pom.xml" tooltip="jbox2d-serialization/pom.xml">
-<persistable path="/jbox2d-serialization/pom.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WheelJoint.java" tooltip="jbox2d-library/src/main/java/org/jbox2d/dynamics/joints/WheelJoint.java">
-<persistable path="/jbox2d-library/src/main/java/org/jbox2d/dynamics/joints/WheelJoint.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestsforSession.java" tooltip="DirtBikeRacer/src/tests/TestsforSession.java">
-<persistable path="/DirtBikeRacer/src/tests/TestsforSession.java"/>
 </file>
 </mruList>
 </workbench>

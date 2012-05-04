@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="SaveAsDialogSettings">
@@ -15,3 +16,16 @@
 		<item value="false" key="TOGGLE_SELECTED"/>
 	</section>
 </section>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="275" key="DIALOG_Y_ORIGIN"/>
+		<item value="619" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+</section>
+>>>>>>> 915fd37a4e5f63ce693e6fe2c7d10d858fffce01

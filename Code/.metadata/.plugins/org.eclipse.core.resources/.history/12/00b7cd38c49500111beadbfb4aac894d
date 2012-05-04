@@ -1,0 +1,37 @@
+package game;
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
+import javax.swing.JComponent;
+import javax.swing.JPanel;
+
+/**
+ * TODO Put here a description of what this class does.
+ *
+ * @author spurrme.
+ *         Created May 4, 2012.
+ */
+public class LevelFrame extends JComponent{
+	private Session currentSession;
+	private GUI g;
+	public LevelFrame(GUI g, Session session){
+		this.currentSession = session;
+		this.g = g;
+	}
+	@Override
+	public void paintComponent(Graphics g){
+		super.paintComponent(g);
+		Graphics2D graphics = (Graphics2D) g;
+		drawLevel(graphics);
+	}
+	/**
+	 * Draws the current level in the session.
+	 *
+	 * @param graphics
+	 */
+	private void drawLevel(Graphics2D graphics) {
+		// TODO Auto-generated method stub.
+		
+	}
+}
