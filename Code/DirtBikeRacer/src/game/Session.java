@@ -1,6 +1,7 @@
 package game;
 
 import java.awt.Point;
+import java.awt.geom.Point2D;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -18,8 +19,8 @@ import java.util.StringTokenizer;
 public class Session {
 	private Bike bike;
 	private File level;
-	private ArrayList<Point> parsedLevel;
-	
+	private ArrayList<Point2D.Double> parsedLevel;
+
 	/**
 	 * Empty constructor for a level.
 	 *
@@ -27,7 +28,7 @@ public class Session {
 	public Session(){
 		this.bike = new Bike();
 	}
-	
+
 	/**
 	 * Constructor for a level that uses a file to build the game.
 	 *
@@ -38,17 +39,17 @@ public class Session {
 		this.level = level;
 		this.parsedLevel = parseLevel(level);
 	}
-	
+
 	/**
 	 * Constructor for a level that uses an array list to build the game.
 	 *
 	 * @param parsedLevel
 	 */
-	public Session(ArrayList<Point> parsedLevel){
+	public Session(ArrayList<Point2D.Double> parsedLevel){
 		this.bike = new Bike();
 		this.parsedLevel = parsedLevel;
 	}
-	
+
 	/**
 	 * Gets the bike for the session.
 	 *
@@ -63,7 +64,7 @@ public class Session {
 	 *
 	 * @return the parsed level
 	 */
-	public ArrayList<Point> getLevel(){
+	public ArrayList<Point2D.Double> getLevel(){
 		return this.parsedLevel;
 	}
 
@@ -73,8 +74,8 @@ public class Session {
 	 * @param level2
 	 * @return the parsed level
 	 */
-	private ArrayList<Point> parseLevel(File level) {
-		ArrayList<Point> levelList = new ArrayList<Point>();
+	private ArrayList<Point2D.Double> parseLevel(File level) {
+		ArrayList<Point2D.Double> levelList = new ArrayList<Point2D.Double>();
 		try{
 			  // Open the file that is the first 
 			  // command line parameter
@@ -89,7 +90,7 @@ public class Session {
 				  StringTokenizer tok = new StringTokenizer(strLine, ",");
 				  int x = Integer.parseInt(tok.nextElement().toString());
 				  int y = Integer.parseInt(tok.nextElement().toString());
-				 levelList.add(new Point(x,y));
+				 levelList.add(new Point2D.Double(x,y));
 			  }
 			  //Close the input stream
 			  in.close();
@@ -139,4 +140,7 @@ public class Session {
 		}
 		return false;
 	}
+
+
+	
 }

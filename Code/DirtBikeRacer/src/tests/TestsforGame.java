@@ -3,6 +3,7 @@ package tests;
 import static org.junit.Assert.*;
 
 import java.awt.Point;
+import java.awt.geom.Point2D;
 import java.util.ArrayList;
 
 import game.Game;
@@ -45,7 +46,7 @@ public class TestsforGame {
 	public void testSessionCanBeChanged() {
 		Game test = new Game();
 		Session s1 = new Session();
-		Session s2 = new Session(new ArrayList<Point>());
+		Session s2 = new Session(new ArrayList<Point2D.Double>());
 		test.setCurrentSession(s1);
 		test.setCurrentSession(s2);
 		assertEquals(test.getCurrentSession(), s2);

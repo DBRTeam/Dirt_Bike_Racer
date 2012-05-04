@@ -52,3 +52,12 @@ org.eclipse.core.internal.resources.ResourceException: The project description f
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
 !SUBENTRY 2 org.eclipse.core.resources 4 567 2012-04-13 11:13:20.660
 !MESSAGE The project description file (.project) for 'Dirt Bike Racer' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SESSION 2012-04-25 11:09:54.540 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer
+
+!ENTRY org.eclipse.core.resources 4 567 2012-04-25 11:12:09.870
+!MESSAGE The project description file (.project) for 'Dirt Bike Racer' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.

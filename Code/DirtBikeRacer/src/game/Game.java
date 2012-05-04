@@ -1,5 +1,9 @@
 package game;
 
+import static org.junit.Assert.assertTrue;
+
+import java.io.File;
+
 /**
  * Starts the game.
  *
@@ -7,10 +11,15 @@ package game;
  *         Created Apr 13, 2012.
  */
 public class Game {
-	private static Session currentSession;
+	public static Session currentSession;
+	private static GUI gui;
 	
 	public static void main(String[] args) {
-		currentSession = new Session();
+		String testFileName = "testLevel.txt";
+		File testFile = new File(testFileName);
+		assertTrue(testFile.exists());
+		currentSession = new Session(testFile);
+		gui = new GUI(currentSession);
 	}
 	
 	public void setCurrentSession(Session s){
