@@ -5,8 +5,6 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.File;
 import java.util.Calendar;
-import java.util.Timer;
-
 import game.PhysicsEngine;
 import game.Session;
 
@@ -34,7 +32,7 @@ public class TestsforPhysics {
 	 */
 	@Test
 	public void testPhysicsEngineisCreatedbySession() {
-		String FileName = "/DirtBikeRacer/TestLevels/testLevel.txt";
+		String FileName = "testLevel.txt";
 		File testFile = new File(FileName);
 		Session test = new Session(testFile);
 		assertEquals(test.physics.getClass(), PhysicsEngine.class);
@@ -46,11 +44,10 @@ public class TestsforPhysics {
 	 */
 	@Test
 	public void testPhysicsEngineReadsFromFile() {
-		String FileName = "/DirtBikeRacer/TestLevels/testLevel.txt";
+		String FileName = "testLevel.txt";
 		File testFile = new File(FileName);
 		Session test = new Session(testFile);
-		test.physics.platforms.length();
-		assertEquals(test.physics.platforms.length(), 6);
+		assertTrue(test.physics.level != null);
 	}
 	
 	/**
@@ -59,7 +56,7 @@ public class TestsforPhysics {
 	 */
 	@Test
 	public void testPhysicsEnginetracksBikeMovement() {
-		String FileName = "/DirtBikeRacer/TestLevels/testLevel.txt";
+		String FileName = "testLevel.txt";
 		File testFile = new File(FileName);
 		Session test = new Session(testFile);
 		double BikeX = test.getBike().getX();
@@ -79,7 +76,7 @@ public class TestsforPhysics {
 	 */
 	@Test
 	public void testPhysicsEnginetracksBikeStop() {
-		String FileName = "/DirtBikeRacer/TestLevels/testLevelWall.txt";
+		String FileName = "testLevelWall.txt";
 		File testFile = new File(FileName);
 		Session test = new Session(testFile);
 		double BikeY = test.getBike().getY();
@@ -99,7 +96,7 @@ public class TestsforPhysics {
 	 */
 	@Test
 	public void testPhysicsEnginetracksBikeUpRamp() {
-		String FileName = "/DirtBikeRacer/TestLevels/testLevelHill.txt";
+		String FileName = "testLevelHill.txt";
 		File testFile = new File(FileName);
 		Session test = new Session(testFile);
 		double BikeX = test.getBike().getX();

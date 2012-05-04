@@ -1,0 +1,57 @@
+package game;
+
+import java.awt.geom.Point2D.Double;
+import java.util.ArrayList;
+
+import org.jbox2d.dynamics.Body;
+import org.jbox2d.dynamics.joints.RevoluteJointDef;
+
+/**
+ * The physics engine for a single session
+ *
+ * @author schuenjr.
+ *         Created May 4, 2012.
+ */
+public class PhysicsEngine {
+	
+	public Body level;
+	public RevoluteJointDef revJointRear;
+	
+	/**
+	 * Creates a simulation with no level
+	 *
+	 */
+	public PhysicsEngine() {
+		this.level = null;
+	}
+	/**
+	 * Constructs a simulation from the given level
+	 *
+	 * @param parsedLevel
+	 */
+	public PhysicsEngine(ArrayList<Double> parsedLevel) {
+		this.level = buildLevel(parsedLevel);
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @param parsedLevel
+	 * @return 
+	 */
+	private Body buildLevel(ArrayList<Double> parsedLevel) {
+		return level;
+		// TODO Auto-generated method stub.
+		
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 */
+	public void motorStart() {
+		// TODO Auto-generated method stub.
+		
+	}
+
+}

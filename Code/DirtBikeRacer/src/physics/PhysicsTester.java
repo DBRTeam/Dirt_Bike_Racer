@@ -2,7 +2,6 @@ package physics;
 
 import javax.swing.JFrame;
 
-import org.jbox2d.testbed.framework.TestList;
 import org.jbox2d.testbed.framework.TestbedFrame;
 import org.jbox2d.testbed.framework.TestbedModel;
 import org.jbox2d.testbed.framework.TestbedPanel;

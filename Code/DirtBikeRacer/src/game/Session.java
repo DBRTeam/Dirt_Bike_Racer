@@ -20,6 +20,7 @@ public class Session {
 	private Bike bike;
 	private File level;
 	private ArrayList<Point2D.Double> parsedLevel;
+	public PhysicsEngine physics;
 
 	/**
 	 * Empty constructor for a level.
@@ -27,6 +28,7 @@ public class Session {
 	 */
 	public Session(){
 		this.bike = new Bike();
+		this.physics = new PhysicsEngine();
 	}
 
 	/**
@@ -38,6 +40,7 @@ public class Session {
 		this.bike = new Bike();
 		this.level = level;
 		this.parsedLevel = parseLevel(level);
+		this.physics = new PhysicsEngine(this.parsedLevel);
 	}
 
 	/**
