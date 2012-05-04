@@ -4,10 +4,6 @@ import static org.junit.Assert.*;
 
 import java.awt.Point;
 import java.io.File;
-<<<<<<< HEAD
-import java.lang.reflect.Array;
-=======
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 import java.util.ArrayList;
 import game.Bike;
 import game.Session;
@@ -39,10 +35,6 @@ public class TestsforSession {
 		Session test = new Session();
 		assertEquals(test.getBike().getClass(), Bike.class);
 	}
-	
-<<<<<<< HEAD
-
-=======
 	/**
 	 * Makes sure that a session can read a level from a file.
 	 */
@@ -65,20 +57,19 @@ public class TestsforSession {
 		}
 
 	}
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 	
 	/**
 	 * Makes sure that a session can make a level from an ArrayList
 	 */
 	@Test
-<<<<<<< HEAD
 	public void testTerrainIsReadInCorrectly() {
 		String testFileName = "C:/Users/spurrme/Documents/Sophomore Year/CSSE376/Project/Dirt_Bike_Racer/Code/DirtBikeRacer/src/testLevel.txt";
 		File testFile = new File(testFileName);
 		assertTrue(testFile.exists());
 		Session testSession = new Session(testFile);
 		ArrayList<Point> actualTrack = testSession.getLevel();
-=======
+		
+	}
 	public void testTerrainIsReadInCorrectlyFromArrayList() {
 		ArrayList<Point> actualTrack = new ArrayList<Point>();
 		actualTrack.add(new Point(0,0));
@@ -89,7 +80,6 @@ public class TestsforSession {
 		actualTrack.add(new Point(20,0));
 		Session testSession = new Session(actualTrack);
 		actualTrack = testSession.getLevel();
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 		ArrayList<Point> testTrack = new ArrayList<Point>();
 		testTrack.add(new Point(0,0));
 		testTrack.add(new Point(4,6));
@@ -97,11 +87,7 @@ public class TestsforSession {
 		testTrack.add(new Point(12,12));
 		testTrack.add(new Point(16,6));
 		testTrack.add(new Point(20,0));
-<<<<<<< HEAD
-		for (int i = 1; i < actualTrack.size(); i++) {
-=======
 		for (int i = 0; i < actualTrack.size(); i++) {
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 			assertEquals(testTrack.get(i), actualTrack.get(i));
 		}
 		
@@ -112,13 +98,6 @@ public class TestsforSession {
 	 */
 	@Test
 	public void testBikeXPositionIsTrackedCorrectly() {
-<<<<<<< HEAD
-		String testFileName = "C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/Levels/LevelTest.txt";
-		File testFile = new File(testFileName);
-		Session testSession = new Session(testFile);
-		testSession.getBike().UpdatePosition(14,27);
-		assertEquals(testSession.getBike().getX(), 14);
-=======
 		ArrayList<Point> track = new ArrayList<Point>();
 		track.add(new Point(0,0)); track.add(new Point(1,0));
 		track.add(new Point(2,1)); track.add(new Point(3,1));
@@ -131,7 +110,6 @@ public class TestsforSession {
 			assertEquals(track.get(i).x, testSession.getBike().getX(), 0.001);
 			testSession.moveBike();
 		}
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 	}
 
 	/**
@@ -140,9 +118,6 @@ public class TestsforSession {
 	 */
 	@Test
 	public void testBikeYPositionIsTrackedCorrectly() {
-<<<<<<< HEAD
-		String testFileName = "C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Code/Levels/LevelTest.txt";
-=======
 		ArrayList<Point> track = new ArrayList<Point>();
 		track.add(new Point(0,0)); track.add(new Point(1,0));
 		track.add(new Point(2,1)); track.add(new Point(3,1));
@@ -163,7 +138,6 @@ public class TestsforSession {
 	@Test
 	public void testMoreComplexTerrainMovement(){
 		String testFileName = "testLevel.txt";
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 		File testFile = new File(testFileName);
 		Session testSession = new Session(testFile);
 		testSession.getBike().UpdateVector(1, 0);
