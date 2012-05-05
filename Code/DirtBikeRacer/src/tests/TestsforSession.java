@@ -36,7 +36,6 @@ public class TestsforSession {
 		Session test = new Session();
 		assertEquals(test.getBike().getClass(), Bike.class);
 	}
-	
 	/**
 	 * Makes sure that a session can load a level from a file.
 	 */
@@ -59,7 +58,6 @@ public class TestsforSession {
 		}
 
 	}
-
 	/**
 	 * Makes sure that a session can load a level from an
 	 * ArrayList.

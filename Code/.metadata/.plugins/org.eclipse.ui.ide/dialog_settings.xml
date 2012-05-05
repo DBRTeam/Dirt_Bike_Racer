@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SaveAsDialogSettings">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="162" key="DIALOG_Y_ORIGIN"/>
+		<item value="579" key="DIALOG_HEIGHT"/>
+		<item value="706" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="289" key="DIALOG_Y_ORIGIN"/>
+		<item value="1190" key="DIALOG_X_ORIGIN"/>
+		<item value="377" key="DIALOG_HEIGHT"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+	</section>
+</section>
+=======
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="ChooseWorkspaceDialogSettings">
@@ -9,3 +28,4 @@
 		</list>
 	</section>
 </section>
+>>>>>>> 915fd37a4e5f63ce693e6fe2c7d10d858fffce01
