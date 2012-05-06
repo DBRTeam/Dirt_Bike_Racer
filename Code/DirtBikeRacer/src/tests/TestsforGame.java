@@ -51,5 +51,5 @@ public class TestsforGame {
 		test.setCurrentSession(s2);
 		assertEquals(test.getCurrentSession(), s2);
 	}
-
+	
 }

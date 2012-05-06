@@ -2,11 +2,15 @@ package tests;
 
 import static org.junit.Assert.*;
 
+import java.awt.AWTException;
 import java.awt.Point;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.awt.geom.Point2D;
 import java.io.File;
 import java.util.ArrayList;
 import game.Bike;
+import game.Game;
 import game.Session;
 
 import org.junit.Test;
@@ -216,4 +220,67 @@ public class TestsforSession {
 	public void testTimeIsTrackedCorrectly() {
 		//TODO: Write Test where time can be measured
 	}
+	
+	/**
+	 * Tests that the game recieves input from the up button
+	 * @throws AWTException 
+	 */
+	@Test
+	public void testInputforUp() throws AWTException {
+		Session test = new Session();
+		Robot gamer = new Robot();
+		double original_position = test.bike.xPosition;
+		gamer.keyPress(KeyEvent.VK_UP);
+		double new_position = test.bike.xPosition;
+		assertTrue(original_position != new_position);
+	}
+	
+	/**
+	 * Tests that the game recieves input from the up button
+	 * @throws AWTException 
+	 */
+	@Test
+	public void testInputforDown() throws AWTException {
+		Session test = new Session();
+		Robot gamer = new Robot();
+		double original_position = test.bike.xPosition;
+		gamer.keyPress(KeyEvent.VK_UP);
+		double new_position = test.bike.xPosition;
+		assertTrue(original_position != new_position);
+	}
+	
+	/**
+	 * Tests that the game recieves input from the up button
+	 * @throws AWTException 
+	 */
+	@Test
+	public void testInputforLeft() throws AWTException {
+		Session test = new Session();
+		Robot gamer = new Robot();
+		double xoriginal_position = test.bike.xPosition;
+		double yoriginal_position = test.bike.yPosition;
+		gamer.keyPress(KeyEvent.VK_UP);
+		gamer.keyPress(KeyEvent.VK_LEFT);
+		double xnew_position = test.bike.xPosition;
+		double ynew_position = test.bike.yPosition;
+		assertTrue((xoriginal_position != xnew_position) && (yoriginal_position != ynew_position));
+	}
+	
+	/**
+	 * Tests that the game recieves input from the up button
+	 * @throws AWTException 
+	 */
+	@Test
+	public void testInputforRight() throws AWTException {
+		Session test = new Session();
+		Robot gamer = new Robot();
+		double xoriginal_position = test.bike.xPosition;
+		double yoriginal_position = test.bike.yPosition;
+		gamer.keyPress(KeyEvent.VK_UP);
+		gamer.keyPress(KeyEvent.VK_RIGHT);
+		double xnew_position = test.bike.xPosition;
+		double ynew_position = test.bike.yPosition;
+		assertTrue((xoriginal_position != xnew_position) && (yoriginal_position != ynew_position));
+	}
+	
 }

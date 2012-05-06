@@ -1,6 +1,5 @@
 package game;
 
-import java.awt.Point;
 import java.awt.geom.Point2D;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -17,7 +16,7 @@ import java.util.StringTokenizer;
  *         Created Apr 13, 2012.
  */
 public class Session {
-	private Bike bike;
+	public Bike bike;
 	private File level;
 	private ArrayList<Point2D.Double> parsedLevel;
 	public PhysicsEngine physics;

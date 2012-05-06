@@ -11,11 +11,11 @@ public class Bike {
 	/**
 	 * The horizontal coordinate of the bike.
 	 */
-	private double xPosition;
+	public double xPosition;
 	/**
 	 * The vertical coordinate of the bike.
 	 */
-	private double yPosition;
+	public double yPosition;
 	/**
 	 * The direction the bike is traveling, in degrees.
 	 */
