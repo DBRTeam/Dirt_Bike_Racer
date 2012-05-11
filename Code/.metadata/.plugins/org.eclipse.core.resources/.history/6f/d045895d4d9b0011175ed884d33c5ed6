@@ -3,6 +3,13 @@ package game;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.awt.FontMetrics;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Image;
+import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.Shape;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.geom.Line2D;
@@ -17,13 +24,17 @@ import javax.swing.JFrame;
 import javax.swing.JRadioButton;
 
 public class GUI extends JFrame{
+	private static final Dimension SIZE = java.awt.Toolkit.getDefaultToolkit()
+	.getScreenSize();
 	private Session currentSession;
+	private LevelFrame frame = new LevelFrame();
 	
 	public GUI(Session session){
 		this.currentSession = session;
 		this.setSize(800, 450);
 		this.setTitle("Dirt Bike Racer");
 		this.setVisible(true);
+		this.add(frame);
 		final JRadioButton englishButton = new JRadioButton("English");
 		final JRadioButton spanishButton = new JRadioButton("Spanish");
 		final JButton playButton = new JButton("Start!");
@@ -49,6 +60,8 @@ public class GUI extends JFrame{
 				mainMenu.undraw();
 				LevelFrame level = new LevelFrame();
 				add(level);
+			
+				
 			}
 		});
 
@@ -56,4 +69,8 @@ public class GUI extends JFrame{
 		setResizable(false);
 	}
 	
+	public double getTime(){
+		
+		return frame.getTime();
+	}
 }

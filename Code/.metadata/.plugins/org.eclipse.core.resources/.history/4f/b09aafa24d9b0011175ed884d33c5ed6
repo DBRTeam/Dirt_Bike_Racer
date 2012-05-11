@@ -54,7 +54,7 @@ public class TestsforGame {
 		test.setCurrentSession(s2);
 		assertEquals(test.getCurrentSession(), s2);
 	}
-
+<<<<<<< HEAD
 
 	/**
 	 * TODO Put here a description of what this method does. 
@@ -67,7 +67,7 @@ public class TestsforGame {
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_ENTER);
 		//robot.delay(25000);
-		//assertEquals(20.00, test.getTime(), 0.01);
+		assertEquals(20.00, test.getTime(), 0.01);
 	}
 	
 	/**
@@ -213,4 +213,7 @@ public class TestsforGame {
 		assertEquals(-10, test.getCurrentSession().getBike().getSpeed(), 0.1);
 	}
 
+=======
+	
+>>>>>>> d575308d1536b0feca58f01106631f8d6cb2a7da
 }

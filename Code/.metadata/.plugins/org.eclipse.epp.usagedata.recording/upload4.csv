@@ -222,6 +222,7 @@ stopped,bundle,org.eclipse.wst.dtd.ui,1.0.400.v200904300717,"org.eclipse.wst.dtd
 stopped,bundle,org.eclipse.wst.xsd.ui,1.2.204.v200909021537,"org.eclipse.wst.xsd.ui",1336123633112
 stopped,bundle,org.eclipse.wst.xml.ui,1.1.2.v201001222130,"org.eclipse.wst.xml.ui",1336123633114
 <<<<<<< HEAD
+<<<<<<< HEAD
 activated,perspective,org.eclipse.jdt.ui,,"org.eclipse.jdt.ui.JavaPerspective",1336134341177
 started,bundle,org.eclipse.osgi,3.5.2.R35x_v20100126,"org.eclipse.osgi",1336134341178
 started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.101.R35x_v20090807-1100,"org.eclipse.equinox.simpleconfigurator",1336134341179
@@ -273,6 +274,8 @@ started,bundle,org.eclipse.help,3.4.1.v20090805_35x,"org.eclipse.help",133613434
 started,bundle,org.eclipse.jdt.apt.core,3.3.202.R35x_v20091130-2300,"org.eclipse.jdt.apt.core",1336134341241
 started,bundle,org.eclipse.jdt.apt.pluggable.core,1.0.201.R35x_v20090925-1100,"org.eclipse.jdt.apt.pluggable.core",1336134341242
 =======
+=======
+>>>>>>> d575308d1536b0feca58f01106631f8d6cb2a7da
 activated,perspective,org.eclipse.jdt.ui,,"org.eclipse.jdt.ui.JavaPerspective",1336710972344
 started,bundle,org.eclipse.osgi,3.5.2.R35x_v20100126,"org.eclipse.osgi",1336710972345
 started,bundle,org.eclipse.equinox.simpleconfigurator,1.0.101.R35x_v20090807-1100,"org.eclipse.equinox.simpleconfigurator",1336710972346
@@ -323,4 +326,7 @@ started,bundle,org.eclipse.jdt.ui,3.5.2.r352_v20100106-0800,"org.eclipse.jdt.ui"
 started,bundle,org.eclipse.jface,3.5.2.M20100120-0800,"org.eclipse.jface",1336710972603
 started,bundle,org.eclipse.team.core,3.5.1.r35x_20100113-0800,"org.eclipse.team.core",1336710972604
 started,bundle,org.eclipse.ui,3.5.2.M20100120-0800,"org.eclipse.ui",1336710972606
+<<<<<<< HEAD
+>>>>>>> d575308d1536b0feca58f01106631f8d6cb2a7da
+=======
 >>>>>>> d575308d1536b0feca58f01106631f8d6cb2a7da

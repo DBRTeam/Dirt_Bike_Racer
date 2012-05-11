@@ -49,6 +49,8 @@ public class GUI extends JFrame{
 				mainMenu.undraw();
 				LevelFrame level = new LevelFrame();
 				add(level);
+			
+				
 			}
 		});
 

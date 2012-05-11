@@ -49,6 +49,8 @@ public class GUI extends JFrame{
 				mainMenu.undraw();
 				LevelFrame level = new LevelFrame();
 				add(level);
+			
+				
 			}
 		});
 
@@ -56,4 +58,8 @@ public class GUI extends JFrame{
 		setResizable(false);
 	}
 	
+	public double getTime(){
+		
+		return frame.getTime();
+	}
 }

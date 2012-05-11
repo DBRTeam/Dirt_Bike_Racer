@@ -48,6 +48,7 @@ public class GUI extends JFrame{
 				spanishButton.setVisible(false);
 				mainMenu.undraw();
 				LevelFrame level = new LevelFrame();
+				repaint();
 				add(level);
 			}
 		});
