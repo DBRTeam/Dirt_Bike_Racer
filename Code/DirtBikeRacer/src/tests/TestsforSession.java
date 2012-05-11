@@ -210,6 +210,7 @@ public class TestsforSession {
 		assertFalse(testSession.bikeCrash());
 	}
 	
+
 	/**
 	 * TODO Put here a description of what this method does.
 	 *
@@ -280,5 +281,5 @@ public class TestsforSession {
 		double ynew_position = test.bike.yPosition;
 		assertTrue((xoriginal_position != xnew_position) && (yoriginal_position != ynew_position));
 	}
-	
+
 }

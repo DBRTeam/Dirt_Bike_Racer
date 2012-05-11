@@ -15,6 +15,8 @@ public class GUI extends JFrame{
 	 */
 	private static final long serialVersionUID = 1L;
 
+	private Session currentSession;
+	
 	public GUI(Session session){
 		this.setSize(800, 450);
 		this.setTitle("Dirt Bike Racer");
@@ -44,13 +46,14 @@ public class GUI extends JFrame{
 				mainMenu.undraw();
 				//LevelFrame level = new LevelFrame();
 				//add(level);
-			
 				
+				LevelFrame level = new LevelFrame();
+				add(level);
 			}
 		});
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setResizable(false);
 	}
-
+	
 }

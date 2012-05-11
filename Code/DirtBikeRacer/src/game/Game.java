@@ -17,7 +17,6 @@ public class Game {
 	public static void main(String[] args) {
 		String testFileName = "testLevel.txt";
 		File testFile = new File(testFileName);
-		assertTrue(testFile.exists());
 		currentSession = new Session(testFile);
 		setGui(new GUI(currentSession));
 	}
@@ -37,4 +36,5 @@ public class Game {
 	public static GUI getGui() {
 		return gui;
 	}
+
 }

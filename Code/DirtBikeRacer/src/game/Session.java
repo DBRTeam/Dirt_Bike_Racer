@@ -36,6 +36,7 @@ public class Session {
 	 */
 	public Session(File level){
 		this.bike = new Bike();
+		this.bike.UpdateVector(2,0);
 		this.parsedLevel = parseLevel(level);
 		this.physics = new PhysicsEngine(this.parsedLevel);
 	}
