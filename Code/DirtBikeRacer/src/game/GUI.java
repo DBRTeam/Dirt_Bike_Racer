@@ -1,34 +1,21 @@
 package game;
 
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Image;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.Shape;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.geom.Line2D;
-import java.awt.geom.Point2D;
-import java.awt.image.ImageObserver;
-import java.text.AttributedCharacterIterator;
-import java.util.ArrayList;
-
 import javax.swing.JButton;
-import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JRadioButton;
 
 public class GUI extends JFrame{
-	private static final Dimension SIZE = java.awt.Toolkit.getDefaultToolkit()
-	.getScreenSize();
-	private Session currentSession;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public GUI(Session session){
-		this.currentSession = session;
 		this.setSize(800, 450);
 		this.setTitle("Dirt Bike Racer");
 		this.setVisible(true);
@@ -55,8 +42,8 @@ public class GUI extends JFrame{
 				englishButton.setVisible(false);
 				spanishButton.setVisible(false);
 				mainMenu.undraw();
-				LevelFrame level = new LevelFrame();
-				add(level);
+				//LevelFrame level = new LevelFrame();
+				//add(level);
 			
 				
 			}

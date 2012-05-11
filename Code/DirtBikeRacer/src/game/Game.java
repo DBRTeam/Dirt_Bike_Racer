@@ -19,7 +19,7 @@ public class Game {
 		File testFile = new File(testFileName);
 		assertTrue(testFile.exists());
 		currentSession = new Session(testFile);
-		gui = new GUI(currentSession);
+		setGui(new GUI(currentSession));
 	}
 	
 	public void setCurrentSession(Session s){
@@ -28,5 +28,13 @@ public class Game {
 	
 	public Session getCurrentSession(){
 		return currentSession;
+	}
+
+	public static void setGui(GUI gui) {
+		Game.gui = gui;
+	}
+
+	public static GUI getGui() {
+		return gui;
 	}
 }
