@@ -11,16 +11,19 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
 import javax.swing.JPanel;
 
 /**
- * TODO Put here a description of what this class does.
+ * This class draws the basic representation of the game.
  *
  * @author spurrme.
  *         Created May 4, 2012.
  */
 public class LevelFrame extends JPanel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Session currentSession = Game.currentSession;
 	private long start = 0;
 	private long finish = 0;

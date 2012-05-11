@@ -12,7 +12,7 @@ import java.io.File;
  */
 public class Game {
 	public static Session currentSession;
-	private static GUI gui;
+	private static  GUI gui;
 	
 	public static void main(String[] args) {
 		String testFileName = "testLevel.txt";

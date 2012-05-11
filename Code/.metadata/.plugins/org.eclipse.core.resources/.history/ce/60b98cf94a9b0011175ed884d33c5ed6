@@ -1,6 +1,6 @@
 package game;
 
-import java.awt.Point;
+import java.awt.geom.Point2D;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
 import java.io.File;
@@ -16,24 +16,19 @@ import java.util.StringTokenizer;
  *         Created Apr 13, 2012.
  */
 public class Session {
-	private Bike bike;
-	private File level;
-	private ArrayList<Point> parsedLevel;
-<<<<<<< HEAD
-=======
-	
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
+	public Bike bike;
+	private ArrayList<Point2D.Double> parsedLevel;
+	public PhysicsEngine physics;
+
 	/**
 	 * Empty constructor for a level.
 	 *
 	 */
 	public Session(){
 		this.bike = new Bike();
+		this.physics = new PhysicsEngine();
 	}
-<<<<<<< HEAD
-=======
-	
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
+
 	/**
 	 * Constructor for a level that uses a file to build the game.
 	 *
@@ -41,26 +36,22 @@ public class Session {
 	 */
 	public Session(File level){
 		this.bike = new Bike();
+		this.bike.UpdateVector(2,0);
 		this.level = level;
 		this.parsedLevel = parseLevel(level);
+		this.physics = new PhysicsEngine(this.parsedLevel);
 	}
-<<<<<<< HEAD
-=======
-	
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
+
 	/**
 	 * Constructor for a level that uses an array list to build the game.
 	 *
 	 * @param parsedLevel
 	 */
-	public Session(ArrayList<Point> parsedLevel){
+	public Session(ArrayList<Point2D.Double> parsedLevel){
 		this.bike = new Bike();
 		this.parsedLevel = parsedLevel;
 	}
-<<<<<<< HEAD
-=======
-	
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
+
 	/**
 	 * Gets the bike for the session.
 	 *
@@ -75,12 +66,7 @@ public class Session {
 	 *
 	 * @return the parsed level
 	 */
-	public ArrayList<Point> getLevel(){
-<<<<<<< HEAD
-		this.parsedLevel = parseLevel(this.level);
-		
-=======
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
+	public ArrayList<Point2D.Double> getLevel(){
 		return this.parsedLevel;
 	}
 
@@ -90,8 +76,8 @@ public class Session {
 	 * @param level2
 	 * @return the parsed level
 	 */
-	private ArrayList<Point> parseLevel(File level) {
-		ArrayList<Point> levelList = new ArrayList<Point>();
+	private ArrayList<Point2D.Double> parseLevel(File level) {
+		ArrayList<Point2D.Double> levelList = new ArrayList<Point2D.Double>();
 		try{
 			  // Open the file that is the first 
 			  // command line parameter
@@ -106,7 +92,7 @@ public class Session {
 				  StringTokenizer tok = new StringTokenizer(strLine, ",");
 				  int x = Integer.parseInt(tok.nextElement().toString());
 				  int y = Integer.parseInt(tok.nextElement().toString());
-				 levelList.add(new Point(x,y));
+				 levelList.add(new Point2D.Double(x,y));
 			  }
 			  //Close the input stream
 			  in.close();
@@ -115,8 +101,6 @@ public class Session {
 			  }
 		
 		return levelList;
-<<<<<<< HEAD
-=======
 	}
 
 	/**
@@ -157,7 +141,6 @@ public class Session {
 			if((Math.cos(Math.toRadians(bike.getRotation())) < Math.cos(Math.toRadians(15))))return true;
 		}
 		return false;
->>>>>>> 023350d3b9c08d8739eb2e517c460f4e69c1a1e0
 	}
 
 

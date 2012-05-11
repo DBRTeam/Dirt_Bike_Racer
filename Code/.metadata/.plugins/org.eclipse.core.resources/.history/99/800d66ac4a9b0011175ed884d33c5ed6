@@ -34,7 +34,9 @@ public class GUI extends JFrame{
 		this.setSize(800, 450);
 		this.setTitle("Dirt Bike Racer");
 		this.setVisible(true);
+<<<<<<< HEAD
 		this.add(frame);
+=======
 		final JRadioButton englishButton = new JRadioButton("English");
 		final JRadioButton spanishButton = new JRadioButton("Spanish");
 		final JButton playButton = new JButton("Start!");
@@ -65,12 +67,16 @@ public class GUI extends JFrame{
 			}
 		});
 
+>>>>>>> d575308d1536b0feca58f01106631f8d6cb2a7da
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setResizable(false);
 	}
 	
 	public double getTime(){
 		
-		return frame.getTime();
+		return 
+		
+		
+		frame.getTime();
 	}
 }

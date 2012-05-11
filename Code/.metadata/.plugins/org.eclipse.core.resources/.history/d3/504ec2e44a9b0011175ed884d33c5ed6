@@ -3,7 +3,10 @@ package tests;
 import static org.junit.Assert.*;
 
 import java.awt.AWTException;
+<<<<<<< HEAD
+=======
 import java.awt.Point;
+>>>>>>> d575308d1536b0feca58f01106631f8d6cb2a7da
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.awt.geom.Point2D;

@@ -71,6 +71,9 @@ public class GUI extends JFrame{
 	
 	public double getTime(){
 		
-		return frame.getTime();
+		return 
+		
+		
+		frame.getTime();
 	}
 }

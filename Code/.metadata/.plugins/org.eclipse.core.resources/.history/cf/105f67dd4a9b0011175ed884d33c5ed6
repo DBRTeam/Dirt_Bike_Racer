@@ -3,7 +3,10 @@ package tests;
 import static org.junit.Assert.*;
 
 import java.awt.AWTException;
+<<<<<<< HEAD
+=======
 import java.awt.Point;
+>>>>>>> d575308d1536b0feca58f01106631f8d6cb2a7da
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.awt.geom.Point2D;
@@ -212,7 +215,8 @@ public class TestsforSession {
 		assertFalse(testSession.bikeCrash());
 	}
 	
-
+<<<<<<< HEAD
+=======
 	/**
 	 * TODO Put here a description of what this method does.
 	 *
@@ -283,5 +287,6 @@ public class TestsforSession {
 		double ynew_position = test.bike.yPosition;
 		assertTrue((xoriginal_position != xnew_position) && (yoriginal_position != ynew_position));
 	}
-
+	
+>>>>>>> d575308d1536b0feca58f01106631f8d6cb2a7da
 }
