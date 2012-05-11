@@ -4,22 +4,23 @@ import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Point;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 
-import javax.swing.JComponent;
 import javax.swing.JPanel;
 
 /**
- * TODO Put here a description of what this class does.
+ * This class draws the basic representation of the game.
  *
  * @author spurrme.
  *         Created May 4, 2012.
  */
 public class LevelFrame extends JPanel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Session currentSession = Game.currentSession;
-	private GUI g;
 	public LevelFrame(){
 		super();
 		setBackground(Color.WHITE);

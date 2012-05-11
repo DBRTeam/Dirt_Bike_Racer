@@ -250,7 +250,7 @@ public class TestsforSession {
 	}
 	
 	/**
-	 * Tests that the game recieves input from the up button
+	 * Tests that the game receives input from the up button
 	 * @throws AWTException 
 	 */
 	@Test
