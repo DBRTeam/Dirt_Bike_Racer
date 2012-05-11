@@ -17,7 +17,6 @@ public class Game {
 	public static void main(String[] args) {
 		String testFileName = "testLevel.txt";
 		File testFile = new File(testFileName);
-		assertTrue(testFile.exists());
 		currentSession = new Session(testFile);
 		gui = new GUI(currentSession);
 	}
@@ -28,5 +27,9 @@ public class Game {
 	
 	public Session getCurrentSession(){
 		return currentSession;
+	}
+	
+	public double getTime(){
+		return gui.getTime();
 	}
 }

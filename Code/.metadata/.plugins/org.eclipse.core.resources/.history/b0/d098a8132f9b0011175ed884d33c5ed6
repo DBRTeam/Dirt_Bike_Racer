@@ -1,0 +1,91 @@
+package game;
+
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Point;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.geom.Line2D;
+import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
+
+import javax.swing.JComponent;
+import javax.swing.JPanel;
+
+/**
+ * TODO Put here a description of what this class does.
+ *
+ * @author spurrme.
+ *         Created May 4, 2012.
+ */
+public class LevelFrame extends JPanel{
+	private Session currentSession = Game.currentSession;
+	private GUI g;
+	private Graphics2D gr;
+	
+	public LevelFrame(){
+		super();
+		setBackground(Color.WHITE);
+		addMouseListener(new Listener());
+	}
+		@Override
+		public void paintComponent(Graphics g){
+			super.paintComponent(g);
+			Graphics2D graphics = (Graphics2D) g;
+			drawLevel(graphics);
+			graphics.draw(new Rectangle2D.Double(currentSession.getBike().getX(), currentSession.getBike().getY(), 20, 20));
+		}
+		
+		/**
+		 * Draws the current level in the session.
+		 *
+		 * @param graphics
+		 */
+		private void drawLevel(Graphics2D g) {
+			int i = 0;
+			Point2D.Double startingPoint = this.currentSession.getLevel().get(i);
+			i++;
+			while(i < this.currentSession.getLevel().size()){
+				Point2D.Double endingPoint = this.currentSession.getLevel().get(i);
+				Line2D.Double line = new Line2D.Double(startingPoint, endingPoint);
+				startingPoint = this.currentSession.getLevel().get(i);
+				i++;
+				g.setStroke(new BasicStroke(10));
+				g.draw(line);
+			}
+		}
+		
+		
+		class BikeDrawer implements Runnable{
+			private Thread runner;
+			
+			public BikeDrawer(){
+				runner = new Thread(this);
+				runner.start();
+			}
+
+			@Override
+			public void run() {
+				double length = currentSession.getLevel().get(currentSession.getLevel().size()-1).x;
+				
+				while(currentSession.getBike().getX() < 800){
+					repaint();
+					currentSession.moveBike();
+					
+					try {
+						Thread.sleep(50);
+					} catch (InterruptedException e){
+						System.out.println("error");
+					}
+				}
+			}
+		}
+		
+		class Listener extends MouseAdapter{
+			public void mousePressed(MouseEvent e){
+				new BikeDrawer();
+			}
+		}
+}

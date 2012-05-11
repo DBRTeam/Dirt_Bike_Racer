@@ -1,6 +1,5 @@
 package game;
 
-import java.awt.Point;
 import java.awt.geom.Point2D;
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -38,6 +37,7 @@ public class Session {
 	 */
 	public Session(File level){
 		this.bike = new Bike();
+		this.bike.UpdateVector(2,0);
 		this.level = level;
 		this.parsedLevel = parseLevel(level);
 		this.physics = new PhysicsEngine(this.parsedLevel);

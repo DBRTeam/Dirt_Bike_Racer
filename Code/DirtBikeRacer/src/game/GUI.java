@@ -22,14 +22,23 @@ public class GUI extends JFrame{
 	private static final Dimension SIZE = java.awt.Toolkit.getDefaultToolkit()
 	.getScreenSize();
 	private Session currentSession;
+	private LevelFrame frame = new LevelFrame();
+	
 	public GUI(Session session){
 		this.currentSession = session;
 		this.setSize(800, 450);
 		this.setTitle("Dirt Bike Racer");
 		this.setVisible(true);
-		this.add(new LevelFrame());
+		this.add(frame);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setResizable(false);
 	}
-
+	
+	public double getTime(){
+		
+		return 
+		
+		
+		frame.getTime();
+	}
 }

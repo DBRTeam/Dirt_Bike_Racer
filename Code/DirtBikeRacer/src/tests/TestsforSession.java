@@ -2,7 +2,9 @@ package tests;
 
 import static org.junit.Assert.*;
 
-import java.awt.Point;
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.awt.geom.Point2D;
 import java.io.File;
 import java.util.ArrayList;
@@ -208,12 +210,4 @@ public class TestsforSession {
 		assertFalse(testSession.bikeCrash());
 	}
 	
-	/**
-	 * TODO Put here a description of what this method does.
-	 *
-	 */
-	@Test
-	public void testTimeIsTrackedCorrectly() {
-		//TODO: Write Test where time can be measured
-	}
 }
