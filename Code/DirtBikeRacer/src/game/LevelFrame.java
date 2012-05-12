@@ -66,6 +66,7 @@ public class LevelFrame extends JPanel{
 			private Thread runner;
 			
 			public BikeDrawer(){
+				repaint();
 				runner = new Thread(this);
 				runner.start();
 			}

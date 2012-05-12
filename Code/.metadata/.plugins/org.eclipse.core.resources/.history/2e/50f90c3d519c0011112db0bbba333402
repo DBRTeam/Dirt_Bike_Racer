@@ -42,12 +42,10 @@ public class GUI extends JFrame{
 				playButton.setVisible(false);
 				englishButton.setVisible(false);
 				spanishButton.setVisible(false);
+				//mainMenu.undraw();
+				g.removeAll();
 				LevelFrame level = new LevelFrame();
 				g.add(level);
-				g.remove(playButton);
-				g.remove(englishButton);
-				g.remove(spanishButton);
-				g.remove(mainMenu);
 			}
 		});
 

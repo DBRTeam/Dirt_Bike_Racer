@@ -56,9 +56,11 @@ public class MainScreen extends JPanel{
 		    this.graphics.drawString("Choose Language:", 410, 200);	
 			
 		}
+	
 	public boolean userClicksPlay() {
 		return false;
 	}
+	
 	public void undraw() {
 		this.clear = true;
 		this.repaint();
