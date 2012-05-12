@@ -6,6 +6,7 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.awt.geom.Point2D;
+import java.io.File;
 import java.util.ArrayList;
 
 import game.Game;
@@ -210,54 +211,6 @@ public class TestsforGame {
 		robot.delay(100);
 		robot.keyPress(KeyEvent.VK_DOWN);
 		assertEquals(-10, test.getCurrentSession().getBike().getSpeed(), 0.1);
-	}
-	
-	/**
-	 * Make sure the English version displays the correct title.
-	 */
-	@Test
-	public void testTitleEnglishCorrect(){
-		
-	}
-	
-	/**
-	 * Make sure the Spanish version displays the correct title.
-	 */
-	@Test
-	public void testTitleSpanishCorrect(){
-		
-	}
-	
-	/**
-	 * Make sure the English version displays the correct start button.
-	 */
-	@Test
-	public void testStartEnglishCorrect(){
-		
-	}
-	
-	/**
-	 * Make sure the Spanish version displays the correct start button.
-	 */
-	@Test
-	public void testStartSpanishCorrect(){
-		
-	}
-	
-	/**
-	 * Make sure the English version displays the correct directions menu.
-	 */
-	@Test
-	public void testDirectionsEnglishCorrect(){
-		
-	}
-	
-	/**
-	 * Make sure the Spanish version displays the correct directions menu.
-	 */
-	@Test
-	public void testDirectionsSpanishCorrect(){
-		
 	}
 
 }

@@ -6,6 +6,7 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.awt.geom.Point2D;
+import java.io.File;
 import java.util.ArrayList;
 
 import game.Game;
@@ -213,7 +214,9 @@ public class TestsforGame {
 	}
 	
 	/**
-	 * Make sure the English version displays the correct title.
+	 * 
+	 * TODO Put here a description of what this method does.
+	 *
 	 */
 	@Test
 	public void testTitleEnglishCorrect(){
@@ -221,7 +224,9 @@ public class TestsforGame {
 	}
 	
 	/**
-	 * Make sure the Spanish version displays the correct title.
+	 * 
+	 * TODO Put here a description of what this method does.
+	 *
 	 */
 	@Test
 	public void testTitleSpanishCorrect(){
@@ -229,7 +234,9 @@ public class TestsforGame {
 	}
 	
 	/**
-	 * Make sure the English version displays the correct start button.
+	 * 
+	 * TODO Put here a description of what this method does.
+	 *
 	 */
 	@Test
 	public void testStartEnglishCorrect(){
@@ -237,7 +244,9 @@ public class TestsforGame {
 	}
 	
 	/**
-	 * Make sure the Spanish version displays the correct start button.
+	 * 
+	 * TODO Put here a description of what this method does.
+	 *
 	 */
 	@Test
 	public void testStartSpanishCorrect(){
@@ -245,7 +254,9 @@ public class TestsforGame {
 	}
 	
 	/**
-	 * Make sure the English version displays the correct directions menu.
+	 * 
+	 * TODO Put here a description of what this method does.
+	 *
 	 */
 	@Test
 	public void testDirectionsEnglishCorrect(){
@@ -253,7 +264,9 @@ public class TestsforGame {
 	}
 	
 	/**
-	 * Make sure the Spanish version displays the correct directions menu.
+	 * 
+	 * TODO Put here a description of what this method does.
+	 *
 	 */
 	@Test
 	public void testDirectionsSpanishCorrect(){

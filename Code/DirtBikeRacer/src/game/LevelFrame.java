@@ -74,7 +74,7 @@ public class LevelFrame extends JPanel{
 			public void run() {
 				double length = currentSession.getLevel().get(currentSession.getLevel().size()-1).x;
 				
-				while(currentSession.getBike().getX() < 800){
+				while(currentSession.getBike().getX() < length){
 					repaint();
 					currentSession.moveBike();
 					
