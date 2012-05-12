@@ -3,14 +3,12 @@ package tests;
 import static org.junit.Assert.*;
 
 import java.awt.AWTException;
-import java.awt.Point;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.awt.geom.Point2D;
 import java.io.File;
 import java.util.ArrayList;
 import game.Bike;
-import game.Game;
 import game.Session;
 
 import org.junit.Test;
@@ -223,7 +221,7 @@ public class TestsforSession {
 	}
 	
 	/**
-	 * Tests that the game recieves input from the up button
+	 * Tests that the game receives input from the up button
 	 * @throws AWTException 
 	 */
 	@Test
@@ -237,7 +235,7 @@ public class TestsforSession {
 	}
 	
 	/**
-	 * Tests that the game recieves input from the up button
+	 * Tests that the game receives input from the up button
 	 * @throws AWTException 
 	 */
 	@Test
@@ -268,7 +266,7 @@ public class TestsforSession {
 	}
 	
 	/**
-	 * Tests that the game recieves input from the up button
+	 * Tests that the game receives input from the up button
 	 * @throws AWTException 
 	 */
 	@Test
