@@ -28,7 +28,7 @@ public class GUI extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JMenuBar menu = new JMenuBar();
-		setUpMenu(menu);
+		
 		setJMenuBar(menu);
 		
 		final JRadioButton englishButton = new JRadioButton("English");

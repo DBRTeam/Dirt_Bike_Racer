@@ -39,7 +39,7 @@ public class LevelFrame extends JPanel{
 			super.paintComponent(g);
 			Graphics2D graphics = (Graphics2D) g;
 			drawLevel(graphics);
-			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getX(), currentSession.getBike().getY(), 20, 20));
+			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getX(), currentSession.getBike().getY()-25, 20, 20));
 		}
 		
 		/**

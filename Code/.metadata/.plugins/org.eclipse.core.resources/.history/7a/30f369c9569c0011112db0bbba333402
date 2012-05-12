@@ -25,11 +25,24 @@ public class GUI extends JFrame{
 		this.setTitle("Dirt Bike Racer");
 		this.setVisible(true);
 		setResizable(false);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JMenuBar menu = new JMenuBar();
-		setUpMenu(menu);
-		setJMenuBar(menu);
+		JMenu help = new JMenu("Help");
+		JMenuItem directions = new JMenuItem("Directions");
+		directions.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				JOptionPane
+						.showMessageDialog(g,
+								"Team Project By:\n Jake Schuenke\n Tyler Shelton\n Matt Spurr",
+								"About", JOptionPane.PLAIN_MESSAGE);
+			}
+		});
+		help.add(directions);
+		JMenuItem about = new JMenuItem("About");
+		help.add(about);
+		g.setJMenuBar(menu);
 		
 		final JRadioButton englishButton = new JRadioButton("English");
 		final JRadioButton spanishButton = new JRadioButton("Spanish");
@@ -62,35 +75,7 @@ public class GUI extends JFrame{
 			}
 		});
 
-	}
-	
-	private void setUpMenu(JMenuBar menu){
-		JMenu help = new JMenu("Help");
-		JMenuItem directions = new JMenuItem("Directions");
-		directions.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				JOptionPane
-						.showMessageDialog(g,
-								"Start level: ENTER\nAccelerate: UP\nDecelerate: DOWN\nRotate: LEFT/RIGHT",
-								"Directions", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
-		help.add(directions);
-		JMenuItem about = new JMenuItem("About");
-		about.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				JOptionPane
-						.showMessageDialog(g,
-								"Team Project By:\n Jake Schuenke\n Tyler Shelton\n Matt Spurr",
-								"About", JOptionPane.PLAIN_MESSAGE);
-			}
-		});
-		help.add(about);
-		menu.add(help);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
 }
