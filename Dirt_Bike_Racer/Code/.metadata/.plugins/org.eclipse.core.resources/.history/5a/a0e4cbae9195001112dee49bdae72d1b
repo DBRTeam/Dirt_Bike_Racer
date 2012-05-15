@@ -1,0 +1,21 @@
+package physics;
+
+/**
+ * TODO Put here a description of what this class does.
+ *
+ * @author schuenjr.
+ *         Created May 3, 2012.
+ */
+public class PhysicsTester {
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub.
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package game;
+
+import javax.swing.JPanel;
+
+/**
+ * TODO Put here a description of what this class does.
+ *
+ * @author spurrme.
+ *         Created May 4, 2012.
+ */
+public class LevelFrame extends JPanel{
+	public LevelFrame(GUI g, Session session){
+		
+	}
+}

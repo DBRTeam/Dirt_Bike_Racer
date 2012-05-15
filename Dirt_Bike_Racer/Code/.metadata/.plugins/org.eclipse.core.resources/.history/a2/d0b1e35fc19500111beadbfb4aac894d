@@ -1,0 +1,23 @@
+package game;
+
+import java.awt.Point;
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+
+public class GUI extends JFrame{
+	private static final Dimension SIZE = java.awt.Toolkit.getDefaultToolkit()
+	.getScreenSize();
+	private Session currentSession;
+	public GUI(Session session){
+		this.setSize(1000, 500);
+		this.setTitle("Dirt Bike Racer");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setResizable(false);
+		this.currentSession = session;
+	}
+	public void drawLevel(){
+		ArrayList<Point> level = this.currentSession.getLevel();
+		this.add()
+	}
+}

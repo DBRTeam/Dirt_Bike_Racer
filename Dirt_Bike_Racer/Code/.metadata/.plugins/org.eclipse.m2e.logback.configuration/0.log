@@ -1,0 +1,510 @@
+2012-04-30 01:59:32,544 [Worker-9] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2012-04-30 02:00:41,406 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-source-plugin/2.1.1/maven-source-plugin-2.1.1.pom
+2012-04-30 02:00:41,417 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-source-plugin/2.1.1/maven-source-plugin-2.1.1.pom
+2012-04-30 02:00:41,923 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-plugins/14/maven-plugins-14.pom
+2012-04-30 02:00:41,934 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-plugins/14/maven-plugins-14.pom
+2012-04-30 02:00:42,510 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom
+2012-04-30 02:00:42,548 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom
+2012-04-30 02:00:43,059 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/apache/6/apache-6.pom
+2012-04-30 02:00:43,076 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/apache/6/apache-6.pom
+2012-04-30 02:00:43,675 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-source-plugin/2.1.1/maven-source-plugin-2.1.1.jar
+2012-04-30 02:00:43,915 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-source-plugin/2.1.1/maven-source-plugin-2.1.1.jar
+2012-04-30 02:00:47,359 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/2.7/maven-javadoc-plugin-2.7.pom
+2012-04-30 02:00:47,373 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/2.7/maven-javadoc-plugin-2.7.pom
+2012-04-30 02:00:47,898 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-plugins/17/maven-plugins-17.pom
+2012-04-30 02:00:47,915 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-plugins/17/maven-plugins-17.pom
+2012-04-30 02:00:48,416 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom
+2012-04-30 02:00:48,429 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-parent/16/maven-parent-16.pom
+2012-04-30 02:00:48,922 [New I/O client worker #10-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/apache/7/apache-7.pom
+2012-04-30 02:00:48,933 [New I/O client worker #10-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/apache/7/apache-7.pom
+2012-04-30 02:00:50,159 [New I/O client worker #11-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/2.7/maven-javadoc-plugin-2.7.jar
+2012-04-30 02:00:50,547 [New I/O client worker #11-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-javadoc-plugin/2.7/maven-javadoc-plugin-2.7.jar
+2012-04-30 02:00:50,846 [New I/O client worker #12-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.1/maven-compiler-plugin-2.3.1.pom
+2012-04-30 02:00:50,854 [New I/O client worker #12-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.1/maven-compiler-plugin-2.3.1.pom
+2012-04-30 02:00:51,380 [New I/O client worker #13-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-plugins/18/maven-plugins-18.pom
+2012-04-30 02:00:51,395 [New I/O client worker #13-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-plugins/18/maven-plugins-18.pom
+2012-04-30 02:00:51,902 [New I/O client worker #14-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.1/maven-compiler-plugin-2.3.1.jar
+2012-04-30 02:00:52,061 [New I/O client worker #14-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/2.3.1/maven-compiler-plugin-2.3.1.jar
+2012-04-30 02:00:52,347 [New I/O client worker #15-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom
+2012-04-30 02:00:52,353 [New I/O client worker #15-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.pom
+2012-04-30 02:00:52,855 [New I/O client worker #16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom
+2012-04-30 02:00:52,859 [New I/O client worker #16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-containers/1.0.3/plexus-containers-1.0.3.pom
+2012-04-30 02:00:53,353 [New I/O client worker #17-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom
+2012-04-30 02:00:53,365 [New I/O client worker #17-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/1.0.4/plexus-1.0.4.pom
+2012-04-30 02:00:53,847 [New I/O client worker #18-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
+2012-04-30 02:00:53,853 [New I/O client worker #18-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.pom
+2012-04-30 02:00:54,400 [New I/O client worker #19-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom
+2012-04-30 02:00:54,412 [New I/O client worker #19-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.0.4/plexus-utils-1.0.4.pom
+2012-04-30 02:00:54,885 [New I/O client worker #20-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+2012-04-30 02:00:54,897 [New I/O client worker #20-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/classworlds/classworlds/1.1-alpha-2/classworlds-1.1-alpha-2.pom
+2012-04-30 02:00:55,348 [New I/O client worker #21-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom
+2012-04-30 02:00:55,354 [New I/O client worker #21-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/2.0.6/maven-plugin-api-2.0.6.pom
+2012-04-30 02:00:55,984 [New I/O client worker #22-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom
+2012-04-30 02:00:56,000 [New I/O client worker #22-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven/2.0.6/maven-2.0.6.pom
+2012-04-30 02:00:56,413 [New I/O client worker #23-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom
+2012-04-30 02:00:56,425 [New I/O client worker #23-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-parent/5/maven-parent-5.pom
+2012-04-30 02:00:56,948 [New I/O client worker #24-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/apache/3/apache-3.pom
+2012-04-30 02:00:56,973 [New I/O client worker #24-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/apache/3/apache-3.pom
+2012-04-30 02:00:57,392 [New I/O client worker #25-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom
+2012-04-30 02:00:57,399 [New I/O client worker #25-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-artifact/2.0.6/maven-artifact-2.0.6.pom
+2012-04-30 02:00:57,849 [New I/O client worker #26-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom
+2012-04-30 02:00:57,853 [New I/O client worker #26-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.4.1/plexus-utils-1.4.1.pom
+2012-04-30 02:00:58,378 [New I/O client worker #27-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
+2012-04-30 02:00:58,395 [New I/O client worker #27-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/1.0.11/plexus-1.0.11.pom
+2012-04-30 02:00:58,857 [New I/O client worker #28-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom
+2012-04-30 02:00:58,869 [New I/O client worker #28-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-core/2.0.6/maven-core-2.0.6.pom
+2012-04-30 02:00:59,350 [New I/O client worker #29-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom
+2012-04-30 02:00:59,356 [New I/O client worker #29-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-settings/2.0.6/maven-settings-2.0.6.pom
+2012-04-30 02:00:59,854 [New I/O client worker #30-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom
+2012-04-30 02:00:59,865 [New I/O client worker #30-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-model/2.0.6/maven-model-2.0.6.pom
+2012-04-30 02:01:00,351 [New I/O client worker #31-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom
+2012-04-30 02:01:00,362 [New I/O client worker #31-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-plugin-parameter-documenter/2.0.6/maven-plugin-parameter-documenter-2.0.6.pom
+2012-04-30 02:01:00,850 [New I/O client worker #32-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.pom
+2012-04-30 02:01:00,858 [New I/O client worker #32-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.pom
+2012-04-30 02:01:03,286 [New I/O client worker #33-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.6/maven-reporting-2.0.6.pom
+2012-04-30 02:01:03,293 [New I/O client worker #33-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.6/maven-reporting-2.0.6.pom
+2012-04-30 02:01:03,892 [New I/O client worker #34-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.pom
+2012-04-30 02:01:03,896 [New I/O client worker #34-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.pom
+2012-04-30 02:01:04,272 [New I/O client worker #35-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/doxia/doxia/1.0-alpha-7/doxia-1.0-alpha-7.pom
+2012-04-30 02:01:04,279 [New I/O client worker #35-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/doxia/doxia/1.0-alpha-7/doxia-1.0-alpha-7.pom
+2012-04-30 02:01:04,786 [New I/O client worker #36-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom
+2012-04-30 02:01:04,794 [New I/O client worker #36-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-profile/2.0.6/maven-profile-2.0.6.pom
+2012-04-30 02:01:05,264 [New I/O client worker #37-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom
+2012-04-30 02:01:05,270 [New I/O client worker #37-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-repository-metadata/2.0.6/maven-repository-metadata-2.0.6.pom
+2012-04-30 02:01:05,763 [New I/O client worker #38-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom
+2012-04-30 02:01:05,772 [New I/O client worker #38-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-error-diagnostics/2.0.6/maven-error-diagnostics-2.0.6.pom
+2012-04-30 02:01:06,476 [New I/O client worker #39-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
+2012-04-30 02:01:06,482 [New I/O client worker #39-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-project/2.0.6/maven-project-2.0.6.pom
+2012-04-30 02:01:06,981 [New I/O client worker #40-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
+2012-04-30 02:01:06,990 [New I/O client worker #40-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-artifact-manager/2.0.6/maven-artifact-manager-2.0.6.pom
+2012-04-30 02:01:10,350 [New I/O client worker #41-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom
+2012-04-30 02:01:10,355 [New I/O client worker #41-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-plugin-registry/2.0.6/maven-plugin-registry-2.0.6.pom
+2012-04-30 02:01:10,854 [New I/O client worker #42-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.pom
+2012-04-30 02:01:10,865 [New I/O client worker #42-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.pom
+2012-04-30 02:01:11,351 [New I/O client worker #43-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom
+2012-04-30 02:01:11,358 [New I/O client worker #43-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-plugin-descriptor/2.0.6/maven-plugin-descriptor-2.0.6.pom
+2012-04-30 02:01:11,853 [New I/O client worker #44-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom
+2012-04-30 02:01:11,861 [New I/O client worker #44-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.pom
+2012-04-30 02:01:12,361 [New I/O client worker #45-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom
+2012-04-30 02:01:12,365 [New I/O client worker #45-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-monitor/2.0.6/maven-monitor-2.0.6.pom
+2012-04-30 02:01:12,959 [New I/O client worker #46-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/classworlds/classworlds/1.1/classworlds-1.1.pom
+2012-04-30 02:01:12,970 [New I/O client worker #46-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/classworlds/classworlds/1.1/classworlds-1.1.pom
+2012-04-30 02:01:13,412 [New I/O client worker #47-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
+2012-04-30 02:01:13,421 [New I/O client worker #47-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.pom
+2012-04-30 02:01:14,021 [New I/O client worker #48-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+2012-04-30 02:01:14,035 [New I/O client worker #48-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/2.0.6/plexus-2.0.6.pom
+2012-04-30 02:01:14,354 [New I/O client worker #49-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8/plexus-compiler-api-1.8.pom
+2012-04-30 02:01:14,360 [New I/O client worker #49-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8/plexus-compiler-api-1.8.pom
+2012-04-30 02:01:15,080 [New I/O client worker #50-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler/1.8/plexus-compiler-1.8.pom
+2012-04-30 02:01:15,088 [New I/O client worker #50-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler/1.8/plexus-compiler-1.8.pom
+2012-04-30 02:01:15,592 [New I/O client worker #51-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.17/plexus-components-1.1.17.pom
+2012-04-30 02:01:15,598 [New I/O client worker #51-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.17/plexus-components-1.1.17.pom
+2012-04-30 02:01:16,162 [New I/O client worker #52-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/2.0.5/plexus-2.0.5.pom
+2012-04-30 02:01:16,174 [New I/O client worker #52-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/2.0.5/plexus-2.0.5.pom
+2012-04-30 02:01:16,583 [New I/O client worker #53-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+2012-04-30 02:01:16,593 [New I/O client worker #53-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.5.5/plexus-utils-1.5.5.pom
+2012-04-30 02:01:17,220 [New I/O client worker #54-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+2012-04-30 02:01:17,226 [New I/O client worker #54-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+2012-04-30 02:01:17,711 [New I/O client worker #55-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8/plexus-compiler-manager-1.8.pom
+2012-04-30 02:01:17,718 [New I/O client worker #55-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8/plexus-compiler-manager-1.8.pom
+2012-04-30 02:01:18,234 [New I/O client worker #56-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8/plexus-compiler-javac-1.8.pom
+2012-04-30 02:01:18,240 [New I/O client worker #56-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8/plexus-compiler-javac-1.8.pom
+2012-04-30 02:01:18,876 [New I/O client worker #57-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compilers/1.8/plexus-compilers-1.8.pom
+2012-04-30 02:01:18,883 [New I/O client worker #57-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compilers/1.8/plexus-compilers-1.8.pom
+2012-04-30 02:01:19,424 [New I/O client worker #58-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
+2012-04-30 02:01:19,651 [New I/O client worker #58-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar
+2012-04-30 02:01:19,682 [New I/O client worker #58-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/doxia/doxia-sink-api/1.0-alpha-7/doxia-sink-api-1.0-alpha-7.jar
+2012-04-30 02:01:19,753 [New I/O client worker #58-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/junit/junit/3.8.1/junit-3.8.1.jar
+2012-04-30 02:01:20,229 [New I/O client worker #58-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar
+2012-04-30 02:01:20,260 [New I/O client worker #58-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.6/maven-reporting-api-2.0.6.jar
+2012-04-30 02:01:20,340 [New I/O client worker #58-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.jar
+2012-04-30 02:01:20,415 [New I/O client worker #58-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-cli/commons-cli/1.0/commons-cli-1.0.jar
+2012-04-30 02:01:20,430 [New I/O client worker #58-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar
+2012-04-30 02:01:20,465 [New I/O client worker #58-5] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interactivity-api/1.0-alpha-4/plexus-interactivity-api-1.0-alpha-4.jar
+2012-04-30 02:01:20,742 [New I/O client worker #58-6] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar
+2012-04-30 02:01:20,825 [New I/O client worker #58-6] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/2.0.5/plexus-utils-2.0.5.jar
+2012-04-30 02:01:21,125 [New I/O client worker #58-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8/plexus-compiler-api-1.8.jar
+2012-04-30 02:01:21,183 [New I/O client worker #58-7] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-api/1.8/plexus-compiler-api-1.8.jar
+2012-04-30 02:01:21,490 [New I/O client worker #58-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8/plexus-compiler-javac-1.8.jar
+2012-04-30 02:01:21,528 [New I/O client worker #58-9] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-javac/1.8/plexus-compiler-javac-1.8.jar
+2012-04-30 02:01:24,338 [New I/O client worker #58-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8/plexus-compiler-manager-1.8.jar
+2012-04-30 02:01:24,350 [New I/O client worker #58-8] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-compiler-manager/1.8/plexus-compiler-manager-1.8.jar
+2012-04-30 02:04:26,707 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2012-04-30 02:04:26,712 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-cvs does not contain lifecycle mapping metadata
+2012-04-30 02:04:26,716 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+2012-04-30 02:04:26,719 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subclipse does not contain lifecycle mapping metadata
+2012-04-30 02:04:26,723 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.maven-runtime-3.0.3 does not contain lifecycle mapping metadata
+2012-04-30 02:04:26,756 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.codehaus.groovy.m2eclipse does not contain lifecycle mapping metadata
+2012-04-30 02:05:28,986 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: org.jbox2d:jbox2d:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\pom.xml.
+2012-04-30 02:05:29,576 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:05:30,716 [New I/O client worker #59-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.pom
+2012-04-30 02:05:30,727 [New I/O client worker #59-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.pom
+2012-04-30 02:05:34,350 [New I/O client worker #60-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom
+2012-04-30 02:05:34,359 [New I/O client worker #60-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.pom
+2012-04-30 02:05:35,289 [New I/O client worker #61-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.6.1/slf4j-parent-1.6.1.pom
+2012-04-30 02:05:35,343 [New I/O client worker #61-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-parent/1.6.1/slf4j-parent-1.6.1.pom
+2012-04-30 02:05:36,387 [New I/O client worker #62-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar
+2012-04-30 02:05:36,856 [New I/O client worker #62-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.jar
+2012-04-30 02:05:36,948 [New I/O client worker #62-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.6.1/slf4j-api-1.6.1.jar
+2012-04-30 02:05:40,467 [New I/O client worker #62-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/junit/junit/4.8.2/junit-4.8.2.jar
+2012-04-30 02:05:40,596 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2012-04-30 02:05:40,726 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:05:40,842 [New I/O client worker #63-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom
+2012-04-30 02:05:40,849 [New I/O client worker #63-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.pom
+2012-04-30 02:05:41,339 [New I/O client worker #64-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/google/google/1/google-1.pom
+2012-04-30 02:05:41,344 [New I/O client worker #64-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/google/google/1/google-1.pom
+2012-04-30 02:05:41,928 [New I/O client worker #65-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar
+2012-04-30 02:05:42,933 [New I/O client worker #65-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/com/google/protobuf/protobuf-java/2.4.1/protobuf-java-2.4.1.jar
+2012-04-30 02:05:43,229 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:05:43,337 [New I/O client worker #66-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.pom
+2012-04-30 02:05:43,353 [New I/O client worker #66-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.pom
+2012-04-30 02:05:43,933 [New I/O client worker #67-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.pom
+2012-04-30 02:05:43,985 [New I/O client worker #67-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.pom
+2012-04-30 02:05:44,330 [New I/O client worker #68-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.pom
+2012-04-30 02:05:44,336 [New I/O client worker #68-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.pom
+2012-04-30 02:05:45,166 [New I/O client worker #69-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar
+2012-04-30 02:05:45,166 [New I/O client worker #69-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.jar
+2012-04-30 02:05:45,234 [New I/O client worker #69-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/slf4j/slf4j-log4j12/1.6.1/slf4j-log4j12-1.6.1.jar
+2012-04-30 02:05:46,781 [New I/O client worker #69-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/log4j/log4j/1.2.14/log4j-1.2.14.jar
+2012-04-30 02:05:46,933 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2012-04-30 02:05:47,872 [New I/O client worker #70-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.pom
+2012-04-30 02:05:47,880 [New I/O client worker #70-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.pom
+2012-04-30 02:05:48,579 [New I/O client worker #71-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.jar
+2012-04-30 02:05:48,741 [New I/O client worker #71-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-resources-plugin/2.4.3/maven-resources-plugin-2.4.3.jar
+2012-04-30 02:05:49,272 [New I/O client worker #72-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-4/maven-filtering-1.0-beta-4.pom
+2012-04-30 02:05:49,279 [New I/O client worker #72-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-4/maven-filtering-1.0-beta-4.pom
+2012-04-30 02:05:49,734 [New I/O client worker #73-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom
+2012-04-30 02:05:49,743 [New I/O client worker #73-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/shared/maven-shared-components/15/maven-shared-components-15.pom
+2012-04-30 02:05:50,287 [New I/O client worker #74-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom
+2012-04-30 02:05:50,293 [New I/O client worker #74-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.pom
+2012-04-30 02:05:50,717 [New I/O client worker #75-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom
+2012-04-30 02:05:50,727 [New I/O client worker #75-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/2.0.2/plexus-2.0.2.pom
+2012-04-30 02:05:51,221 [New I/O client worker #76-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom
+2012-04-30 02:05:51,227 [New I/O client worker #76-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.12/plexus-interpolation-1.12.pom
+2012-04-30 02:05:51,763 [New I/O client worker #77-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom
+2012-04-30 02:05:51,770 [New I/O client worker #77-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.14/plexus-components-1.1.14.pom
+2012-04-30 02:05:52,573 [New I/O client worker #78-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom
+2012-04-30 02:05:52,578 [New I/O client worker #78-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.pom
+2012-04-30 02:05:53,074 [New I/O client worker #79-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
+2012-04-30 02:05:53,081 [New I/O client worker #79-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/sonatype/spice/spice-parent/10/spice-parent-10.pom
+2012-04-30 02:05:53,576 [New I/O client worker #80-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/sonatype/forge/forge-parent/3/forge-parent-3.pom
+2012-04-30 02:05:53,587 [New I/O client worker #80-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/sonatype/forge/forge-parent/3/forge-parent-3.pom
+2012-04-30 02:05:54,077 [New I/O client worker #81-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom
+2012-04-30 02:05:54,085 [New I/O client worker #81-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/1.5.8/plexus-utils-1.5.8.pom
+2012-04-30 02:05:54,605 [New I/O client worker #82-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom
+2012-04-30 02:05:54,610 [New I/O client worker #82-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.pom
+2012-04-30 02:05:55,078 [New I/O client worker #83-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom
+2012-04-30 02:05:55,085 [New I/O client worker #83-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-components/1.1.15/plexus-components-1.1.15.pom
+2012-04-30 02:05:55,616 [New I/O client worker #84-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom
+2012-04-30 02:05:55,624 [New I/O client worker #84-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus/2.0.3/plexus-2.0.3.pom
+2012-04-30 02:05:56,191 [New I/O client worker #85-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-4/maven-filtering-1.0-beta-4.jar
+2012-04-30 02:05:56,371 [New I/O client worker #85-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar
+2012-04-30 02:05:56,390 [New I/O client worker #85-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.4/plexus-build-api-0.0.4.jar
+2012-04-30 02:05:56,416 [New I/O client worker #85-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/shared/maven-filtering/1.0-beta-4/maven-filtering-1.0-beta-4.jar
+2012-04-30 02:05:56,638 [New I/O client worker #85-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar
+2012-04-30 02:05:57,022 [New I/O client worker #85-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-interpolation/1.13/plexus-interpolation-1.13.jar
+2012-04-30 02:05:57,688 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-library/src/main/java
+2012-04-30 02:05:57,696 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:05:57,722 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-library/src/main/resources
+2012-04-30 02:05:57,733 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-library/src/test/java
+2012-04-30 02:05:57,750 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-library/src/test/resources
+2012-04-30 02:05:57,796 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:05:57,882 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:05:57,966 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-serialization/src/main/java
+2012-04-30 02:05:57,984 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:05:57,989 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-serialization/src/main/resources
+2012-04-30 02:05:58,003 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-serialization/src/test/java
+2012-04-30 02:05:58,028 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-serialization/src/test/resources
+2012-04-30 02:05:58,172 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: org.jbox2d:jbox2d:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\pom.xml.
+2012-04-30 02:05:58,190 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:05:58,231 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-testbed/src/main/java
+2012-04-30 02:05:58,248 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:05:58,256 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-testbed/src/main/resources
+2012-04-30 02:05:58,267 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-testbed/src/test/java
+2012-04-30 02:05:58,279 [Worker-12] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-testbed/src/test/resources
+2012-04-30 02:05:58,304 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:05:58,377 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:05:58,456 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:05:58,466 [Worker-12] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Project import completed 30 sec
+2012-04-30 02:05:58,667 [Worker-15] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update started
+2012-04-30 02:05:58,668 [Worker-15] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update completed: 0 sec
+2012-04-30 02:06:01,648 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:06:01,934 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: org.jbox2d:jbox2d:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\pom.xml.
+2012-04-30 02:06:01,945 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:06:01,977 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:06:02,006 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:06:02,409 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:06:04,050 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:07:22,043 [Worker-11] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Project jbox2d-read-only already exists
+2012-04-30 02:07:22,047 [Worker-11] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Project jbox2d-library already exists
+2012-04-30 02:07:22,050 [Worker-11] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Project jbox2d-serialization already exists
+2012-04-30 02:07:22,053 [Worker-11] ERROR o.e.m.c.i.p.ProjectConfigurationManager - Project jbox2d-testbed already exists
+2012-04-30 02:07:22,079 [Worker-11] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Project import completed 0 sec
+2012-04-30 02:07:38,483 [Worker-6] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update started
+2012-04-30 02:07:40,785 [Worker-9] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2012-04-30 02:07:41,168 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:07:41,595 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.7.1/maven-surefire-plugin-2.7.1.pom
+2012-04-30 02:07:41,608 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.7.1/maven-surefire-plugin-2.7.1.pom
+2012-04-30 02:07:42,115 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire/2.7.1/surefire-2.7.1.pom
+2012-04-30 02:07:42,128 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/surefire/surefire/2.7.1/surefire-2.7.1.pom
+2012-04-30 02:07:42,591 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-parent/18/maven-parent-18.pom
+2012-04-30 02:07:42,610 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-parent/18/maven-parent-18.pom
+2012-04-30 02:07:43,092 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/apache/8/apache-8.pom
+2012-04-30 02:07:43,108 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/apache/8/apache-8.pom
+2012-04-30 02:07:43,995 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.7.1/maven-surefire-plugin-2.7.1.jar
+2012-04-30 02:07:44,239 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/2.7.1/maven-surefire-plugin-2.7.1.jar
+2012-04-30 02:07:44,578 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.1/maven-jar-plugin-2.3.1.pom
+2012-04-30 02:07:44,589 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.1/maven-jar-plugin-2.3.1.pom
+2012-04-30 02:07:45,285 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.1/maven-jar-plugin-2.3.1.jar
+2012-04-30 02:07:45,527 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-jar-plugin/2.3.1/maven-jar-plugin-2.3.1.jar
+2012-04-30 02:07:45,882 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-archiver/2.4.1/maven-archiver-2.4.1.pom
+2012-04-30 02:07:45,892 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-archiver/2.4.1/maven-archiver-2.4.1.pom
+2012-04-30 02:07:46,388 [New I/O client worker #10-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.pom
+2012-04-30 02:07:46,393 [New I/O client worker #10-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.pom
+2012-04-30 02:07:46,879 [New I/O client worker #11-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.pom
+2012-04-30 02:07:46,888 [New I/O client worker #11-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.pom
+2012-04-30 02:07:47,380 [New I/O client worker #12-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
+2012-04-30 02:07:47,389 [New I/O client worker #12-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.pom
+2012-04-30 02:07:48,012 [New I/O client worker #13-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/maven-archiver/2.4.1/maven-archiver-2.4.1.jar
+2012-04-30 02:07:48,128 [New I/O client worker #13-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/maven-archiver/2.4.1/maven-archiver-2.4.1.jar
+2012-04-30 02:07:48,224 [New I/O client worker #13-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.jar
+2012-04-30 02:07:48,450 [New I/O client worker #13-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.jar
+2012-04-30 02:07:48,774 [New I/O client worker #13-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-io/1.0/plexus-io-1.0.jar
+2012-04-30 02:07:48,815 [New I/O client worker #13-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+2012-04-30 02:07:49,116 [New I/O client worker #13-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/plexus/plexus-archiver/1.0/plexus-archiver-1.0.jar
+2012-04-30 02:07:50,781 [New I/O client worker #13-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+2012-04-30 02:07:52,209 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-library/src/main/java
+2012-04-30 02:07:52,215 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-library/src/main/resources
+2012-04-30 02:07:52,215 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-library/src/test/java
+2012-04-30 02:07:52,217 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-library/src/test/resources
+2012-04-30 02:07:52,342 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:07:52,527 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-testbed/src/main/java
+2012-04-30 02:07:52,531 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-testbed/src/main/resources
+2012-04-30 02:07:52,531 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-testbed/src/test/java
+2012-04-30 02:07:52,533 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-testbed/src/test/resources
+2012-04-30 02:07:52,698 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:07:52,825 [New I/O client worker #14-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.6/maven-antrun-plugin-1.6.pom
+2012-04-30 02:07:52,832 [New I/O client worker #14-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.6/maven-antrun-plugin-1.6.pom
+2012-04-30 02:07:53,445 [New I/O client worker #15-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.6/maven-antrun-plugin-1.6.jar
+2012-04-30 02:07:53,682 [New I/O client worker #15-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.6/maven-antrun-plugin-1.6.jar
+2012-04-30 02:07:54,082 [New I/O client worker #16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/1.7/build-helper-maven-plugin-1.7.pom
+2012-04-30 02:07:54,089 [New I/O client worker #16-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/1.7/build-helper-maven-plugin-1.7.pom
+2012-04-30 02:07:54,544 [New I/O client worker #17-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/mojo/mojo-parent/28/mojo-parent-28.pom
+2012-04-30 02:07:54,555 [New I/O client worker #17-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/mojo/mojo-parent/28/mojo-parent-28.pom
+2012-04-30 02:07:54,993 [New I/O client worker #18-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom
+2012-04-30 02:07:55,004 [New I/O client worker #18-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom
+2012-04-30 02:07:55,600 [New I/O client worker #19-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo1.maven.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/1.7/build-helper-maven-plugin-1.7.jar
+2012-04-30 02:07:55,879 [New I/O client worker #19-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo1.maven.org/maven2/org/codehaus/mojo/build-helper-maven-plugin/1.7/build-helper-maven-plugin-1.7.jar
+2012-04-30 02:07:56,162 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-serialization/src/main/java
+2012-04-30 02:07:56,163 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-serialization/src/main/resources
+2012-04-30 02:07:56,163 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-serialization/src/test/java
+2012-04-30 02:07:56,165 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-serialization/src/test/resources
+2012-04-30 02:07:56,238 [Worker-6] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update completed: 17 sec
+2012-04-30 02:07:59,476 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:15:33,969 [Worker-2] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration TestbedMain references non-existing project jbox2d-testbed.
+org.eclipse.core.runtime.CoreException: Launch configuration TestbedMain references non-existing project jbox2d-testbed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1252) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:316) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-04-30 02:15:33,973 [Worker-2] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration TestbedMain references non-existing project jbox2d-testbed.
+org.eclipse.core.runtime.CoreException: Launch configuration TestbedMain references non-existing project jbox2d-testbed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1252) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:536) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:417) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:317) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-04-30 02:15:33,980 [Worker-2] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration TestbedMain references non-existing project jbox2d-testbed.
+org.eclipse.core.runtime.CoreException: Launch configuration TestbedMain references non-existing project jbox2d-testbed.
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1376) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1252) ~[org.eclipse.jdt.launching_3.6.1.v20111006_r372.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.0.v20110523.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2115) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:378) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:245) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:216) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:170) [org.eclipse.debug.core_3.7.1.v20111129-2031.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:318) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-04-30 02:30:35,790 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2012-04-30 02:30:35,795 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-cvs does not contain lifecycle mapping metadata
+2012-04-30 02:30:35,799 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+2012-04-30 02:30:35,803 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subclipse does not contain lifecycle mapping metadata
+2012-04-30 02:30:35,806 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.maven-runtime-3.0.3 does not contain lifecycle mapping metadata
+2012-04-30 02:30:35,826 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.codehaus.groovy.m2eclipse does not contain lifecycle mapping metadata
+2012-04-30 02:31:07,945 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: org.jbox2d:jbox2d:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\pom.xml.
+2012-04-30 02:31:07,957 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:31:08,011 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:31:08,044 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:31:08,818 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-library/src/main/java
+2012-04-30 02:31:08,823 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-library/src/main/resources
+2012-04-30 02:31:08,823 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-library/src/test/java
+2012-04-30 02:31:08,824 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-library/src/test/resources
+2012-04-30 02:31:08,916 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-serialization/src/main/java
+2012-04-30 02:31:08,917 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-serialization/src/main/resources
+2012-04-30 02:31:08,918 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-serialization/src/test/java
+2012-04-30 02:31:08,921 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-serialization/src/test/resources
+2012-04-30 02:31:09,002 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-testbed/src/main/java
+2012-04-30 02:31:09,005 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-testbed/src/main/resources
+2012-04-30 02:31:09,005 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /jbox2d-testbed/src/test/java
+2012-04-30 02:31:09,006 [Worker-0] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /jbox2d-testbed/src/test/resources
+2012-04-30 02:31:09,077 [Worker-0] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Project import completed 2 sec
+2012-04-30 02:31:09,389 [Worker-12] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update started
+2012-04-30 02:31:09,390 [Worker-12] INFO  o.e.m.c.u.i.UpdateConfigurationJob - Update completed: 0 sec
+2012-04-30 02:31:09,633 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:31:09,990 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:31:10,063 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:31:10,128 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:31:10,216 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: org.jbox2d:jbox2d:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\pom.xml.
+2012-04-30 02:31:10,248 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:31:10,270 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:31:10,292 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:31:10,327 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:31:10,361 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:31:12,006 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:31:12,317 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: org.jbox2d:jbox2d:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\pom.xml.
+2012-04-30 02:31:12,327 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:31:12,347 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:31:12,403 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:31:13,523 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:31:14,885 [Worker-14] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:31:16,166 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:31:16,233 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:31:16,266 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:31:16,307 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:31:16,380 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: org.jbox2d:jbox2d:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\pom.xml.
+2012-04-30 02:31:16,391 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:31:16,413 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:31:16,435 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-library:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-library\pom.xml.
+2012-04-30 02:31:16,462 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-serialization:1.0.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-serialization\pom.xml.
+2012-04-30 02:31:16,492 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: org.jbox2d:jbox2d-testbed:2.3.0-SNAPSHOT @ C:\Users\schuenjr\Documents\ROSE\CSSE_376\Dirt_Bike_Racer\Code\jbox2d-read-only\jbox2d-testbed\pom.xml.
+2012-04-30 02:33:12,318 [Worker-9] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|http://repo1.maven.org/maven2
+java.io.IOException: No response received after 60000
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.checkError(AsyncFetcher.java:253) ~[org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.read(AsyncFetcher.java:261) ~[org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at java.io.PipedInputStream.read(Unknown Source) ~[na:1.6.0_29]
+	at java.io.InputStream.read(Unknown Source) ~[na:1.6.0_29]
+	at org.codehaus.plexus.util.IOUtil.copy(IOUtil.java:188) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.IOUtil.copy(IOUtil.java:174) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.FileUtils.copyStreamToFile(FileUtils.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$LocalCacheIndexAdaptor.setIndexFile(DefaultIndexUpdater.java:700) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:844) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:135) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1124) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1081) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:658) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:71) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1773) ~[na:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.6.0_29]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.6.0_29]
+2012-04-30 14:27:35,425 [Worker-8] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2012-05-03 00:29:50,544 [Worker-10] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo1.maven.org/maven2
+2012-05-03 00:43:25,784 [Worker-4] ERROR o.e.m.e.x.i.MarkerLocationService - Error checking for schema
+java.lang.NullPointerException: null
+	at org.eclipse.m2e.editor.xml.internal.MarkerLocationService.checkForSchema(MarkerLocationService.java:237) [org.eclipse.m2e.editor.xml_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.editor.xml.internal.MarkerLocationService.addEditorHintMarkers(MarkerLocationService.java:220) [org.eclipse.m2e.editor.xml_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MarkerUtils.addEditorHintMarkers(MarkerUtils.java:61) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readMavenProject(ProjectRegistryManager.java:640) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:433) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:87) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-05-03 00:43:25,793 [Worker-4] ERROR o.e.m.e.x.i.MarkerLocationService - Error checking for warnings
+java.lang.NullPointerException: null
+	at org.eclipse.m2e.editor.xml.internal.MarkerLocationService.checkVarious(MarkerLocationService.java:524) [org.eclipse.m2e.editor.xml_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.editor.xml.internal.MarkerLocationService.addEditorHintMarkers(MarkerLocationService.java:221) [org.eclipse.m2e.editor.xml_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.markers.MarkerUtils.addEditorHintMarkers(MarkerUtils.java:61) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readMavenProject(ProjectRegistryManager.java:640) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:433) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:87) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-05-03 00:43:25,804 [Worker-4] ERROR o.e.m.c.i.p.r.ProjectRegistryRefreshJob - null
+java.lang.NullPointerException: null
+	at org.eclipse.m2e.core.internal.markers.MavenMarkerManager.addMarkers(MavenMarkerManager.java:57) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readMavenProject(ProjectRegistryManager.java:642) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:433) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:87) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-05-03 00:43:26,984 [Worker-8] ERROR o.e.m.c.i.p.r.ProjectRegistryRefreshJob - null
+java.lang.NullPointerException: null
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.configureExecutionRequest(ProjectRegistryManager.java:792) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.createExecutionRequest(ProjectRegistryManager.java:787) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:742) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:735) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectFacade.getMavenProject(MavenProjectFacade.java:211) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.WorkspaceStateWriter.mavenProjectChanged(WorkspaceStateWriter.java:58) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) ~[na:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) ~[na:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+2012-05-03 01:04:43,169 [Worker-10] ERROR o.e.m.c.i.i.nexus.NexusIndexManager - Unable to update index for central|http://repo1.maven.org/maven2
+java.io.IOException: No response received after 60000
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.checkError(AsyncFetcher.java:253) ~[org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.AsyncFetcher$PipedErrorInputStream.read(AsyncFetcher.java:261) ~[org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at java.io.PipedInputStream.read(Unknown Source) ~[na:1.6.0_29]
+	at java.io.InputStream.read(Unknown Source) ~[na:1.6.0_29]
+	at org.codehaus.plexus.util.IOUtil.copy(IOUtil.java:188) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.IOUtil.copy(IOUtil.java:174) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.FileUtils.copyStreamToFile(FileUtils.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.index.updater.DefaultIndexUpdater$LocalCacheIndexAdaptor.setIndexFile(DefaultIndexUpdater.java:700) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:844) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.apache.maven.index.updater.DefaultIndexUpdater.fetchAndUpdateIndex(DefaultIndexUpdater.java:135) ~[indexer-core-3.1.0.jar:3.1.0]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateRemoteIndex(NexusIndexManager.java:1124) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager.updateIndex(NexusIndexManager.java:1081) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.NexusIndexManager$1.run(NexusIndexManager.java:658) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.m2e.core.internal.index.nexus.IndexUpdaterJob.run(IndexUpdaterJob.java:71) [org.eclipse.m2e.core_1.0.100.20110804-1717.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.101.v20120113-1953.jar:na]
+java.util.concurrent.TimeoutException: No response received after 60000
+	at com.ning.http.client.providers.netty.NettyAsyncHttpProvider$ReaperFuture.run(NettyAsyncHttpProvider.java:1773) ~[na:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.FutureTask$Sync.innerRunAndReset(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.FutureTask.runAndReset(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source) ~[na:1.6.0_29]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[na:1.6.0_29]
+	at java.lang.Thread.run(Unknown Source) ~[na:1.6.0_29]

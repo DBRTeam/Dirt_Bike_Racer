@@ -1,0 +1,42 @@
+package game;
+
+import java.awt.geom.Point2D.Double;
+import java.util.ArrayList;
+
+/**
+ * TODO Put here a description of what this class does.
+ *
+ * @author schuenjr.
+ *         Created May 4, 2012.
+ */
+public class PhysicsEngine {
+
+	/**
+	 * TODO Put here a description of what this constructor does.
+	 *
+	 * @param parsedLevel
+	 */
+	public PhysicsEngine(ArrayList<Double> parsedLevel) {
+		// TODO Auto-generated constructor stub.
+	}
+
+	/**
+	 * TODO Put here a description of what this constructor does.
+	 *
+	 */
+	public PhysicsEngine() {
+		// TODO Auto-generated constructor stub.
+	}
+
+	public Object platforms;
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 */
+	public void motorStart() {
+		// TODO Auto-generated method stub.
+		
+	}
+
+}

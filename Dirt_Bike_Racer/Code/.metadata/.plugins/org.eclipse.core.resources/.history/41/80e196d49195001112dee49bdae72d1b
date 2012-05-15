@@ -1,0 +1,23 @@
+package game;
+
+import physics.DominoTest;
+
+/**
+ * TODO Put here a description of what this class does.
+ *
+ * @author schuenjr.
+ *         Created May 3, 2012.
+ */
+public class Main {
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		return;
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;game.PhysicsEngine.buildLevel(...)&apos; to &apos;buildLevel1&apos;&#x0D;&#x0A;- Original project: &apos;DirtBikeRacer&apos;&#x0D;&#x0A;- Original element: &apos;game.PhysicsEngine.buildLevel(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;game.PhysicsEngine.buildLevel1(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;buildLevel&apos;" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;game{PhysicsEngine.java[PhysicsEngine~buildLevel~QArrayList\&lt;QDouble;&gt;;" name="buildLevel1" references="true" stamp="1337054978035" version="1.0"/>
+</session>
