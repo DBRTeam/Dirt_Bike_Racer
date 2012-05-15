@@ -1,0 +1,17 @@
+import org.jbox2d.testbed.TestbedMain;
+import org.jbox2d.testbed.framework.TestbedModel;
+
+
+/**
+ * TODO Put here a description of what this class does.
+ *
+ * @author schuenjr.
+ *         Created May 3, 2012.
+ */
+public class PhysicsTester {
+	
+	
+	
+	
+	
+}

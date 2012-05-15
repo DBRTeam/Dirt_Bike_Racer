@@ -1,5 +1,23 @@
+<<<<<<< HEAD
 PROBLEMS_FILTERS_MIGRATE=true
 eclipse.preferences.version=1
 platformState=1333058419635
 quickStart=false
 tipsAndTricks=true
+=======
+#Fri May 11 22:14:38 EDT 2012
+>>>>>>>=d575308d1536b0feca58f01106631f8d6cb2a7da
+IMPORT_FILES_AND_FOLDERS_RELATIVE=true
+SAVE_ALL_BEFORE_BUILD=true
+REFRESH_WORKSPACE_ON_STARTUP=true
+<<<<<<<=HEAD
+PROBLEMS_FILTERS_MIGRATE=true
+quickStart=false
+tipsAndTricks=true
+eclipse.preferences.version=1
+platformState=1277519535098
+EXIT_PROMPT_ON_CLOSE_LAST_WINDOW=false
+IMPORT_FILES_AND_FOLDERS_TYPE=23,1
+OPEN_REQUIRED_PROJECTS=always
+=\=\=\=\=\=\=
+>>>>>>> 63b3501bb9f18dd3346fb579bf05d8d2295dd7d4

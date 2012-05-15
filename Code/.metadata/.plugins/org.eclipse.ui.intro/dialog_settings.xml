@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<item value="1024" key="introLaunchBar.location"/>
 </section>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="1024" key="introLaunchBar.location"/>
+</section>
+>>>>>>> 63b3501bb9f18dd3346fb579bf05d8d2295dd7d4

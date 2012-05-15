@@ -1,0 +1,8 @@
+testBikeRecievesNewLocation
+testBikeRecievesNewVector
+testBikeRecievesNewRotation
+testBikeCrashFromForce
+testBikeCrashFromFlip
+testBikeisCreated
+testGameisCreated
+testSessionisCreated
