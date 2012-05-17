@@ -19,7 +19,8 @@ public class Session {
 	public Bike bike;
 	private ArrayList<Point2D.Double> parsedLevel;
 	public PhysicsEngine physics;
-
+	private static final double xSCALE = 8.1;
+	private static final double ySCALE = 7.0;
 	/**
 	 * Empty constructor for a level.
 	 *
@@ -86,7 +87,7 @@ public class Session {
 			  BufferedReader br = new BufferedReader(new InputStreamReader(in));
 			  String strLine;
 			  //Read File Line By Line
-			  while ((strLine = br.readLine()) != null)   {
+			  while ((strLine = br.readLine()) != null) {
 			  // Print the content on the console
 				  StringTokenizer tok = new StringTokenizer(strLine, ",");
 				  int x = Integer.parseInt(tok.nextElement().toString());
@@ -106,11 +107,56 @@ public class Session {
 	 * Moves the bike based on its speed and the terrain.
 	 */
 	public void moveBike(){
-		double newX = bike.getX()+bike.getSpeed();
-		double newY = getTrackY(newX);
+		double newX = (getBikeXPosition() + 47.00) * xSCALE ;
+		double newY = (400 - (getBikeYPosition() + 32.00) * ySCALE);
+		double newFrontWheelx = (getBikeFrontWheelXPosition() + 47.00) * xSCALE ;
+		double newFrontWheely = (400 - (getBikeFrontWheelYPosition() + 32.00) * ySCALE);
+		double newRearWheelx = (getBikeRearWheelXPosition() + 47.00) * xSCALE ;
+		double newRearWheely = (400 - (getBikeRearWheelYPosition() + 32.00) * ySCALE);
+		this.physics.step();
+		this.physics.step();
+		this.physics.step();
 		bike.UpdatePosition(newX, newY);
+		bike.UpdatePositionFW(newFrontWheelx,newFrontWheely);
+		bike.UpdatePositionRW(newRearWheelx, newRearWheely);
 	}
 	
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	private double getBikeFrontWheelXPosition() {
+		return this.physics.getBikeFrontWheelx();
+	}
+	
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	private double getBikeFrontWheelYPosition() {
+		return this.physics.getBikeFrontWheelx();
+	}
+	
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	private double getBikeRearWheelXPosition() {
+		return this.physics.getBikeFrontWheelx();
+	}
+	
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	private double getBikeRearWheelYPosition() {
+		return this.physics.getBikeFrontWheelx();
+	}
+
 	/**
 	 * Gets the y position on the track at a given x position.
 	 * 

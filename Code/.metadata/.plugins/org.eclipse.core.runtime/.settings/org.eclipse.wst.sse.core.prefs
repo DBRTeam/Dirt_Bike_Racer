@@ -1,6 +1,5 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=63b3501bb9f18dd3346fb579bf05d8d2295dd7d4
 eclipse.preferences.version=1
-<<<<<<< HEAD
-task-tag-projects-already-scanned=DirtBikeRacer,JBox2D,PhysicsTest
-=======
-task-tag-projects-already-scanned=DirtBikeRacer,jbox2d-library,jbox2d-read-only,jbox2d-serialization,jbox2d-testbed
->>>>>>> 63b3501bb9f18dd3346fb579bf05d8d2295dd7d4
+task-tag-projects-already-scanned=DirtBikeRacer,JBox2D

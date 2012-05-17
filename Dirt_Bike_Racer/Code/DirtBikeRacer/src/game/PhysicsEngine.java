@@ -12,7 +12,7 @@ import org.jbox2d.dynamics.BodyType;
 import org.jbox2d.dynamics.Fixture;
 import org.jbox2d.dynamics.FixtureDef;
 import org.jbox2d.dynamics.World;
-import org.jbox2d.dynamics.joints.Joint;
+import org.jbox2d.dynamics.joints.RevoluteJoint;
 import org.jbox2d.dynamics.joints.RevoluteJointDef;
 
 /**
@@ -24,9 +24,13 @@ import org.jbox2d.dynamics.joints.RevoluteJointDef;
 public class PhysicsEngine {
 	public World world;
 	public Body level;
-	public Joint revJointRear;
+	public RevoluteJoint revJointRear;
 	private Fixture BikeFrame;
-	
+	private Fixture FrontWheelFrame;
+	private Fixture RearWheelFrame;
+	private boolean up;
+	private boolean down;
+	private static final float DegtoRad = 0.0174532935199432957f;
 	/**
 	 * Creates a simulation with no level
 	 *
@@ -52,75 +56,90 @@ public class PhysicsEngine {
 	 */
 	private Body buildLevel1(ArrayList<Double> parsedLevel){
 		// Floor
-		FixtureDef floorfix = new FixtureDef();
-		PolygonShape floorshape = new PolygonShape();
-		floorfix.shape = floorshape;
-		
-		BodyDef floorbody = new BodyDef();
-		floorbody.position = new Vec2(20.0f, -20f);
-		floorfix.friction = 100f;
-		Body floor = this.world.createBody(floorbody);
-		
-		
-		 floorshape.setAsBox(1000.0f, 0.25f,new Vec2(-20.0f,10.0f),0.00f);
-         floor.createFixture(floorshape, 0);
-        
-       
-         
-		
-	// Wheels
-		CircleShape shape = new CircleShape();
-		shape.m_radius = 1.0f;
-		BodyDef wheelbody1 = new BodyDef();
-		wheelbody1.type = BodyType.DYNAMIC;
-		wheelbody1.position.set(-2.0f, -9.0f);
-		Body wheel1_attachment = this.world.createBody(wheelbody1);
-		wheel1_attachment.createFixture(shape, 2.0f);
-		
-		
-		BodyDef wheelbody2 = new BodyDef();
-		wheelbody2.type = BodyType.DYNAMIC;
-		wheelbody2.position.set(2.0f, -9.0f);
-		Body wheel2_attachment = this.world.createBody(wheelbody2);
-		wheel2_attachment.createFixture(shape, 2.0f);
-		
-	// Frame
-		
-		FixtureDef framefix = new FixtureDef();
-	    PolygonShape frameshape = new PolygonShape();
-	    frameshape.setAsBox(2f, 0.125f);
-	    framefix.shape = frameshape;
-	    framefix.density = 25.0f;
-
-	    BodyDef framebody = new BodyDef();
-	    framebody.type = BodyType.DYNAMIC;
-	    framebody.position = new Vec2(0.0f,-9.0f);
-	    Body frame_attachment = this.world.createBody(framebody);
-	    this.BikeFrame = frame_attachment.createFixture(framefix);
-	    
-	    RevoluteJointDef revJoint1 = new RevoluteJointDef();
-	    RevoluteJointDef revJoint2 = new RevoluteJointDef();
-	    revJoint1.initialize(frame_attachment,wheel1_attachment, new Vec2(-2.0f, -9.0f));
-	    revJoint2.initialize(frame_attachment,wheel2_attachment, new Vec2(2.0f, -9.0f));
-	    revJoint1.maxMotorTorque = 100.f;
-	    revJoint1.enableMotor = true;
-	    revJoint1.motorSpeed = -200.0f;
-	    this.revJointRear = this.world.createJoint(revJoint1);
-	    
-	   this.world.createJoint(revJoint2);
-		return floor;
+				FixtureDef floorfix = new FixtureDef();
+				PolygonShape floorshape = new PolygonShape();
+				floorfix.shape = floorshape;
 				
+				BodyDef floorbody = new BodyDef();
+				floorbody.position = new Vec2(20.0f, -20f);
+				floorfix.friction = 10f;
+				floorfix.density = 0;
+				floorfix.restitution = 0;
+				
+				Body floor = this.world.createBody(floorbody);
+				
+//				// Top
+//				floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,43.125f),0.00f);
+//			    floor.createFixture(floorfix);
+//			    // Right
+//			    floorshape.setAsBox(0.125f, 28.125f,new Vec2(30.0f,15.0f),0.00f);
+//			    floor.createFixture(floorfix);
+			    //Bottom
+			    floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,-13.125f),0.00f);
+			    floor.createFixture(floorfix);
+			    //Left
+			    floorshape.setAsBox(0.125f, 28.125f,new Vec2(-70.0f,15.0f),0.00f);
+			    floor.createFixture(floorfix);
+			    
+			    floorshape.setAsBox(2.83f, 0.125f,new Vec2(-31.5f,-11.0f),0.785f);
+			    floor.createFixture(floorfix);
+			    floorshape.setAsBox(3.16f, 0.125f,new Vec2(-26.67f,-8.0f),(float) Math.tan(1.0/3.0));
+			    floor.createFixture(floorfix);
+			    floorshape.setAsBox(15.00f, 0.125f,new Vec2(-9.0f,-7.0f),0.00f);
+			    floor.createFixture(floorfix);
+			    floorshape.setAsBox(16.00f, 0.125f,new Vec2(17.0f,3.5f),45.00f * DegtoRad);
+			    floor.createFixture(floorfix);
+			     
+			    
+			// Wheels
+			     
+			    FixtureDef wheelfix = new FixtureDef();
+				CircleShape shape = new CircleShape();
+				shape.m_radius = .75f;
+				wheelfix.friction = 10f;
+				wheelfix.density = 50f;
+				wheelfix.restitution = 0.1f;
+				wheelfix.shape = shape;
+				
+				
+				BodyDef wheelbody1 = new BodyDef();
+				wheelbody1.type = BodyType.DYNAMIC;
+				wheelbody1.position.set(-48.0f, -32.0f);
+				Body wheel1_attachment = this.world.createBody(wheelbody1);
+				this.RearWheelFrame = wheel1_attachment.createFixture(wheelfix);
+				
+				BodyDef wheelbody2 = new BodyDef();
+				wheelbody2.type = BodyType.DYNAMIC;
+				wheelbody2.position.set(-46.0f, -32.0f);
+				Body wheel2_attachment = this.world.createBody(wheelbody2);
+				this.FrontWheelFrame = wheel2_attachment.createFixture(wheelfix);
+				
+			// Frame
+				
+				FixtureDef framefix = new FixtureDef();
+			    PolygonShape frameshape = new PolygonShape();
+			    frameshape.setAsBox(1f, 0.125f);
+			    framefix.density = 50.0f;
+			    framefix.shape = frameshape;
+
+			    BodyDef framebody = new BodyDef();
+			    framebody.type = BodyType.DYNAMIC;
+			    framebody.position = new Vec2(-47.0f,-32.0f);
+			    Body frame_attachment = this.world.createBody(framebody);
+			    this.BikeFrame = frame_attachment.createFixture(framefix);
+			    
+			    RevoluteJointDef revJoint1 = new RevoluteJointDef();
+			    RevoluteJointDef revJoint2 = new RevoluteJointDef();
+			    revJoint1.initialize(frame_attachment,wheel1_attachment, new Vec2(-48.0f, -32.0f));
+			    revJoint2.initialize(frame_attachment,wheel2_attachment, new Vec2(-46.0f, -32.0f));
+			    revJoint1.maxMotorTorque = 1000.0f;
+			    revJoint1.enableMotor = true;
+			    revJoint1.motorSpeed = -25.0f;
+			    this.revJointRear = (RevoluteJoint) this.world.createJoint(revJoint1);
+			    this.world.createJoint(revJoint2);
+			    return floor;
 			}
 
-
-	/**
-	 * Turns the motor on the back wheel of the bike
-	 *
-	 */
-	public void motorStart() {
-		
-		
-	}
 	
 	public double getBikeXPostion() {
 		Vec2 position = this.BikeFrame.getBody().getPosition();
@@ -129,14 +148,78 @@ public class PhysicsEngine {
 	
 	public double getBikeYPostion() {
 		Vec2 position = this.BikeFrame.getBody().getPosition();
-		return position.x;
+		return position.y;
 	}
+	public void setUptoTrue(){
+		this.up = true;
+	}
+	public void setUptoFalse(){
+		this.up = false;
+	}
+		
+	public void setDowntoTrue(){
+		this.down = true;
+	}
+	public void setDowntoFalse(){
+		this.down = false;
+	}
+	
 	/**
 	 * TODO Put here a description of what this method does.
 	 *
 	 */
 	public void step() {
 		this.world.step((1.0f/60.0f),8,3);
+		if (this.up && this.down){
+			this.revJointRear.setMotorSpeed(0);
+		} else if (this.up){
+			this.revJointRear.setMotorSpeed(-25);
+		} else if (this.down){
+			this.revJointRear.setMotorSpeed(25);
+		} else {
+			this.revJointRear.setMotorSpeed(0);
+		}
 	}
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	public double getBikeFrontWheelx() {
+		return this.FrontWheelFrame.getBody().getPosition().x;
+	}
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	public double getBikeFrontWheely() {
+		return this.FrontWheelFrame.getBody().getPosition().x;
+	}
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	public double getBikeRearWheelx() {
+		return this.FrontWheelFrame.getBody().getPosition().x;
+	}
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	public double getBikeRearWheely() {
+		return this.FrontWheelFrame.getBody().getPosition().x;
+	}
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 */
+	public void motorStart() {
+		// TODO Auto-generated method stub.
+		
+	}
+	
 	
 }
