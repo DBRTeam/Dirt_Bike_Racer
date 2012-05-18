@@ -17,6 +17,7 @@ import java.util.StringTokenizer;
  */
 public class Session {
 	public Bike bike;
+	public int levelNum;
 	private ArrayList<Point2D.Double> parsedLevel;
 	public PhysicsEngine physics;
 	private static final double xSCALE = 8.1;
@@ -35,11 +36,12 @@ public class Session {
 	 *
 	 * @param level
 	 */
-	public Session(File level){
+	public Session(File level, int levelnum){
 		this.bike = new Bike();
+		this.levelNum = levelnum;
 		this.bike.UpdateVector(2,0);
 		this.parsedLevel = parseLevel(level);
-		this.physics = new PhysicsEngine(1);
+		this.physics = new PhysicsEngine(levelnum);
 	}
 
 	/**

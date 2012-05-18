@@ -101,7 +101,6 @@ public class GUI extends JFrame{
 						System.out.println(GUI.this.messages.getString("Title"));
 						englishButton.setSelected(true);
 						spanishButton.setSelected(false);
-			
 					}
 				});
 		this.spanishButton.addActionListener(new ActionListener() {	
@@ -118,7 +117,6 @@ public class GUI extends JFrame{
 				System.out.println(GUI.this.messages.getString("Title"));
 				englishButton.setSelected(false);
 				spanishButton.setSelected(true);
-						
 			}
 		});
 		playButton.addActionListener(new ActionListener() {

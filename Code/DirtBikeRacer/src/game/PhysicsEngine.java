@@ -65,7 +65,7 @@ public class PhysicsEngine {
 				
 				BodyDef floorbody = new BodyDef();
 				floorbody.position = new Vec2(20.0f, -20f);
-				floorfix.friction = 10f;
+				floorfix.friction = 12f;
 				floorfix.density = 0;
 				floorfix.restitution = 0;
 				
@@ -96,39 +96,6 @@ public class PhysicsEngine {
 			    
 				} else if (level == 2){
 			    
-//				// Top
-//				floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,43.125f),0.00f);
-//			    floor.createFixture(floorfix);
-//			    // Right
-//			    floorshape.setAsBox(0.125f, 28.125f,new Vec2(30.0f,15.0f),0.00f);
-//			    floor.createFixture(floorfix);
-			    //Bottom
-			    floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,-13.125f),0.00f);
-			    floor.createFixture(floorfix);
-			    //Left
-			    floorshape.setAsBox(0.125f, 28.125f,new Vec2(-70.0f,15.0f),0.00f);
-			    floor.createFixture(floorfix);
-			    
-			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-50.5f,-10.0f),45.0f * DegtoRad);
-			    floor.createFixture(floorfix);
-			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-43.5f,-10.0f),135.0f * DegtoRad);
-			    floor.createFixture(floorfix);
-			    
-			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-35.5f,-13.0f),45.0f * DegtoRad);
-			    floor.createFixture(floorfix);
-			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-28.5f,-13.0f),135.0f * DegtoRad);
-			    floor.createFixture(floorfix);
-			    
-			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-26.5f,-11.0f),45.0f * DegtoRad);
-			    floor.createFixture(floorfix);
-			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-19.5f,-11.0f),135.0f * DegtoRad);
-			    floor.createFixture(floorfix);
-			    
-			    floorshape.setAsBox(10.0f, 0.125f,new Vec2(10.5f,-8.5f),30.0f * DegtoRad);
-			    floor.createFixture(floorfix);
-			    
-				} else {
-
 //					// Top
 //					floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,43.125f),0.00f);
 //				    floor.createFixture(floorfix);
@@ -156,6 +123,39 @@ public class PhysicsEngine {
 				    floor.createFixture(floorfix);
 				    floorshape.setAsBox(5.0f, 0.125f,new Vec2(1.75f,-6.0f),0.0f);
 				    floor.createFixture(floorfix);
+				    
+				} else {
+				    
+//					// Top
+//					floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,43.125f),0.00f);
+//				    floor.createFixture(floorfix);
+//				    // Right
+//				    floorshape.setAsBox(0.125f, 28.125f,new Vec2(30.0f,15.0f),0.00f);
+//				    floor.createFixture(floorfix);
+				    //Bottom
+				    floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,-13.125f),0.00f);
+				    floor.createFixture(floorfix);
+				    //Left
+				    floorshape.setAsBox(0.125f, 28.125f,new Vec2(-70.0f,15.0f),0.00f);
+				    floor.createFixture(floorfix);
+				    
+				    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-50.5f,-10.0f),45.0f * DegtoRad);
+				    floor.createFixture(floorfix);
+				    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-43.5f,-10.0f),135.0f * DegtoRad);
+				    floor.createFixture(floorfix);
+				    
+				    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-35.5f,-13.0f),45.0f * DegtoRad);
+				    floor.createFixture(floorfix);
+				    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-28.5f,-13.0f),135.0f * DegtoRad);
+				    floor.createFixture(floorfix);
+				    
+				    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-26.5f,-11.0f),45.0f * DegtoRad);
+				    floor.createFixture(floorfix);
+				    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-19.5f,-11.0f),135.0f * DegtoRad);
+				    floor.createFixture(floorfix);
+				    
+				    floorshape.setAsBox(10.0f, 0.125f,new Vec2(10.5f,-8.5f),30.0f * DegtoRad);
+				    floor.createFixture(floorfix);
 			    }
 				
 			// Wheels
@@ -163,7 +163,7 @@ public class PhysicsEngine {
 			    FixtureDef wheelfix = new FixtureDef();
 				CircleShape shape = new CircleShape();
 				shape.m_radius = .75f;
-				wheelfix.friction = 10f;
+				wheelfix.friction = 12f;
 				wheelfix.density = 50f;
 				wheelfix.restitution = 0.1f;
 				wheelfix.shape = shape;
