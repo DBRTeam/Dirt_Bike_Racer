@@ -43,18 +43,17 @@ public class PhysicsEngine {
 	 *
 	 * @param parsedLevel
 	 */
-	public PhysicsEngine(ArrayList<Double> parsedLevel) {
+	public PhysicsEngine(int level) {
 		this.world = new World(new Vec2(0.0f, -10.0f), true);
-		this.level = buildLevel1(parsedLevel);
+		this.level = buildLevel(level);
 	}
-
+	
 	/**
 	 * TODO Put here a description of what this method does.
 	 *
-	 * @param parsedLevel
 	 * @return 
 	 */
-	private Body buildLevel1(ArrayList<Double> parsedLevel){
+	private Body buildLevel(int level){
 		// Floor
 				FixtureDef floorfix = new FixtureDef();
 				PolygonShape floorshape = new PolygonShape();
@@ -68,6 +67,7 @@ public class PhysicsEngine {
 				
 				Body floor = this.world.createBody(floorbody);
 				
+				if (level == 1){
 //				// Top
 //				floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,43.125f),0.00f);
 //			    floor.createFixture(floorfix);
@@ -89,8 +89,71 @@ public class PhysicsEngine {
 			    floor.createFixture(floorfix);
 			    floorshape.setAsBox(16.00f, 0.125f,new Vec2(17.0f,3.5f),45.00f * DegtoRad);
 			    floor.createFixture(floorfix);
-			     
 			    
+				} else if (level == 2){
+			    
+//				// Top
+//				floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,43.125f),0.00f);
+//			    floor.createFixture(floorfix);
+//			    // Right
+//			    floorshape.setAsBox(0.125f, 28.125f,new Vec2(30.0f,15.0f),0.00f);
+//			    floor.createFixture(floorfix);
+			    //Bottom
+			    floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,-13.125f),0.00f);
+			    floor.createFixture(floorfix);
+			    //Left
+			    floorshape.setAsBox(0.125f, 28.125f,new Vec2(-70.0f,15.0f),0.00f);
+			    floor.createFixture(floorfix);
+			    
+			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-50.5f,-10.0f),45.0f * DegtoRad);
+			    floor.createFixture(floorfix);
+			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-43.5f,-10.0f),135.0f * DegtoRad);
+			    floor.createFixture(floorfix);
+			    
+			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-35.5f,-13.0f),45.0f * DegtoRad);
+			    floor.createFixture(floorfix);
+			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-28.5f,-13.0f),135.0f * DegtoRad);
+			    floor.createFixture(floorfix);
+			    
+			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-26.5f,-11.0f),45.0f * DegtoRad);
+			    floor.createFixture(floorfix);
+			    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-19.5f,-11.0f),135.0f * DegtoRad);
+			    floor.createFixture(floorfix);
+			    
+			    floorshape.setAsBox(10.0f, 0.125f,new Vec2(10.5f,-8.5f),30.0f * DegtoRad);
+			    floor.createFixture(floorfix);
+			    
+				} else {
+
+					// Top
+					floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,43.125f),0.00f);
+				    floor.createFixture(floorfix);
+				    // Right
+				    floorshape.setAsBox(0.125f, 28.125f,new Vec2(30.0f,15.0f),0.00f);
+				    floor.createFixture(floorfix);
+				    //Bottom
+				    floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,-13.125f),0.00f);
+				    floor.createFixture(floorfix);
+				    //Left
+				    floorshape.setAsBox(0.125f, 28.125f,new Vec2(-70.0f,15.0f),0.00f);
+				    floor.createFixture(floorfix);
+				    
+				    floorshape.setAsBox(20.0f, 0.125f,new Vec2(-45.0f,-1.5f),35.0f * DegtoRad);
+				    floor.createFixture(floorfix);
+				    floorshape.setAsBox(6.0f, 0.125f,new Vec2(-22.5f,10.0f),0.0f);
+				    floor.createFixture(floorfix);
+				    floorshape.setAsBox(4.0f, 0.125f,new Vec2(-16.0f,6.0f),100.0f * DegtoRad);
+				    floor.createFixture(floorfix);
+				    floorshape.setAsBox(4.0f, 0.125f,new Vec2(-4.0f,-2.0f),100.0f * DegtoRad);
+				    floor.createFixture(floorfix);
+				    floorshape.setAsBox(4.0f, 0.125f,new Vec2(7.5f,-10.0f),100.0f * DegtoRad);
+				    floor.createFixture(floorfix);
+				    floorshape.setAsBox(5.0f, 0.125f,new Vec2(-10.0f,2.0f),0.0f);
+				    floor.createFixture(floorfix);
+				    floorshape.setAsBox(5.0f, 0.125f,new Vec2(1.75f,-6.0f),0.0f);
+				    floor.createFixture(floorfix);
+			    }
+				
 			// Wheels
 			     
 			    FixtureDef wheelfix = new FixtureDef();
@@ -121,6 +184,7 @@ public class PhysicsEngine {
 			    frameshape.setAsBox(1f, 0.125f);
 			    framefix.density = 50.0f;
 			    framefix.shape = frameshape;
+			    
 
 			    BodyDef framebody = new BodyDef();
 			    framebody.type = BodyType.DYNAMIC;
@@ -194,7 +258,7 @@ public class PhysicsEngine {
 	 * @return
 	 */
 	public double getBikeFrontWheely() {
-		return this.FrontWheelFrame.getBody().getPosition().x;
+		return this.FrontWheelFrame.getBody().getPosition().y;
 	}
 	/**
 	 * TODO Put here a description of what this method does.
@@ -202,7 +266,7 @@ public class PhysicsEngine {
 	 * @return
 	 */
 	public double getBikeRearWheelx() {
-		return this.FrontWheelFrame.getBody().getPosition().x;
+		return this.RearWheelFrame.getBody().getPosition().x;
 	}
 	/**
 	 * TODO Put here a description of what this method does.
@@ -210,7 +274,7 @@ public class PhysicsEngine {
 	 * @return
 	 */
 	public double getBikeRearWheely() {
-		return this.FrontWheelFrame.getBody().getPosition().x;
+		return this.RearWheelFrame.getBody().getPosition().y;
 	}
 	/**
 	 * TODO Put here a description of what this method does.
