@@ -1,4 +1,0 @@
-At the end of the week the user should see the basic implementation for the game.  They will be able
-to see a level, dirtbike, and integrated physics enginer, along with being able to input commands.
-This will allow the user to control the bike throughout the level.  Also the win screen will be
-implemented. 

@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/jbox2d-library" element2="/jbox2d-read-only" element3="/jbox2d-serialization" element4="/jbox2d-testbed" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1335766533393"/>
-</session>

@@ -28,6 +28,10 @@ public class Bike {
 	 * The orientation of the bike, in degrees.
 	 */
 	private double rotation;
+	private double xPositionFW;
+	private double yPositionFW;
+	private int xPositionRW;
+	private int yPositionRW;
 	
 	public Bike(){
 		this.xPosition = 0;
@@ -35,6 +39,10 @@ public class Bike {
 		this.directionVector = 0;
 		this.speedVector = 0;
 		this.rotation = 0;
+		this.xPositionFW = 0;
+		this.yPositionFW = 0;
+		this.xPositionRW = 0;
+		this.yPositionRW = 0;
 	}
 
 	/**
@@ -86,6 +94,60 @@ public class Bike {
 
 	public double getRotation(){
 		return this.rotation;
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	public double getXRearWheel() {
+		return this.xPositionRW;
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	public double getXFrontWheel() {
+		return this.xPositionFW;
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	public int getYRearWheel() {
+		return this.yPositionRW;
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @return
+	 */
+	public double getYFrontWheel() {
+		return this.yPositionFW;
+	}
+
+	/**
+	 * TODO Put here a description of what this method does.
+	 * @param newFrontWheely 
+	 * @param newFrontWheelx 
+	 *
+	 */
+	public void UpdatePositionFW(double newFrontWheelx, double newFrontWheely) {
+		this.xPositionFW = newFrontWheelx;
+		this.yPositionFW = newFrontWheely;
+		
+	}
+	
+	public void UpdatePositionRW(double newRearWheelx, double newRearWheely) {
+		this.xPositionFW = newRearWheelx;
+		this.yPositionFW = newRearWheely;
+		
 	}
 	
 }

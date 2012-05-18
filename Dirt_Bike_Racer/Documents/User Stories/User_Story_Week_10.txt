@@ -1,7 +1,0 @@
-At the end of the week the user will be able to play a fully functional game. 
-They will be able to select what language they want the game to be played in. 
-They will be able to read instructions, as well as choose to start the game.
-Once in the game they will be able to control the dirt bike across a level, and
-see exactly how long it takes them to beat the level. Also they will be able 
-to experience a crash or win state.  Also once they have beaten all three levels the user
-will be able to see that they beat the game.  

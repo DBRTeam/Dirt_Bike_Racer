@@ -1,4 +1,0 @@
-At the end of the week the user will be able to add a file to the system to allow the creation of a level.
-The file will have to be in a certain format.  Also the user will be able to test if the bike
-class is in a crash state or not.  The user will be able to have the bike class interact with the
-level class.  

@@ -108,19 +108,10 @@ public class LevelFrame extends JPanel{
 					start = System.currentTimeMillis();
 		        }
 		        if(keyText == "Up"){
-		        	double oldSpeed = currentSession.getBike().getSpeed();
-		        	double bikeX = currentSession.getBike().getX();
-		        	double lastPoint = currentSession.getLevel().get(currentSession.getLevel().size()-1).x;
-		        	if((oldSpeed <= 10)&&(bikeX < lastPoint)){
-		        		currentSession.getBike().UpdateVector(oldSpeed+1,0);
-		        	}
+		        	currentSession.physics.setUptoTrue();
 		        }
 		        if(keyText == "Down"){
-		        	double oldSpeed = currentSession.getBike().getSpeed();
-		        	double bikeX = currentSession.getBike().getX();
-		        	if((oldSpeed >= -10)&&(bikeX > 0)){
-		        		currentSession.getBike().UpdateVector(oldSpeed-1,0);
-		        	}
+		        	currentSession.physics.setDowntoTrue();
 		        }
 		        if(keyText == "Left"){
 		        	double oldRotation = currentSession.getBike().getRotation();
@@ -134,7 +125,14 @@ public class LevelFrame extends JPanel{
 
 			@Override
 			public void keyReleased(KeyEvent k) {
-				// 
+				int keyCode = k.getKeyCode();
+		        String keyText = KeyEvent.getKeyText(keyCode);
+		        if(keyText == "Up"){
+		        	currentSession.physics.setUptoFalse();
+		        }
+		        if(keyText == "Down"){
+		        	currentSession.physics.setDowntoFalse();
+		        }
 			}
 
 			@Override

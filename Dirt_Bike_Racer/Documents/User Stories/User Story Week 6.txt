@@ -1,5 +1,0 @@
-At the end of the week the user will be able to give the bike a new position, 
-a new vector, and check to see where the bike is and what vector the bike is at.
-Also the user will be able to see if the bike is in the crashed state due to force from 
-a fall or the vector the bike is at.  Also the user will be able to start a game and session
-state. 
