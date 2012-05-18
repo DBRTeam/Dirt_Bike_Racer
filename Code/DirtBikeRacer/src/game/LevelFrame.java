@@ -80,6 +80,9 @@ public class LevelFrame extends JPanel{
 				while(currentSession.getBike().getXFrontWheel() < length){
 					repaint();
 					currentSession.moveBike();
+					if (currentSession.bike.getRiderY() < currentSession.getTrackY(currentSession.bike.getRiderX())){
+						currentSession.bikeCrash();
+					}
 					
 					try {
 						Thread.sleep(50);
