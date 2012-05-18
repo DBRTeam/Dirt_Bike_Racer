@@ -29,11 +29,11 @@ public class PhysicsEngine {
 	private Fixture BikeFrame;
 	private Fixture FrontWheelFrame;
 	private Fixture RearWheelFrame;
-	private boolean up;
-	private boolean down;
+	public boolean up;
+	public boolean down;
 	private Fixture RiderFrame;
-	private boolean right;
-	private boolean left;
+	public boolean right;
+	public boolean left;
 	private static final float DegtoRad = 0.0174532935199432957f;
 	/**
 	 * Creates a simulation with no level
@@ -320,7 +320,7 @@ public class PhysicsEngine {
 	 *
 	 */
 	public void motorStart() {
-		this.revJointRear.setMotorSpeed(25);
+		this.revJointRear.setMotorSpeed(-25);
 	}
 	public double getBikeRiderx() {
 		return this.RiderFrame.getBody().getPosition().x;

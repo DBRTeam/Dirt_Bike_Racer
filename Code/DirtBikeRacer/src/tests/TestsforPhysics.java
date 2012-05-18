@@ -6,6 +6,9 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.util.Calendar;
 import game.PhysicsEngine;
@@ -37,7 +40,7 @@ public class TestsforPhysics {
 	public void testPhysicsEngineisCreatedbySession() {
 		String FileName = "testLevel.txt";
 		File testFile = new File(FileName);
-		Session test = new Session(testFile);
+		Session test = new Session(testFile,1);
 		assertEquals(test.physics.getClass(), PhysicsEngine.class);
 	}
 
@@ -49,7 +52,7 @@ public class TestsforPhysics {
 	public void testPhysicsEngineReadsFromFile() {
 		String FileName = "testLevel.txt";
 		File testFile = new File(FileName);
-		Session test = new Session(testFile);
+		Session test = new Session(testFile,1);
 		assertTrue(test.physics.level != null);
 	}
 	
@@ -59,39 +62,18 @@ public class TestsforPhysics {
 	 */
 	@Test
 	public void testPhysicsEnginetracksBikeMovement() {
-		String FileName = "testLevel.txt";
+		String FileName = "level1.txt";
 		File testFile = new File(FileName);
-		Session test = new Session(testFile);
-		double BikeX = test.getBike().getX();
-		double BikeY = test.getBike().getY();
-		test.physics.motorStart();
-		Calendar cal = Calendar.getInstance();
-		long TimetoWait = 5000;
-		while (cal.getTimeInMillis() < TimetoWait){
-			System.out.println("waiting...\n");
+		Session test = new Session(testFile,1);
+		double BikeX = test.getBikeXPosition();
+		test.physics.setUptoTrue();
+		for (int i = 0; i < 300; i++) {
+			test.physics.step();
 		}
-		assertTrue((BikeX != test.getBike().getX()) && (BikeY != test.getBike().getY()));
+		assertTrue((BikeX < test.getBikeXPosition()));
+		
+		
 	}
-	
-	/**
-	 * Makes sure that the bike's position is affected by wall
-	 *
-	 */
-	@Test
-	public void testPhysicsEnginetracksBikeStop() {
-		String FileName = "testLevelWall.txt";
-		File testFile = new File(FileName);
-		Session test = new Session(testFile);
-		double BikeY = test.getBike().getY();
-		test.physics.motorStart();
-		Calendar cal = Calendar.getInstance();
-		long TimetoWait = 5000;
-		while (cal.getTimeInMillis() < TimetoWait){
-			System.out.println("waiting...\n");
-		}
-		assertTrue((test.getBike().getX()) == 8.5 && (BikeY == test.getBike().getX()));
-	}
-	
 
 	/**
 	 * Makes sure that the bike's position is affected by a ramp
@@ -99,17 +81,15 @@ public class TestsforPhysics {
 	 */
 	@Test
 	public void testPhysicsEnginetracksBikeUpRamp() {
-		String FileName = "testLevelHill.txt";
+		String FileName = "level1.txt";
 		File testFile = new File(FileName);
-		Session test = new Session(testFile);
-		double BikeX = test.getBike().getX();
-		double BikeY = test.getBike().getY();
-		test.physics.motorStart();
-		Calendar cal = Calendar.getInstance();
-		long TimetoWait = 5000;
-		while (cal.getTimeInMillis() < TimetoWait){
-			System.out.println("waiting...\n");
+		Session test = new Session(testFile,1);
+		double BikeX = test.getBikeXPosition();
+		double BikeY = test.getBikeYPosition();
+		test.physics.setUptoTrue();
+		for (int i = 0; i < 300; i++) {
+			test.physics.step();
 		}
-		assertTrue((BikeX < test.getBike().getX()) && (BikeY < test.getBike().getY()));
+		assertTrue((BikeX < test.getBikeXPosition()) && (BikeY < test.getBikeYPosition()));
 	}
 }

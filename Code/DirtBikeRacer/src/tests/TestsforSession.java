@@ -43,18 +43,18 @@ public class TestsforSession {
 	 */
 	@Test
 	public void testTerrainIsReadInCorrectlyFromFile() {
-		String testFileName = "testLevel.txt";
+		String testFileName = "Level1.txt";
 		File testFile = new File(testFileName);
 		assertTrue(testFile.exists());
-		Session testSession = new Session(testFile);
+		Session testSession = new Session(testFile,1);
 		ArrayList<Point2D.Double> actualTrack = testSession.getLevel();
 		ArrayList<Point2D.Double> testTrack = new ArrayList<Point2D.Double>();
-		testTrack.add(new Point2D.Double(0,0));
-		testTrack.add(new Point2D.Double(4,6));
-		testTrack.add(new Point2D.Double(8,12));
-		testTrack.add(new Point2D.Double(12,12));
-		testTrack.add(new Point2D.Double(16,6));
-		testTrack.add(new Point2D.Double(20,0));
+		testTrack.add(new Point2D.Double(5,390));
+		testTrack.add(new Point2D.Double(275,390));
+		testTrack.add(new Point2D.Double(305,365));
+		testTrack.add(new Point2D.Double(360,345));
+		testTrack.add(new Point2D.Double(600,345));
+		testTrack.add(new Point2D.Double(800,175));
 		for (int i = 1; i < actualTrack.size(); i++) {
 			assertEquals(testTrack.get(i), actualTrack.get(i));
 		}
@@ -83,63 +83,6 @@ public class TestsforSession {
 		testTrack.add(new Point2D.Double(20,0));
 		for (int i = 1; i < actualTrack.size(); i++) {
 			assertEquals(testTrack.get(i), actualTrack.get(i));
-		}
-	}
-	
-	/**
-	 * Makes sure that the bike moves along the track based on its speed.
-	 */
-	@Test
-	public void testBikeXPositionIsTrackedCorrectly() {
-		ArrayList<Point2D.Double> track = new ArrayList<Point2D.Double>();
-		track.add(new Point2D.Double(0,0)); track.add(new Point2D.Double(1,0));
-		track.add(new Point2D.Double(2,1)); track.add(new Point2D.Double(3,1));
-		track.add(new Point2D.Double(4,0)); track.add(new Point2D.Double(5,0));
-		track.add(new Point2D.Double(6,2)); track.add(new Point2D.Double(7,1));
-		track.add(new Point2D.Double(8,0)); track.add(new Point2D.Double(9,0));
-		Session testSession = new Session(track);
-		testSession.getBike().UpdateVector(1, 0);
-		for (int i = 0; i < track.size()-1; i++) {
-			assertEquals(track.get(i).x, testSession.getBike().getX(), 0.001);
-			testSession.moveBike();
-		}
-	}
-
-	/**
-	 * Makes sure that the bike can follow the terrain of the level,
-	 * such as going up and down hills.
-	 */
-	@Test
-	public void testBikeYPositionIsTrackedCorrectly() {
-		ArrayList<Point2D.Double> track = new ArrayList<Point2D.Double>();
-		track.add(new Point2D.Double(0,0)); track.add(new Point2D.Double(1,0));
-		track.add(new Point2D.Double(2,1)); track.add(new Point2D.Double(3,1));
-		track.add(new Point2D.Double(4,0)); track.add(new Point2D.Double(5,0));
-		track.add(new Point2D.Double(6,2)); track.add(new Point2D.Double(7,1));
-		track.add(new Point2D.Double(8,0)); track.add(new Point2D.Double(9,0));
-		Session testSession = new Session(track);
-		testSession.getBike().UpdateVector(1, 0);
-		for (int i = 0; i < track.size() - 1; i++) {
-			assertEquals(track.get(i).y, testSession.getBike().getY(), 0.001);
-			testSession.moveBike();
-		}
-	}
-	
-	/**
-	 * Makes sure that the bike can follow a complex terrain.
-	 */
-	@Test
-	public void testMoreComplexTerrainMovement(){
-		String testFileName = "testLevel.txt";
-		File testFile = new File(testFileName);
-		Session testSession = new Session(testFile);
-		testSession.getBike().UpdateVector(1, 0);
-		for (int i = 0; i < 20; i++){
-			double bikeX = testSession.getBike().getX();
-			double bikeY = testSession.getBike().getY();
-			double trackY = testSession.getTrackY(bikeX);
-			assertEquals(bikeY, trackY, 0.001);
-			testSession.moveBike();
 		}
 	}
 	
@@ -228,10 +171,8 @@ public class TestsforSession {
 	public void testInputforUp() throws AWTException {
 		Session test = new Session();
 		Robot gamer = new Robot();
-		double original_position = test.bike.xPosition;
 		gamer.keyPress(KeyEvent.VK_UP);
-		double new_position = test.bike.xPosition;
-		assertTrue(original_position != new_position);
+		assertTrue(test.physics.up);
 	}
 	
 	/**
@@ -242,10 +183,8 @@ public class TestsforSession {
 	public void testInputforDown() throws AWTException {
 		Session test = new Session();
 		Robot gamer = new Robot();
-		double original_position = test.bike.xPosition;
-		gamer.keyPress(KeyEvent.VK_UP);
-		double new_position = test.bike.xPosition;
-		assertTrue(original_position != new_position);
+		gamer.keyPress(KeyEvent.VK_DOWN);
+		assertTrue(test.physics.down);
 	}
 	
 	/**
@@ -256,13 +195,8 @@ public class TestsforSession {
 	public void testInputforLeft() throws AWTException {
 		Session test = new Session();
 		Robot gamer = new Robot();
-		double xoriginal_position = test.bike.xPosition;
-		double yoriginal_position = test.bike.yPosition;
-		gamer.keyPress(KeyEvent.VK_UP);
 		gamer.keyPress(KeyEvent.VK_LEFT);
-		double xnew_position = test.bike.xPosition;
-		double ynew_position = test.bike.yPosition;
-		assertTrue((xoriginal_position != xnew_position) && (yoriginal_position != ynew_position));
+		assertTrue(test.physics.left);
 	}
 	
 	/**
@@ -273,13 +207,8 @@ public class TestsforSession {
 	public void testInputforRight() throws AWTException {
 		Session test = new Session();
 		Robot gamer = new Robot();
-		double xoriginal_position = test.bike.xPosition;
-		double yoriginal_position = test.bike.yPosition;
-		gamer.keyPress(KeyEvent.VK_UP);
 		gamer.keyPress(KeyEvent.VK_RIGHT);
-		double xnew_position = test.bike.xPosition;
-		double ynew_position = test.bike.yPosition;
-		assertTrue((xoriginal_position != xnew_position) && (yoriginal_position != ynew_position));
+		assertTrue(test.physics.right);
 	}
 
 }
