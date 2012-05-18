@@ -11,6 +11,8 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
+import java.io.File;
+
 import javax.swing.JPanel;
 
 /**
@@ -34,6 +36,7 @@ public class LevelFrame extends JPanel{
 		setFocusable(true);
 		addKeyListener(new Listener2());
 	}
+	
 		@Override
 		public void paintComponent(Graphics g){
 			super.paintComponent(g);
@@ -87,6 +90,10 @@ public class LevelFrame extends JPanel{
 				}
 				finish = System.currentTimeMillis();
 				System.out.println((finish-start)/1000.0);
+				File testFile = new File("testLevel.txt");
+				Game.currentSession = new Session(testFile);
+				currentSession = Game.currentSession;
+				repaint();
 			}
 		}
 		
