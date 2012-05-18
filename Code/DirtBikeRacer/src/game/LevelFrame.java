@@ -39,7 +39,8 @@ public class LevelFrame extends JPanel{
 			super.paintComponent(g);
 			Graphics2D graphics = (Graphics2D) g;
 			drawLevel(graphics);
-			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getX(), currentSession.getBike().getY()-25, 20, 20));
+			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getXFrontWheel(), currentSession.getBike().getYFrontWheel()-25, 5, 5));
+			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getXRearWheel(), currentSession.getBike().getYRearWheel()-25, 5, 5));
 		}
 		
 		/**
@@ -75,7 +76,7 @@ public class LevelFrame extends JPanel{
 			public void run() {
 				double length = currentSession.getLevel().get(currentSession.getLevel().size()-1).x;
 				
-				while(currentSession.getBike().getX() < length){
+				while(currentSession.getBike().getXFrontWheel() < length){
 					repaint();
 					currentSession.moveBike();
 					
