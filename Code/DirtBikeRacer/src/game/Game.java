@@ -16,9 +16,11 @@ public class Game {
 		String testFileName = "level1.txt";
 		File testFile = new File(testFileName);
 		currentSession = new Session(testFile, 1);
-		setGui(new GUI(currentSession));
+		new ChooseLanguage();
+
 	}
 	
+
 	public void setCurrentSession(Session s){
 		currentSession = s;
 	}

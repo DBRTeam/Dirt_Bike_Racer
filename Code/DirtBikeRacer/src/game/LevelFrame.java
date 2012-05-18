@@ -2,6 +2,7 @@ package game;
 
 import java.awt.BasicStroke;
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.event.KeyAdapter;
@@ -11,7 +12,9 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
+
 import java.io.File;
+import java.text.DecimalFormat;
 
 import javax.swing.JPanel;
 
@@ -29,7 +32,10 @@ public class LevelFrame extends JPanel{
 	private Session currentSession = Game.currentSession;
 	private long start = 0;
 	private long finish = 0;
-	private long totalTime = 0;
+	private double totalTime = 0;
+	private int level = 1;
+	private String winMessage = "";
+	private String timeMessage = "";
 	
 	public LevelFrame(){
 		super();
@@ -42,6 +48,14 @@ public class LevelFrame extends JPanel{
 		public void paintComponent(Graphics g){
 			super.paintComponent(g);
 			Graphics2D graphics = (Graphics2D) g;
+
+			Font font = new Font("Broadway", Font.PLAIN, 40);
+			graphics.setFont(font);
+			graphics.drawString(winMessage, 200, 100);
+			font = new Font("Broadway", Font.PLAIN, 30);
+			graphics.setFont(font);
+			graphics.drawString(timeMessage, 200, 160);
+			
 			drawLevel(graphics);
 			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getXFrontWheel(), currentSession.getBike().getYFrontWheel()-25, 5, 5));
 			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getXRearWheel(), currentSession.getBike().getYRearWheel()-25, 5, 5));
@@ -89,16 +103,28 @@ public class LevelFrame extends JPanel{
 					} catch (InterruptedException e){
 						System.out.println("error");
 					}
+					if(currentSession.bikeCrash()){
+						File testFile = currentSession.file;
+						Game.currentSession = new Session(testFile, level);
+						currentSession = Game.currentSession;
+					}
 				}
 				finish = System.currentTimeMillis();
-				totalTime += finish;
-				System.out.println((finish-start)/1000.0);
+				double levelTime = (finish-start)/1000.0;
+				totalTime += levelTime;
+				System.out.println(totalTime);
 				File testFile = new File("");
 				if(currentSession.levelNum == 1) testFile = new File("level2.txt");
 				if(currentSession.levelNum == 2) testFile = new File("level3.txt");
-				int nextLevel = currentSession.levelNum + 1;
-				Game.currentSession = new Session(testFile, nextLevel);
-				currentSession = Game.currentSession;
+				level = currentSession.levelNum + 1;
+				if(level < 4){
+					Game.currentSession = new Session(testFile, level);
+					currentSession = Game.currentSession;
+				}else {
+					winMessage = "Congratulations!";
+					DecimalFormat df = new DecimalFormat(".##");
+					timeMessage = "Total time: " + df.format(totalTime) + " seconds";
+				}
 				repaint();
 			}
 		}

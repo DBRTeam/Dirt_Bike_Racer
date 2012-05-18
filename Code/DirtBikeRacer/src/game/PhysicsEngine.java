@@ -1,8 +1,5 @@
 package game;
 
-import java.awt.geom.Point2D.Double;
-import java.util.ArrayList;
-
 import org.jbox2d.collision.shapes.CircleShape;
 import org.jbox2d.collision.shapes.PolygonShape;
 import org.jbox2d.common.Vec2;
@@ -53,7 +50,7 @@ public class PhysicsEngine {
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
+	 * Builds the level using the physics engine to use for the bike.
 	 *
 	 * @return 
 	 */
@@ -91,7 +88,7 @@ public class PhysicsEngine {
 			    floor.createFixture(floorfix);
 			    floorshape.setAsBox(15.00f, 0.125f,new Vec2(-9.0f,-7.0f),0.00f);
 			    floor.createFixture(floorfix);
-			    floorshape.setAsBox(16.00f, 0.125f,new Vec2(17.0f,3.5f),45.00f * DegtoRad);
+			    floorshape.setAsBox(20.00f, 0.125f,new Vec2(17.0f,3.5f),45.00f * DegtoRad);
 			    floor.createFixture(floorfix);
 			    
 				} else if (level == 2){
@@ -258,7 +255,7 @@ public class PhysicsEngine {
 	}
 	
 	/**
-	 * TODO Put here a description of what this method does.
+	 * Adds functionality for the bike during each update of the runnable.
 	 *
 	 */
 	public void step() {
@@ -284,7 +281,7 @@ public class PhysicsEngine {
 		}
 	}
 	/**
-	 * TODO Put here a description of what this method does.
+	 * Gets the x position of the front wheel.
 	 *
 	 * @return
 	 */
@@ -292,7 +289,7 @@ public class PhysicsEngine {
 		return this.FrontWheelFrame.getBody().getPosition().x;
 	}
 	/**
-	 * TODO Put here a description of what this method does.
+	 * Gets the y position of the front wheel.
 	 *
 	 * @return
 	 */
@@ -300,15 +297,14 @@ public class PhysicsEngine {
 		return this.FrontWheelFrame.getBody().getPosition().y;
 	}
 	/**
-	 * TODO Put here a description of what this method does.
-	 *
+	 *Gets the x position of the back wheel	 
 	 * @return
 	 */
 	public double getBikeRearWheelx() {
 		return this.RearWheelFrame.getBody().getPosition().x;
 	}
 	/**
-	 * TODO Put here a description of what this method does.
+	 * Gets the x position of the back wheel.
 	 *
 	 * @return
 	 */
@@ -316,7 +312,7 @@ public class PhysicsEngine {
 		return this.RearWheelFrame.getBody().getPosition().y;
 	}
 	/**
-	 * TODO Put here a description of what this method does.
+	 * gives the motor a base speed.
 	 *
 	 */
 	public void motorStart() {

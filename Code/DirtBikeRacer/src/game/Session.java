@@ -18,6 +18,7 @@ import java.util.StringTokenizer;
 public class Session {
 	public Bike bike;
 	public int levelNum;
+	public File file;
 	private ArrayList<Point2D.Double> parsedLevel;
 	public PhysicsEngine physics;
 	private static final double xSCALE = 8.1;
@@ -39,6 +40,7 @@ public class Session {
 	public Session(File level, int levelnum){
 		this.bike = new Bike();
 		this.levelNum = levelnum;
+		this.file = level;
 		this.bike.UpdateVector(2,0);
 		this.parsedLevel = parseLevel(level);
 		this.physics = new PhysicsEngine(levelnum);
@@ -195,9 +197,9 @@ public class Session {
 	 * @return
 	 */
 	public boolean bikeCrash(){
-		if(bike.getY() == getTrackY(bike.getX())){
-			if((Math.cos(Math.toRadians(bike.getRotation())) < Math.cos(Math.toRadians(15))))
-				return true;
+		if((this.physics.getBikeRidery() < this.physics.getBikeFrontWheely())&&
+				(this.physics.getBikeRidery() < this.physics.getBikeRearWheely())	){
+			return true;
 		}
 		return false;
 	}
