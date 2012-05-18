@@ -11,6 +11,8 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
+
+import javax.swing.JButton;
 import javax.swing.JPanel;
 
 /**
@@ -39,6 +41,8 @@ public class LevelFrame extends JPanel{
 			super.paintComponent(g);
 			Graphics2D graphics = (Graphics2D) g;
 			drawLevel(graphics);
+			JButton button = new JButton("Fuck this");
+			this.add(button);
 			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getX(), currentSession.getBike().getY()-25, 20, 20));
 		}
 		
