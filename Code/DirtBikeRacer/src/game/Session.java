@@ -17,6 +17,7 @@ import java.util.StringTokenizer;
  */
 public class Session {
 	public Bike bike;
+	public int levelNum;
 	private ArrayList<Point2D.Double> parsedLevel;
 	public PhysicsEngine physics;
 	private static final double xSCALE = 8.1;
@@ -35,11 +36,12 @@ public class Session {
 	 *
 	 * @param level
 	 */
-	public Session(File level){
+	public Session(File level, int levelnum){
 		this.bike = new Bike();
+		this.levelNum = levelnum;
 		this.bike.UpdateVector(2,0);
 		this.parsedLevel = parseLevel(level);
-		this.physics = new PhysicsEngine(this.parsedLevel);
+		this.physics = new PhysicsEngine(levelnum);
 	}
 
 	/**
@@ -107,8 +109,6 @@ public class Session {
 	 * Moves the bike based on its speed and the terrain.
 	 */
 	public void moveBike(){
-		double newX = (getBikeXPosition() + 47.00) * xSCALE ;
-		double newY = (400 - (getBikeYPosition() + 32.00) * ySCALE);
 		double newFrontWheelx = (getBikeFrontWheelXPosition() + 47.00) * xSCALE ;
 		double newFrontWheely = (400 - (getBikeFrontWheelYPosition() + 32.00) * ySCALE);
 		double newRearWheelx = (getBikeRearWheelXPosition() + 47.00) * xSCALE ;
@@ -116,7 +116,6 @@ public class Session {
 		this.physics.step();
 		this.physics.step();
 		this.physics.step();
-		bike.UpdatePosition(newX, newY);
 		bike.UpdatePositionFW(newFrontWheelx,newFrontWheely);
 		bike.UpdatePositionRW(newRearWheelx, newRearWheely);
 	}
@@ -136,7 +135,7 @@ public class Session {
 	 * @return
 	 */
 	private double getBikeFrontWheelYPosition() {
-		return this.physics.getBikeFrontWheelx();
+		return this.physics.getBikeFrontWheely();
 	}
 	
 	/**
@@ -145,7 +144,7 @@ public class Session {
 	 * @return
 	 */
 	private double getBikeRearWheelXPosition() {
-		return this.physics.getBikeFrontWheelx();
+		return this.physics.getBikeRearWheelx();
 	}
 	
 	/**
@@ -154,7 +153,7 @@ public class Session {
 	 * @return
 	 */
 	private double getBikeRearWheelYPosition() {
-		return this.physics.getBikeFrontWheelx();
+		return this.physics.getBikeRearWheely();
 	}
 
 	/**

@@ -30,8 +30,8 @@ public class Bike {
 	private double rotation;
 	private double xPositionFW;
 	private double yPositionFW;
-	private int xPositionRW;
-	private int yPositionRW;
+	private double xPositionRW;
+	private double yPositionRW;
 	
 	public Bike(){
 		this.xPosition = 0;
@@ -119,7 +119,7 @@ public class Bike {
 	 *
 	 * @return
 	 */
-	public int getYRearWheel() {
+	public double getYRearWheel() {
 		return this.yPositionRW;
 	}
 
@@ -145,8 +145,8 @@ public class Bike {
 	}
 	
 	public void UpdatePositionRW(double newRearWheelx, double newRearWheely) {
-		this.xPositionFW = newRearWheelx;
-		this.yPositionFW = newRearWheely;
+		this.xPositionRW = newRearWheelx;
+		this.yPositionRW = newRearWheely;
 		
 	}
 	

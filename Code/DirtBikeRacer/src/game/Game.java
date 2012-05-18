@@ -13,9 +13,9 @@ public class Game {
 	private static  GUI gui;
 	
 	public static void main(String[] args) {
-		String testFileName = "testLevel.txt";
+		String testFileName = "level1.txt";
 		File testFile = new File(testFileName);
-		currentSession = new Session(testFile);
+		currentSession = new Session(testFile, 1);
 		setGui(new GUI(currentSession));
 	}
 	

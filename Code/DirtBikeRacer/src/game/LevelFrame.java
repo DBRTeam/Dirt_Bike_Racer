@@ -29,6 +29,7 @@ public class LevelFrame extends JPanel{
 	private Session currentSession = Game.currentSession;
 	private long start = 0;
 	private long finish = 0;
+	private long totalTime = 0;
 	
 	public LevelFrame(){
 		super();
@@ -42,7 +43,8 @@ public class LevelFrame extends JPanel{
 			super.paintComponent(g);
 			Graphics2D graphics = (Graphics2D) g;
 			drawLevel(graphics);
-			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getX(), currentSession.getBike().getY()-25, 20, 20));
+			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getXFrontWheel(), currentSession.getBike().getYFrontWheel()-25, 5, 5));
+			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getXRearWheel(), currentSession.getBike().getYRearWheel()-25, 5, 5));
 		}
 		
 		/**
@@ -78,10 +80,9 @@ public class LevelFrame extends JPanel{
 			public void run() {
 				double length = currentSession.getLevel().get(currentSession.getLevel().size()-1).x;
 				
-				while(currentSession.getBike().getX() < length){
+				while(currentSession.getBike().getXFrontWheel() < length){
 					repaint();
 					currentSession.moveBike();
-					
 					try {
 						Thread.sleep(50);
 					} catch (InterruptedException e){
@@ -89,9 +90,13 @@ public class LevelFrame extends JPanel{
 					}
 				}
 				finish = System.currentTimeMillis();
+				totalTime += finish;
 				System.out.println((finish-start)/1000.0);
-				File testFile = new File("testLevel.txt");
-				Game.currentSession = new Session(testFile);
+				File testFile = new File("");
+				if(currentSession.levelNum == 1) testFile = new File("level2.txt");
+				if(currentSession.levelNum == 2) testFile = new File("level3.txt");
+				int nextLevel = currentSession.levelNum + 1;
+				Game.currentSession = new Session(testFile, nextLevel);
 				currentSession = Game.currentSession;
 				repaint();
 			}

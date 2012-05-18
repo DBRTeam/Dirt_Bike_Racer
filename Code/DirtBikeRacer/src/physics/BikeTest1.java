@@ -17,7 +17,9 @@ import org.jbox2d.testbed.framework.TestbedTest;
  *         Created May 4, 2012.
  */
 public class BikeTest1 extends TestbedTest {
-
+	
+	private static final float DegtoRad = 0.0174532935199432957f;
+	
 	@Override
 	public String getTestName() {
 		return "BikeTest1";
@@ -25,7 +27,7 @@ public class BikeTest1 extends TestbedTest {
 
 	@Override
 	public void initTest(boolean argDeserialized) {
-	if(argDeserialized){
+		if(argDeserialized){
 		      return;
 	}
 	// Floor
@@ -35,56 +37,102 @@ public class BikeTest1 extends TestbedTest {
 		
 		BodyDef floorbody = new BodyDef();
 		floorbody.position = new Vec2(20.0f, -20f);
-		floorfix.friction = 100f;
+		floorfix.friction = 10f;
+		floorfix.density = 0;
+		floorfix.restitution = 0;
+		
 		Body floor = getWorld().createBody(floorbody);
 		
-		 floorshape.setAsBox(0.25f, 5.0f,new Vec2(-30.0f,4.0f),1.00f);
-         floor.createFixture(floorshape, 0);
-         floorshape.setAsBox(0.25f, 5.0f,new Vec2(-20.0f,4.0f),1.5f);
-         floor.createFixture(floorshape, 0);
-         floorshape.setAsBox(0.25f, 5.0f,new Vec2(-10.0f,4.0f),1.55f);
-         floor.createFixture(floorshape, 0);
-		
+		// Top
+		floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,43.125f),0.00f);
+	    floor.createFixture(floorfix);
+	    // Right
+	    floorshape.setAsBox(0.125f, 28.125f,new Vec2(30.0f,15.0f),0.00f);
+	    floor.createFixture(floorfix);
+	    //Bottom
+	    floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,-13.125f),0.00f);
+	    floor.createFixture(floorfix);
+	    //Left
+	    floorshape.setAsBox(0.125f, 28.125f,new Vec2(-70.0f,15.0f),0.00f);
+	    floor.createFixture(floorfix);
+	    
+	    floorshape.setAsBox(2.83f, 0.125f,new Vec2(-31.5f,-11.0f),0.785f);
+	    floor.createFixture(floorfix);
+	    floorshape.setAsBox(3.16f, 0.125f,new Vec2(-26.67f,-8.0f),(float) Math.tan(1.0/3.0));
+	    floor.createFixture(floorfix);
+	    floorshape.setAsBox(15.00f, 0.125f,new Vec2(-9.0f,-7.0f),0.00f);
+	    floor.createFixture(floorfix);
+	    floorshape.setAsBox(16.00f, 0.125f,new Vec2(17.0f,3.5f),45.00f * DegtoRad);
+	    floor.createFixture(floorfix);
+	     
+	    
 	// Wheels
+	     
+	    FixtureDef wheelfix = new FixtureDef();
 		CircleShape shape = new CircleShape();
-		shape.m_radius = 1.0f;
+		shape.m_radius = .75f;
+		wheelfix.friction = 10f;
+		wheelfix.density = 50f;
+		wheelfix.restitution = 0.1f;
+		wheelfix.shape = shape;
+		
 		
 		BodyDef wheelbody1 = new BodyDef();
 		wheelbody1.type = BodyType.DYNAMIC;
-		wheelbody1.position.set(-2.0f, -9.0f);
+		wheelbody1.position.set(-48.0f, -32.0f);
 		Body wheel1_attachment = getWorld().createBody(wheelbody1);
-		wheel1_attachment.createFixture(shape, 2.0f);
+		wheel1_attachment.createFixture(wheelfix);
 		
 		BodyDef wheelbody2 = new BodyDef();
 		wheelbody2.type = BodyType.DYNAMIC;
-		wheelbody2.position.set(2.0f, -9.0f);
+		wheelbody2.position.set(-46.0f, -32.0f);
 		Body wheel2_attachment = getWorld().createBody(wheelbody2);
-		wheel2_attachment.createFixture(shape, 2.0f);
+		wheel2_attachment.createFixture(wheelfix);
 		
 	// Frame
 		
 		FixtureDef framefix = new FixtureDef();
 	    PolygonShape frameshape = new PolygonShape();
-	    frameshape.setAsBox(2f, 0.125f);
+	    frameshape.setAsBox(1f, 0.125f);
+	    framefix.density = 50.0f;
 	    framefix.shape = frameshape;
-	    framefix.density = 25.0f;
 
 	    BodyDef framebody = new BodyDef();
 	    framebody.type = BodyType.DYNAMIC;
-	    framebody.position = new Vec2(0.0f,-9.0f);
+	    framebody.position = new Vec2(-47.0f,-32.0f);
 	    Body frame_attachment = getWorld().createBody(framebody);
 	    frame_attachment.createFixture(framefix);
 	    
 	    RevoluteJointDef revJoint1 = new RevoluteJointDef();
 	    RevoluteJointDef revJoint2 = new RevoluteJointDef();
-	    revJoint1.initialize(frame_attachment,wheel1_attachment, new Vec2(-2.0f, -9.0f));
-	    revJoint2.initialize(frame_attachment,wheel2_attachment, new Vec2(2.0f, -9.0f));
-	    revJoint1.maxMotorTorque = 100.f;
-	    revJoint1.enableMotor = true;
-	    revJoint1.motorSpeed = -200.0f;
+	    revJoint1.initialize(frame_attachment,wheel1_attachment, new Vec2(-48.0f, -32.0f));
+	    revJoint2.initialize(frame_attachment,wheel2_attachment, new Vec2(-46.0f, -32.0f));
+	    revJoint1.maxMotorTorque = 1000.0f;
+	    revJoint1.enableMotor = false;
+	    revJoint1.motorSpeed = -5.0f;
 	    getWorld().createJoint(revJoint1);
 	    getWorld().createJoint(revJoint2);
-	      
-	}
+	    
+	 // Rider
+	    
+	    FixtureDef riderfix = new FixtureDef();
+	    PolygonShape ridershape = new PolygonShape();
+	    ridershape.setAsBox(0.0625f, 1.0f);
+	    riderfix.density = 20f;
+	    riderfix.shape = ridershape;
+	    riderfix.friction = 0f;
 
+	    BodyDef riderbody = new BodyDef();
+	    riderbody.type = BodyType.DYNAMIC;
+	    riderbody.position = new Vec2(-47.0f,-31.0f);
+	    Body rider_attachment = getWorld().createBody(riderbody);
+	    rider_attachment.createFixture(riderfix);
+	    
+	    RevoluteJointDef revJoint3 = new RevoluteJointDef();
+	    revJoint3.initialize(rider_attachment,frame_attachment, new Vec2(-47.0f, -32.0f));
+	    revJoint1.maxMotorTorque = 1000.0f;
+	    revJoint1.enableMotor = true;
+	    revJoint1.motorSpeed = -15.0f;
+	    getWorld().createJoint(revJoint3);  
+	}
 }
