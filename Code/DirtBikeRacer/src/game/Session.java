@@ -107,17 +107,31 @@ public class Session {
 	 * Moves the bike based on its speed and the terrain.
 	 */
 	public void moveBike(){
+		double newBikex = (getBikeXPosition() + 47.00) * xSCALE ;
+		double newBikey = (400 - (getBikeYPosition() + 36.00) * ySCALE);
 		double newFrontWheelx = (getBikeFrontWheelXPosition() + 47.00) * xSCALE ;
 		double newFrontWheely = (400 - (getBikeFrontWheelYPosition() + 32.00) * ySCALE);
 		double newRearWheelx = (getBikeRearWheelXPosition() + 47.00) * xSCALE ;
 		double newRearWheely = (400 - (getBikeRearWheelYPosition() + 32.00) * ySCALE);
-		this.physics.step();
-		this.physics.step();
-		this.physics.step();
-		bike.UpdatePositionFW(newFrontWheelx,newFrontWheely);
+		double newRiderx = (getBikeRiderXPosition() + 47.00) * xSCALE;
+		double newRidery = (400 - (getBikeRiderYPosition() + 36.00) * ySCALE);
+		bike.UpdatePosition(newBikex, newBikey);
+		bike.UpdatePositionFW(newFrontWheelx, newFrontWheely);
 		bike.UpdatePositionRW(newRearWheelx, newRearWheely);
+		bike.UpdatePositionRider(newRiderx, newRidery);
+		this.physics.step();
+		this.physics.step();
+		this.physics.step();
 	}
 	
+	private double getBikeRiderYPosition() {
+		return this.physics.getBikeRidery();
+	}
+
+	private double getBikeRiderXPosition() {
+		return this.physics.getBikeRiderx();
+	}
+
 	/**
 	 * TODO Put here a description of what this method does.
 	 *
@@ -180,7 +194,8 @@ public class Session {
 	 */
 	public boolean bikeCrash(){
 		if(bike.getY() == getTrackY(bike.getX())){
-			if((Math.cos(Math.toRadians(bike.getRotation())) < Math.cos(Math.toRadians(15))))return true;
+			if((Math.cos(Math.toRadians(bike.getRotation())) < Math.cos(Math.toRadians(15))))
+				return true;
 		}
 		return false;
 	}

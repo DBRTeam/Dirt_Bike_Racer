@@ -41,6 +41,7 @@ public class LevelFrame extends JPanel{
 			drawLevel(graphics);
 			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getXFrontWheel(), currentSession.getBike().getYFrontWheel()-25, 5, 5));
 			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getXRearWheel(), currentSession.getBike().getYRearWheel()-25, 5, 5));
+			graphics.draw(new Line2D.Double(currentSession.bike.getX(), currentSession.bike.getY(), currentSession.bike.getRiderX(), currentSession.bike.getRiderY()));
 		}
 		
 		/**
@@ -115,12 +116,10 @@ public class LevelFrame extends JPanel{
 		        	currentSession.physics.setDowntoTrue();
 		        }
 		        if(keyText == "Left"){
-		        	double oldRotation = currentSession.getBike().getRotation();
-		        	currentSession.getBike().UpdateRotation(oldRotation+10);
+		        	currentSession.physics.setLefttoTrue();
 		        }
 		        if(keyText == "Right"){
-		        	double oldRotation = currentSession.getBike().getRotation();
-		        	currentSession.getBike().UpdateRotation(oldRotation-10);
+		        	currentSession.physics.setRighttoTrue();
 		        }
 			}
 
@@ -133,6 +132,12 @@ public class LevelFrame extends JPanel{
 		        }
 		        if(keyText == "Down"){
 		        	currentSession.physics.setDowntoFalse();
+		        }
+		        if(keyText == "Left"){
+		        	currentSession.physics.setLefttoFalse();
+		        }
+		        if(keyText == "Right"){
+		        	currentSession.physics.setRighttoFalse();
 		        }
 			}
 

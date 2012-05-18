@@ -25,11 +25,15 @@ public class PhysicsEngine {
 	public World world;
 	public Body level;
 	public RevoluteJoint revJointRear;
+	public RevoluteJoint revJointRider;
 	private Fixture BikeFrame;
 	private Fixture FrontWheelFrame;
 	private Fixture RearWheelFrame;
 	private boolean up;
 	private boolean down;
+	private Fixture RiderFrame;
+	private boolean right;
+	private boolean left;
 	private static final float DegtoRad = 0.0174532935199432957f;
 	/**
 	 * Creates a simulation with no level
@@ -125,12 +129,12 @@ public class PhysicsEngine {
 			    
 				} else {
 
-					// Top
-					floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,43.125f),0.00f);
-				    floor.createFixture(floorfix);
-				    // Right
-				    floorshape.setAsBox(0.125f, 28.125f,new Vec2(30.0f,15.0f),0.00f);
-				    floor.createFixture(floorfix);
+//					// Top
+//					floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,43.125f),0.00f);
+//				    floor.createFixture(floorfix);
+//				    // Right
+//				    floorshape.setAsBox(0.125f, 28.125f,new Vec2(30.0f,15.0f),0.00f);
+//				    floor.createFixture(floorfix);
 				    //Bottom
 				    floorshape.setAsBox(50.00f, 0.125f,new Vec2(-20.0f,-13.125f),0.00f);
 				    floor.createFixture(floorfix);
@@ -201,7 +205,32 @@ public class PhysicsEngine {
 			    revJoint1.motorSpeed = -25.0f;
 			    this.revJointRear = (RevoluteJoint) this.world.createJoint(revJoint1);
 			    this.world.createJoint(revJoint2);
-			    return floor;
+			    
+			    
+			    
+				 // Rider
+				    
+				    FixtureDef riderfix = new FixtureDef();
+				    PolygonShape ridershape = new PolygonShape();
+				    ridershape.setAsBox(0.0625f, 2.0f);
+				    riderfix.density = 20f;
+				    riderfix.shape = ridershape;
+				    riderfix.friction = 0f;
+
+				    BodyDef riderbody = new BodyDef();
+				    riderbody.type = BodyType.DYNAMIC;
+				    riderbody.position = new Vec2(-47.0f,-30.0f);
+				    Body rider_attachment = this.world.createBody(riderbody);
+				    this.RiderFrame = rider_attachment.createFixture(riderfix);
+				    
+				    RevoluteJointDef revJoint3 = new RevoluteJointDef();
+				    revJoint3.initialize(rider_attachment,frame_attachment, new Vec2(-47.0f, -32.0f));
+				    revJoint3.maxMotorTorque = 2000.0f;
+				    revJoint3.enableMotor = true;
+				    revJoint3.motorSpeed = 15.0f;
+				    this.revJointRider = (RevoluteJoint) this.world.createJoint(revJoint3); 
+				    
+				    return floor;
 			}
 
 	
@@ -243,6 +272,16 @@ public class PhysicsEngine {
 		} else {
 			this.revJointRear.setMotorSpeed(0);
 		}
+		
+		if (this.left && this.right){
+			this.revJointRider.setMotorSpeed(0);
+		} else if (this.right){
+			this.revJointRider.setMotorSpeed(50);
+		} else if (this.left){
+			this.revJointRider.setMotorSpeed(-50);
+		} else {
+			this.revJointRider.setMotorSpeed(0);
+		}
 	}
 	/**
 	 * TODO Put here a description of what this method does.
@@ -281,8 +320,25 @@ public class PhysicsEngine {
 	 *
 	 */
 	public void motorStart() {
-		// TODO Auto-generated method stub.
-		
+		this.revJointRear.setMotorSpeed(25);
+	}
+	public double getBikeRiderx() {
+		return this.RiderFrame.getBody().getPosition().x;
+	}
+	public double getBikeRidery() {
+		return this.RiderFrame.getBody().getPosition().y;
+	}
+	public void setLefttoTrue() {
+		this.left = true;
+	}
+	public void setRighttoTrue() {
+		this.right = true;
+	}
+	public void setLefttoFalse() {
+		this.left = false;
+	}
+	public void setRighttoFalse() {
+		this.right = false;
 	}
 	
 	
