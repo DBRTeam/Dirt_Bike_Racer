@@ -12,7 +12,10 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
+
 import java.io.File;
+import java.text.DecimalFormat;
+
 import javax.swing.JPanel;
 
 /**
@@ -45,12 +48,14 @@ public class LevelFrame extends JPanel{
 		public void paintComponent(Graphics g){
 			super.paintComponent(g);
 			Graphics2D graphics = (Graphics2D) g;
+
 			Font font = new Font("Broadway", Font.PLAIN, 40);
 			graphics.setFont(font);
 			graphics.drawString(winMessage, 200, 100);
 			font = new Font("Broadway", Font.PLAIN, 30);
 			graphics.setFont(font);
 			graphics.drawString(timeMessage, 200, 160);
+			
 			drawLevel(graphics);
 			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getXFrontWheel(), currentSession.getBike().getYFrontWheel()-25, 5, 5));
 			graphics.draw(new Ellipse2D.Double(currentSession.getBike().getXRearWheel(), currentSession.getBike().getYRearWheel()-25, 5, 5));
@@ -117,7 +122,8 @@ public class LevelFrame extends JPanel{
 					currentSession = Game.currentSession;
 				}else {
 					winMessage = "Congratulations!";
-					timeMessage = "Total time: " + totalTime + " seconds";
+					DecimalFormat df = new DecimalFormat(".##");
+					timeMessage = "Total time: " + df.format(totalTime) + " seconds";
 				}
 				repaint();
 			}
