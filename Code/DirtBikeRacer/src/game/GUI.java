@@ -1,12 +1,9 @@
 package game;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.RenderingHints;
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -174,7 +171,6 @@ public class GUI extends JFrame{
 	    Font font = new Font("Broadway", Font.PLAIN, fontSize);
 	    
 	    this.graphics.setFont(font);
-	    //this.graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 	    if(this.aLocale.getCountry() == "US"){
 		    this.graphics.drawString(this.messages.getString("Bike"), 375, 100);
 		    this.graphics.drawString(this.messages.getString("Racer"), 410, 155);
