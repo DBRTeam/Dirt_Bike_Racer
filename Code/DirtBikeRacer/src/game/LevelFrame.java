@@ -12,7 +12,6 @@ import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 
-import javax.swing.JButton;
 import java.io.File;
 
 import javax.swing.JPanel;

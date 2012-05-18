@@ -6,9 +6,7 @@ package tests;
 import static org.junit.Assert.*;
 
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
+
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.Locale;
