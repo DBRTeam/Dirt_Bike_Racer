@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="11" version="2.0">
+<workbench progressCount="9" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="309" y="-8">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
-<coolbarLayout>
+<coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="103" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="99" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="130" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="141" y="22"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="103" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="103" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="153" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="206" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -29,47 +29,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PhysicsEngine.java" partName="PhysicsEngine.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Dirt_Bike_Racer/Code/DirtBikeRacer/src/game/PhysicsEngine.java" title="PhysicsEngine.java" tooltip="DirtBikeRacer/src/game/PhysicsEngine.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/game/PhysicsEngine.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6444" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="testLevel.txt" partName="testLevel.txt" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Dirt_Bike_Racer/Code/DirtBikeRacer/testLevel.txt" title="testLevel.txt" tooltip="DirtBikeRacer/testLevel.txt" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/testLevel.txt"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="50" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Session.java" partName="Session.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Dirt_Bike_Racer/Code/DirtBikeRacer/src/game/Session.java" title="Session.java" tooltip="DirtBikeRacer/src/game/Session.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/game/Session.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4185" selectionTopPixel="1611"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Game.java" partName="Game.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Dirt_Bike_Racer/Code/DirtBikeRacer/src/game/Game.java" title="Game.java" tooltip="DirtBikeRacer/src/game/Game.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/game/Game.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GUI.java" partName="GUI.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Dirt_Bike_Racer/Code/DirtBikeRacer/src/game/GUI.java" title="GUI.java" tooltip="DirtBikeRacer/src/game/GUI.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/game/GUI.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Bike.java" partName="Bike.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Dirt_Bike_Racer/Code/DirtBikeRacer/src/game/Bike.java" title="Bike.java" tooltip="DirtBikeRacer/src/game/Bike.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/game/Bike.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2881" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestsforPhysics.java" partName="TestsforPhysics.java" path="C:/Users/schuenjr/Documents/ROSE/CSSE_376/Dirt_Bike_Racer/Dirt_Bike_Racer/Code/DirtBikeRacer/src/tests/TestsforPhysics.java" title="TestsforPhysics.java" tooltip="DirtBikeRacer/src/tests/TestsforPhysics.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DirtBikeRacer/src/tests/TestsforPhysics.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="10" selectionOffset="1675" selectionTopPixel="780"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.jdt.ui.TypeHierarchy" partName="Type Hierarchy"/>
@@ -109,7 +72,7 @@
 <child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
-<child filterId="org.eclipse.m2e.MavenModuleFilter" isEnabled="false"/>
+<child filterId="org.eclipse.mylyn.java.ui.MembersFilter" isEnabled="false"/>
 </xmlDefinedFilters>
 </customFilters>
 </viewState>
@@ -150,6 +113,9 @@
 <alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
 <alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
 <show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
 <show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <show_view_action id="org.eclipse.jdt.ui.SourceView"/>
@@ -239,166 +205,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/game/PhysicsEngine.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/game/Session.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/game/GUI.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/game/LevelFrame.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/game/Bike.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DirtBikeRacer/src/tests/TestsforPhysics.java"/>
-</editors>
-<item historyLabel="GUI.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position info="not_deleted" x="3765" y="0"/>
-</item>
-<item historyLabel="PhysicsEngine.java" index="0">
-<position info="not_deleted" x="5198" y="0"/>
-</item>
-<item historyLabel="PhysicsEngine.java" index="0">
-<position info="not_deleted" x="5311" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position info="not_deleted" x="3749" y="0"/>
-</item>
-<item historyLabel="PhysicsEngine.java" index="0">
-<position info="not_deleted" x="3703" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position info="not_deleted" x="3749" y="0"/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="986" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="Session.java" index="1">
-<position info="not_deleted" x="5206" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="Session.java" index="1">
-<position info="not_deleted" x="5206" y="0"/>
-</item>
-<item historyLabel="Session.java" index="1">
-<position info="not_deleted" x="4154" y="0"/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="986" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position info="not_deleted" x="874" y="0"/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="566" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="1962" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="2120" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="2274" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="2433" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="2433" y="0"/>
-</item>
-<item historyLabel="GUI.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PhysicsEngine.java" index="0">
-<position info="not_deleted" x="3703" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="GUI.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="Session.java" index="1">
-<position info="not_deleted" x="3488" y="0"/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="2726" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="Session.java" index="1">
-<position info="not_deleted" x="3429" y="0"/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="2603" y="6"/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="2881" y="0"/>
-</item>
-<item historyLabel="Session.java" index="1">
-<position info="not_deleted" x="3006" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="GUI.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="Session.java" index="1">
-<position info="not_deleted" x="3006" y="0"/>
-</item>
-<item historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-<item historyLabel="Bike.java" index="4">
-<position info="not_deleted" x="2881" y="0"/>
-</item>
-<item historyLabel="Session.java" index="1">
-<position info="not_deleted" x="3675" y="0"/>
-</item>
-<item historyLabel="PhysicsEngine.java" index="0">
-<position info="not_deleted" x="5812" y="6"/>
-</item>
-<item historyLabel="PhysicsEngine.java" index="0">
-<position info="not_deleted" x="6406" y="0"/>
-</item>
-<item historyLabel="Session.java" index="1">
-<position info="not_deleted" x="4185" y="0"/>
-</item>
-<item historyLabel="TestsforPhysics.java" index="5">
-<position info="not_deleted" x="1675" y="10"/>
-</item>
-<item historyLabel="PhysicsEngine.java" index="0">
-<position info="not_deleted" x="6444" y="0"/>
-</item>
-<item active="true" historyLabel="LevelFrame.java" index="3">
-<position/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>

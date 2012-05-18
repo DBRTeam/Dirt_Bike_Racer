@@ -1,0 +1,62 @@
+[Box: ::game - ::<<Unknown>>::JFrame]
+X=689
+Y=40
+
+[Box: ::game - ::<<Unknown>>::JPanel]
+X=780
+Y=620
+
+[Box: ::game - ::<<Unknown>>::KeyAdapter]
+X=20
+Y=40
+
+[Box: ::game - ::<<Unknown>>::MouseAdapter]
+X=242
+Y=40
+
+[Box: ::game - ::<<Unknown>>::Runnable]
+X=483
+Y=250
+
+[Box: ::game - ::game::Bike]
+X=181
+Y=642
+
+[Box: ::game - ::game::Game]
+X=894
+Y=40
+
+[Box: ::game - ::game::GUI]
+X=729
+Y=250
+
+[Box: ::game - ::game::LevelFrame]
+X=768
+Y=701
+
+[Box: ::game - ::game::LevelFrame.BikeDrawer]
+X=484
+Y=40
+
+[Box: ::game - ::game::LevelFrame.Listener]
+X=261
+Y=250
+
+[Box: ::game - ::game::LevelFrame.Listener2]
+X=29
+Y=250
+
+[Box: ::game - ::game::PhysicsEngine]
+X=452
+Y=791
+
+[Box: ::game - ::game::Session]
+X=343
+Y=364
+
+[Diagram: ::game]
+OffsetX=0
+OffsetY=0
+Visibility=0
+ShowAssoc=1
+

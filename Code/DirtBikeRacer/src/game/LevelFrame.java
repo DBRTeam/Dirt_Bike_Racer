@@ -13,6 +13,8 @@ import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 
 import javax.swing.JButton;
+import java.io.File;
+
 import javax.swing.JPanel;
 
 /**
@@ -29,6 +31,7 @@ public class LevelFrame extends JPanel{
 	private Session currentSession = Game.currentSession;
 	private long start = 0;
 	private long finish = 0;
+	private long totalTime = 0;
 	
 	public LevelFrame(){
 		super();
@@ -36,6 +39,7 @@ public class LevelFrame extends JPanel{
 		setFocusable(true);
 		addKeyListener(new Listener2());
 	}
+	
 		@Override
 		public void paintComponent(Graphics g){
 			super.paintComponent(g);
@@ -82,7 +86,6 @@ public class LevelFrame extends JPanel{
 				while(currentSession.getBike().getXFrontWheel() < length){
 					repaint();
 					currentSession.moveBike();
-					
 					try {
 						Thread.sleep(50);
 					} catch (InterruptedException e){
@@ -90,7 +93,15 @@ public class LevelFrame extends JPanel{
 					}
 				}
 				finish = System.currentTimeMillis();
+				totalTime += finish;
 				System.out.println((finish-start)/1000.0);
+				File testFile = new File("");
+				if(currentSession.levelNum == 1) testFile = new File("level2.txt");
+				if(currentSession.levelNum == 2) testFile = new File("level3.txt");
+				int nextLevel = currentSession.levelNum + 1;
+				Game.currentSession = new Session(testFile, nextLevel);
+				currentSession = Game.currentSession;
+				repaint();
 			}
 		}
 		
